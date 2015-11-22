@@ -104,7 +104,7 @@ session_start();
             </div>
 
             <div class="col-xs-6 col-sm-6 text-center col-md-4">
-                <a class="photo_link" target="new" href="../galeries/galerie_sc/carlsbourg2013/carlsbourg2013.html">
+                <a class="photo_link" target="new" href="/pages/gallery.php?section=scouts&gallery=carlsbourg2013">
 					<div class="photo_move">
 						<div id="GDcamp13_sc" class="img-responsive"></div>
 						<h4 class="photo_title">Grand camp Scouts 2013</h4>
