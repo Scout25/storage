@@ -1,14 +1,39 @@
 <?php
 session_start();
+$current_url = $_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'];
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-<!-- Head -->
-<title>Gallerie Scouts - Carlsbourg 2013 - Scout25</title>
-<!-- <link rel="stylesheet" href="assets/css/main.css" />
-<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript> -->
-<?php include("../../../includes/header.php"); ?>
+	<title>Gallerie Scouts - Carlsbourg 2013 - Scout25</title>
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+    <meta http-equiv="Content-Language" content="fr">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="scouts,scoutisme,guides,pluralistes,jeunes,jeunesse,mouvement de jeunesse,activités,animations,ganshoren,bruxelles,Bruxelles-Noroi,section,animateurs,week-end,adolescents,jeunes adolescents">
+    <meta name="author" content="capaert.axel@hotmail.com">
+
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/icons/apple_touch/144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/img/icons/apple_touch/114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/img/icons/apple_touch/72.png">
+    <link rel="apple-touch-icon-precomposed" href="/img/icons/apple_touch/57.png">
+    <link rel="shortcut icon" href="/img/icons/favicon.png">
+
+    <!-- Add custom CSS here -->
+    <link href="/css/gallery.css" rel="stylesheet">
+    
+    <!-- Google Analytics -->
+    <script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	
+	  ga('create', 'UA-58418852-1', 'auto');
+	  ga('send', 'pageview');
+	</script>
+</head>
 
 <body id="gallery" class="is-loading-0 is-loading-1 is-loading-2">
 		<!-- Main -->
