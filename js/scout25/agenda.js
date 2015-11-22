@@ -16,7 +16,7 @@ $( document ).ready( function() {
 	  		"2015-12-18": {"number": 1, "badgeClass": "badge-warning", url: ",,cinéma,,"},
 
 	  		// Janvier
-	  		"2016-01-10": {"number": 3, "badgeClass": "badge-warning", url: "normale,,,normale"},
+	  		"2016-01-10": {"number": 2, "badgeClass": "badge-warning", url: "normale,,,normale"},
 	  		"2016-01-24": {"number": 2, "badgeClass": "badge-warning", url: ",normale,,normale"},
 	  		"2016-01-31": {"number": 4, "badgeClass": "badge-warning", url: "normale,normale,normale,normale"},
 
