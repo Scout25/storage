@@ -37,102 +37,67 @@ $current_url = $_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'];
 
 <body id="gallery" class="is-loading-0 is-loading-1 is-loading-2">
 		<!-- Main -->
-			<div id="main">
+		<div id="main">
 
-				<!-- Header -->
-					<header id="header">
-						<h1>Les scouts et Guides</h1>
-						<p>Grand camp 2013 - Carlsbourg</p>
-						
-					</header>
+			<!-- Header -->
+			<header id="header">
+				<h1>Les scouts et Guides</h1>
+				<p>Grand camp 2013 - Carlsbourg</p>
+			</header>
 
-				<!-- Thumbnail -->
-					<section id="thumbnails">
-						<article>
-							<a class="thumbnail" href="images/fulls/01.jpg" data-position="left center"><img src="images/thumbs/01.jpg" alt="" /></a>
-							<h2>Carlsbourg 2015</h2>
-							<p>L'heure de la douche</p>
-						</article>
-						<article>
-							<a class="thumbnail" href="images/fulls/02.jpg"><img src="images/thumbs/02.jpg" alt="" /></a>
-							<h2>Carlsbourg 2015</h2>
-							<p>L'heure de la douche</p>
-						</article>
-						<article>
-							<a class="thumbnail" href="images/fulls/03.jpg" data-position="top center"><img src="images/thumbs/03.jpg" alt="" /></a>
-							<h2>Carlsbourg 2015</h2>
-							<p>Tente camouflage</p>
-						</article>
-						<article>
-							<a class="thumbnail" href="images/fulls/04.jpg"><img src="images/thumbs/04.jpg" alt="" /></a>
-							<h2>Carlsbourg 2015</h2>
-							<p>Petit coin sympa</p>
-						</article>
-						<article>
-							<a class="thumbnail" href="images/fulls/05.jpg" data-position="top center"><img src="images/thumbs/05.jpg" alt="" /></a>
-							<h2>Carlsbourg 2015</h2>
-							<p>Le terrain</p>
-						</article>
-						<article>
-							<a class="thumbnail" href="images/fulls/06.jpg"><img src="images/thumbs/06.jpg" alt="" /></a>
-							<h2>Carlsbourg 2015</h2>
-							<p>Les tables à feu</p>
-						</article>
-						<article>
-							<a class="thumbnail" href="images/fulls/07.jpg"><img src="images/thumbs/07.jpg" alt="" /></a>
-							<h2>Carlsbourg 2015</h2>
-							<p>Repas en préparation</p>
-						</article>
-						<article>
-							<a class="thumbnail" href="images/fulls/08.jpg"><img src="images/thumbs/08.jpg" alt="" /></a>
-							<h2>Carlsbourg 2015</h2>
-							<p>Une pause s'impose</p>
-						</article>
-						<article>
-							<a class="thumbnail" href="images/fulls/09.jpg"><img src="images/thumbs/09.jpg" alt="" /></a>
-							<h2>Carlsbourg 2015</h2>
-							<p></p>
-						</article>
-						<article>
-							<a class="thumbnail" href="images/fulls/10.jpg"><img src="images/thumbs/10.jpg" alt="" /></a>
-							<h2>Carlsbourg 2015</h2>
-							<p>Préparation du repas</p>
-						</article>
-						<article>
-							<a class="thumbnail" href="images/fulls/11.jpg"><img src="images/thumbs/11.jpg" alt="" /></a>
-							<h2>Carlsbourg 2015</h2>
-							<p>Préparation du repas</p>
-						</article>
-						<article>
-							<a class="thumbnail" href="images/fulls/12.jpg"><img src="images/thumbs/12.jpg" alt="" /></a>
-							<h2>Carlsbourg 2015</h2>
-							<p>Préparation du repas</p>
-						</article>
-                        <article>
-							<a class="thumbnail" href="images/fulls/13.jpg"><img src="images/thumbs/13.jpg" alt="" /></a>
-							<h2>Carlsbourg 2015</h2>
-							<p>Préparation du repas</p>
-						</article>
-                        <article>
-							<a class="thumbnail" href="images/fulls/14.jpg"><img src="images/thumbs/14.jpg" alt="" /></a>
-							<h2>Carlsbourg 2015</h2>
-							<p>Le terrain.</p>
-						</article>
-					</section>
+			<!-- Thumbnail -->
+			<section id="thumbnails">
+			<?php
+				$folder = "images/fulls/";
+				$files = scandir($folder);
+				$title = "Carlsbourg 2015";
+				$description = array(
+						"L'heure de la douche",
+						"L'heure de la douche",
+						"L'heure de la douche",
+						"Tente camouflage",
+						"Petit coin sympa",
+						"Le terrain",
+						"Les tables à feu",
+						"Repas en préparation",
+						"Une pause s'impose",
+						"Carlsbourg 2015",
+						"Préparation du repas",
+						"Préparation du repas",
+						"Préparation du repas",
+						"Préparation du repas",
+						"Le terrain",
+					);
 
-				<!-- Footer -->
-					<footer id="footer">
-						<ul class="copyright">
-							<li>&copy; 25 ème unité de Ganshoren</li>
-						</ul>
-					</footer>
-			</div>
+				$i = 0;
+				foreach ($files as $file) :
+					// Prepend mac hidden files issue
+					if ($file == "." || $file == "..") :
+						// Do nothing
+					else : ?>
+						<article>
+							<a class="thumbnail" href="images/fulls/<?= $file ?>" alt="<?= $description[$i]?$description[$i]:null ?>" >
+								<img src="images/thumbs/<?= $file ?>" alt="<?= $description[$i]?$description[$i]:null ?>" />
+							</a>
+							<h2><?= $title ?></h2>
+							<p><?= $description[$i]?$description[$i]:null ?></p>
+						</article>
+					<?php $i++; endif; ?>
+				<?php endforeach; ?>
+			</section>
+
+			<!-- Footer -->
+			<footer id="footer">
+				<ul class="copyright">
+					<li>&copy; 25 ème unité de Ganshoren</li>
+				</ul>
+			</footer>
+		</div>
 
 		<!-- Scripts -->
-			<script src="/js/jquery-1.11.2.min.js"></script>
-			<script src="/js/scout25/gallery/skel.min.js"></script>
-			<!--[if lte IE 8]><script src="/js/scout25/gallery/ie/respond.min.js"></script><![endif]-->
-			<script src="/js/scout25/gallery/main.js"></script>
-
+		<script src="/js/jquery-1.11.2.min.js"></script>
+		<script src="/js/scout25/gallery/skel.min.js"></script>
+		<!--[if lte IE 8]><script src="/js/scout25/gallery/ie/respond.min.js"></script><![endif]-->
+		<script src="/js/scout25/gallery/main.js"></script>
 	</body>
 </html>
