@@ -1,4 +1,4 @@
-#main.gallery {
+#gallery {
 	@import url("http://fonts.googleapis.com/css?family=Roboto:400,700");
 	/* Thumbnails */
 	#thumbnails:after {
@@ -138,7 +138,7 @@
 	}
 
 	body, input, select, textarea {
-		font-family: "Roboto", Helvetica, sans-serif;
+		font-family: Helvetica, sans-serif;
 		font-weight: 400;
 		line-height: 1.65;
 		font-size: 1em;
@@ -756,7 +756,7 @@
 			top: 0;
 			width: 4em;
 			height: 4em;
-			background-image: url("images/close-small-alt.svg");
+			background-image: url("/img/gallery/close-small-alt.svg");
 			background-repeat: no-repeat;
 			background-size: 32px 32px;
 			cursor: pointer;
@@ -1049,7 +1049,7 @@
 				top: 0;
 				width: 4em;
 				height: 4em;
-				background-image: url("images/close.svg");
+				background-image: url("/img/gallery/close.svg");
 				background-repeat: no-repeat;
 				background-size: 64px 64px;
 				cursor: pointer;
@@ -1066,7 +1066,7 @@
 				width: 6em;
 				height: 6em;
 				margin-top: -3em;
-				background-image: url("images/arrow.svg");
+				background-image: url("/img/gallery/arrow.svg");
 				background-position: center;
 				background-repeat: no-repeat;
 				background-size: contain;
@@ -1148,7 +1148,7 @@
 				left: 50%;
 				width: 3em;
 				height: 3em;
-				background-image: url("images/spinner.svg");
+				background-image: url("/img/gallery/spinner.svg");
 				background-position: center;
 				background-repeat: no-repeat;
 				background-size: contain;
@@ -1169,7 +1169,7 @@
 		}
 
 			body.fullscreen #viewer .inner .toggle {
-				background-image: url("images/open.svg");
+				background-image: url("/img/gallery/open.svg");
 			}
 
 		body.is-loading-1 #viewer {
@@ -1199,7 +1199,7 @@
 					-webkit-transition: opacity 0.75s ease;
 					-ms-transition: opacity 0.75s ease;
 					transition: opacity 0.75s ease;
-					background-image: url("images/open.svg");
+					background-image: url("/img/gallery/open.svg");
 					opacity: 0;
 					right: 0;
 				}
@@ -1218,12 +1218,12 @@
 
 			#viewer .inner .nav-next,
 			#viewer .inner .nav-previous {
-				background-image: url("images/arrow-small.svg");
+				background-image: url("/img/gallery/arrow-small.svg");
 				background-size: 32px 32px;
 			}
 
 			body.fullscreen #viewer .inner .toggle {
-				background-image: url("images/open-small.svg");
+				background-image: url("/img/gallery/open-small.svg");
 			}
 
 		}
@@ -1243,7 +1243,7 @@
 			}
 
 				#viewer .inner .toggle {
-					background-image: url("images/close-small.svg") !important;
+					background-image: url("/img/gallery/close-small.svg") !important;
 					background-size: 32px 32px;
 				}
 

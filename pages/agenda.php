@@ -7,7 +7,6 @@ session_start();
 <head>
 <!-- Head -->
 <title>Agenda, unité du Porc-épic 25, scouts et guides pluralistes de Ganshoren, Bruxelles-Norois</title>
-<link href="/css/calendar/responsive-calendar.css" rel="stylesheet">
 <?php include("../includes/header.php"); ?>
 
 <body id="agenda" class="body_agenda">

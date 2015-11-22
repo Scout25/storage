@@ -10,15 +10,9 @@ session_start();
 <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript> -->
 <?php include("../../../includes/header.php"); ?>
 
-<body class="is-loading-0 is-loading-1 is-loading-2">
-
-    <!-- Navbar -->
-    <?php include("../../../includes/navbar.php"); ?>
-    <!-- /Navbar -->
-	</head>
-
+<body id="gallery" class="is-loading-0 is-loading-1 is-loading-2">
 		<!-- Main -->
-			<div id="main" class="gallery">
+			<div id="main">
 
 				<!-- Header -->
 					<header id="header">
@@ -107,14 +101,13 @@ session_start();
 							<li>&copy; 25 ème unité de Ganshoren</li>
 						</ul>
 					</footer>
-
 			</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
+			<script src="/js/jquery-1.11.2.min.js"></script>
+			<script src="/js/scout25/gallery/skel.min.js"></script>
+			<!--[if lte IE 8]><script src="/js/scout25/gallery/ie/respond.min.js"></script><![endif]-->
+			<script src="/js/scout25/gallery/main.js"></script>
 
 	</body>
 </html>

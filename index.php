@@ -264,7 +264,7 @@ session_start();
                     <address>
                         <strong>Responsable d'Unité adj:</strong>
                         <br/> <a href="http://fr.wikipedia.org/wiki/Jabiru" target="new">Jabiru</a>
-                        <br/> Patrick Van Laer
+                        <br/> Patrick Vanlaer
                     </address>
                 </div>
 
