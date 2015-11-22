@@ -1,0 +1,123 @@
+.submit {
+	background-color: rgb(33,87,161);
+	color: rgb(255,255,255);
+	border: 1px solid rgb(255,255,255);
+	border-radius: 3px;
+}
+
+.submit:hover {
+	background-color: rgb(255,255,255);
+	color: rgb(33,87,161);
+	border: 1px solid rgb(255,255,255);
+}
+
+#anim-zone {
+  width:200px;
+  font-size: 18px;
+  margin: 0 auto;
+  background-color: rgb(209,16,41);
+  border:none;
+  position:fixed;
+  left:50%;
+  margin-left: -100px;
+  z-index: 1;
+  border-radius: 0 0 5px 5px;
+}
+
+#anim-wrapper {
+  margin-top: -300px;
+  top: 0;
+  height: 300px;
+  background: rgb(33,87,161);
+  position: fixed;
+  overflow-x: auto;
+  z-index: 1000;
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -ms-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+
+#anim-wrapper  p, h3 {
+  color: rgb(255,255,255);
+}
+
+#anim-wrapper h3 {
+  padding-top: 50px;
+}
+
+#anim-wrapper > #anim-close {
+  width:200px;
+  font-size: 18px;
+  margin: 0 auto;
+  color:rgb(255,255,255);
+  background-color: rgb(33,87,161);
+  border:none;
+  position:absolute;
+  bottom:0px;
+  left:50%;
+  margin-left: -100px;
+  z-index: 1;
+  border-radius: 5px 5px 0 0;
+}
+
+#anim-close:hover {
+  color:rgb(0,0,0);
+}
+
+#anim-wrapper.active {
+  top: 300px;
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -ms-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+
+.off {
+  background-color: rgba(0,0,0,0);
+  border: 1 px solid rgb(255,255,255);
+}
+
+#zone_anim  a {
+  color: rgb(255,255,255);
+}
+
+.zoom {
+  width:120px;
+  margin: 0 auto;
+  webkit-transition: 0.3s;
+  moz-transition: 0.3s;
+  o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.zoom:hover {
+  width:150px;
+}
+
+@media (max-width: 850px) {
+
+  #anim-wrapper {
+    height:350px;
+    margin-top:-350px;
+    z-index: 99999;
+  }
+
+  #anim-wrapper h3 {
+    padding-top: 15px;
+  }
+
+  #anim-wrapper.active {
+    top: 350px;
+  }
+  
+  .navbar-brand {
+	  margin-top: 3px;
+  }
+}
+
+#inscriptions .row {
+  min-height: 100px;
+}

@@ -1,0 +1,3 @@
+# Ignore what we don't need in production
+.DS_Store
+.sass-cache/

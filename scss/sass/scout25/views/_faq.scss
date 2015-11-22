@@ -1,0 +1,74 @@
+.faq .intro a {
+	color: rgb(255,255,255);
+	text-decoration: none;
+	font-style: italic;
+}
+
+.faq .intro a:hover {
+	text-decoration: none;
+	font-style: normal;
+}
+
+.petit {
+	font-size: 11px;
+}
+
+.th {
+	border-bottom: 1px solid;
+}
+
+.border {
+  border-right: 1px solid;
+}
+
+.no_border {
+  border-right: none;
+}
+
+.no_border, .border {
+  padding: 3px 5px 3px 5px;
+}
+
+table {
+	border-radius: 3px;
+}
+
+.faq {
+  background-image: url(../img/patterns/wood_contacts.jpg);
+}
+
+.retour {
+  font-size: 14px;
+  padding: 5px;
+}
+
+.retour:hover {
+  text-decoration: none;
+}
+
+.input, textarea, .form_btn {
+  background-color: rgba(0,0,0,0);
+  border-radius: 3px;
+  border: 1px solid rgb(255,255,255);
+  margin-bottom: 10px;
+  color: rgb(255,255,255);
+  height: 34px;
+}
+
+#about_contacts label, .form {
+  font-family: AngryChalk;
+  color: rgb(255,255,255);
+}
+
+.form_btn:hover {
+  background-color: rgb(255,255,255);
+  color: rgb(0,0,0);
+}
+
+.center {
+  text-align: center;
+}
+
+.ps {
+  font-size: 12px;
+}

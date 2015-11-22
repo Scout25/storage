@@ -1,0 +1,96 @@
+nav.navbar {
+    background-color: $blue;
+
+    .navbar-header {
+        .navbar-toggle {
+            @include border-radius(2px);
+            border: 1px solid $white;
+            color: $white;
+
+            &:hover, &:focus {
+                background-color: $white;
+                color: $blue;
+            }
+        }
+
+        .navbar-brand {
+            float: left;
+            padding: 25px;
+            font-size: 18px;
+            line-height: 20px;
+            background: center center no-repeat url(/img/logos/logo_white_min.png);
+            background-size: auto 40px;
+
+            &:hover, &:focus {
+                text-decoration: none;
+                background: center center no-repeat url(/img/logos/logo_min.png);
+                background-size: auto 40px;
+                background-color: $white;
+            }
+        }
+    }
+
+    .navbar-collapse {
+        ul.navbar-nav {
+            li {
+                &.dropdown {
+                    ul.dropdown-menu {
+                        padding: 0;
+                        background-color: $blue;
+                        @include border-bottom-left-radius(2px);
+                        @include border-bottom-right-radius(2px);
+
+                        @include bp-medium {
+                            border: 1px solid $white;
+                            border-top: none;
+                        }
+
+                        li {
+                            a {
+                                color: $white;
+                            }
+
+                            &:hover, &:focus {
+                                background-color: $white;
+
+                                a {
+                                    color: $blue;
+                                }
+                            }
+                        }
+                    }
+
+                    &:hover, &:focus, &:visited {
+                        background-color: $blue;
+                        color: $white;
+                    }
+                }
+
+                a {
+                    color: $white;
+
+                    &:hover, &:focus {
+                        background-color: $white;
+                        color: $blue;
+                    }
+                }
+            }
+
+            &.open {
+                li {
+                    a {
+                        color: $blue;
+                    }
+                }
+            }
+        }
+
+        ul.navbar-right {
+            margin-right: 0px;
+
+            @include bp-navbar {
+                margin-right: 82px;
+            }
+        }
+    }
+}

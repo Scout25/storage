@@ -1,0 +1,62 @@
+.header_contacts {
+  display: table;
+  height: 100%;
+  width: 100%; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color:white;
+}
+
+@media (max-width:500px) {
+
+  #big_contacts {
+    width: 0px;
+    height: 0px;
+    opacity: 0;
+  }
+
+}
+
+@media (min-width:501px) {
+
+  #little_contacts {
+    width: 0px;
+    height: 0px;
+    opacity: 0;
+  }
+
+}
+
+dl > dt {
+  color: rgb(33, 87, 161);
+}
+
+.signature {
+  text-align: right;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.padding {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.padding_titre {
+  padding-bottom: 20px;
+}
+
+.paddings {
+  padding:20px;
+}
+
+.blue {
+  background-color: rgb(33,87,161);
+  background-image: none;
+}
+
+.logo_contacts {
+  max-height: 395px;
+}

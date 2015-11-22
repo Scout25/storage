@@ -1,0 +1,728 @@
+.fc-right .fc-today-button {
+  display: inherit;
+}
+
+.full-table {
+  display: table;
+}
+
+.full-prev, .full-next {
+  display: table-cell;
+  width: 5%;
+  vertical-align: middle;
+}
+
+.full-prev i:hover, .full-next i:hover {
+  color: rgb(209,16,41);
+}
+
+.full-next {
+  text-align: right;
+}
+
+.full-prev p:hover, .full-next p:hover {
+  cursor: pointer;
+}
+
+.alert-success, .alert-error {
+  position: fixed;
+  top: 0;
+  height: 50px;
+  width: 100%;
+  z-index: 9999;
+  display: none;
+}
+
+.alert-success {
+  background-color: rgb(132,186,81);
+}
+
+.alert-error {
+  background-color: rgb(209,16,41);
+}
+
+.alert-success h3, .alert-error h3 {
+  text-align: center;
+  margin: 0;
+  line-height: 50px;
+}
+
+.attention {
+  position: relative;
+  bottom: 2px;
+}
+
+/* Repas */
+.logo-repas {
+  content: url("../img/sections/logos/pionniers.png");
+  background-size: 100%;
+  width: 100px;
+}
+
+/* Global Styles */
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: "AngryChalk";
+  src: url(../fonts/AngryChalk.ttf);
+}
+
+.a-white {
+  color: white;
+  text-decoration: underline;
+}
+
+.a-white:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.bleu {
+  color: rgb(33,87,161);
+}
+
+.rouge {
+  color: rgb(209,16,41);
+}
+
+.vert {
+  color: rgb(132,186,81);
+}
+
+
+body {
+  background-image: url(../img/patterns/wood.jpg);
+}
+
+.body_contacts {
+  background-image: url(../img/patterns/wood_contacts.jpg);
+  background-attachment: fixed;
+}
+
+.body_agenda {
+  background-image: url(../img/fond_agenda.jpg);
+  background-attachment: fixed;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.vert-text {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  overflow: hidden;
+}
+
+.vert-text_top {
+  display: table-cell;
+  vertical-align: top;
+  text-align: center;
+  overflow: hidden;
+}
+
+.vert-text h1 {
+  padding: 0;
+  margin: 0;
+  font-size: 4.5em;
+  font-weight: 700;
+}
+
+.vert-text_top h2 {
+  margin-top: 75px;
+}
+
+/* header */
+
+
+.header_castors, .header_louveteaux, .header_scouts, .header_pis  {
+  padding-top: 50px; 
+}
+
+@media (max-width:501px) {
+  .header_castors, .header_louveteaux, .header_scouts, .header_pis  {
+    margin-top: 25px;
+  }
+}
+
+/* Header */
+@media (max-width: 501px) {
+
+  #top {
+    padding-top: 25px;
+   }
+
+  .first_bouton {
+    margin-top: 85%;
+  }
+
+  #top_index {
+    padding-top: 40px;
+  }
+
+}
+
+.float {
+  float:left;
+  margin-right:20px;
+}
+
+.float_right, .float_logo_header {
+  float:right;
+  margin-left: 20px;
+  border-radius:3px;
+}
+
+@media (max-width: 892px) {
+
+  .h1_titre {
+    margin-top: 60px;
+  }
+}
+
+.h1_titre {
+  margin-bottom: 20px;
+}
+
+.h1_index {
+  padding-left: -15px;
+}
+
+.img_header {
+  max-height:100px;
+  padding:1%;
+}
+
+.sgp {
+  border-radius: 5px;
+}
+
+@media (min-width: 768px) {
+
+  .h1_titre {
+    padding-bottom: 150px;
+  }
+  
+}
+
+@media (max-width:991px) {
+
+  .img_header {
+    max-width: 125px;
+  }
+
+  .sgp, .logo_contacts {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+
+  .uniforme_contacts {
+    margin: 0 auto;
+  }
+
+  .p {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .float_right {
+    float:left;
+    margin-right: 20px;
+    margin-left: 0px;
+  }
+
+}
+
+@media (max-width: 543px) {
+
+  .little {
+    width: 0px;
+    height: 0px;
+    opacity:0;
+  }
+
+  #little {
+    width: 0px;
+    height: 0px;
+    opacity:0;
+  }
+
+  #bigfirst_castors {
+    margin-top: -101px;
+  }
+
+  #bigfirst_louveteaux {
+    margin-top: -57px;
+  }
+
+  #bigfirst_scouts {
+    margin-top: -46px;
+  }
+
+  #bigfirst_pis {
+    margin-top: -100px;
+  }
+
+}
+
+@media (min-width: 544px) {
+
+  #big, #bigfirst_castors, #bigfirst_louveteaux, #bigfirst_scouts, #bigfirst_pis {
+    opacity: 0;
+    width: 0px;
+    height: 0px;
+  }
+
+  .big {
+    opacity: 0;
+    width: 0px;
+    height: 0px;
+  }
+
+}
+
+/* Intro */
+
+#about, #about_castors, #about_louveteaux, #about_scouts, #about_pis {
+  padding-top: 45px;
+  padding-bottom: 45px;
+  color: rgb(255,255,255);
+  background-color: rgb(209,16,41);
+}
+
+#about_contacts {
+  padding-top: 45px;
+  padding-bottom: 45px;
+  color: rgb(255,255,255);
+}
+
+.fond_blanc {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: rgb(0,0,0);
+  border-radius: 5px;
+}
+
+.agenda {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 300px;
+  margin: 0 auto;
+}
+
+.sections_logos {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: rgb(0,0,0);
+  border-radius: 5px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border:2px solid rgb(33,87,161);
+  width:150px;
+  webkit-transition: 0.3s;
+  moz-transition: 0.3s;
+  o-transition: 0.3s;
+  transition: 0.3s;
+}
+.sections_logos:hover {
+  border:2px solid rgb(209,16,41);
+}
+
+/* Services */
+
+.services, .services_index {
+  background-color: rgb(33,87,161);
+  padding: 50px 0;
+  color: #ffffff;
+}
+
+.services_contacts {
+  padding: 50px 0;
+  color: #ffffff;
+}
+
+.service-item {
+  margin-bottom: 15px;
+}
+
+i.service-icon {
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 56px;
+  width: 140px;
+  height: 140px;
+  line-height: 136px;
+  vertical-align: middle; 
+  text-align: center;
+}
+
+.services_img {
+  border:3px solid white;
+  border-radius: 80px;
+}
+
+#img_services {
+  background-image: url(../img/services/services.jpg);
+}
+
+#img_services:hover {
+  background-image: url(../img/services/services2.jpg);
+}
+
+.google_plus {
+  width:25px;
+  margin-top:-4px;
+  webkit-transition: 0.3s;
+  moz-transition: 0.3s;
+  o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.google_plus:hover {
+  width:35px;
+}
+
+/* Callout */
+
+.callout {
+  color: #ffffff;
+  display: table;
+  height: 400px;
+  width: 100%;
+  background: url(../img/fond.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.callout_min {
+  color: #ffffff;
+  display: table;
+  height: 400px;
+  width: 100%;
+  background: url(../img/fond.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* Portfolio */
+
+.right {
+	margin-left: 180px;
+}
+
+.white {
+  background-color: rgba(255,255,255,0.8);
+}
+
+.whitefirst {
+  background-color: rgba(255,255,255,0.8);
+  padding-top: 20px;
+}
+
+.portfolio {
+  padding: 50px 0;
+  color: rgb(209,16,41);
+}
+
+.portfolio_contacts {
+  padding: 50px 0;
+  color: rgb(255,255,255);
+}
+
+.portfolio_contacts > .container {
+  overflow: hidden;
+}
+
+.portfolio_pi {
+  background-image: url(../img/patterns/wood.jpg);
+}
+
+.portfolio a {
+  color: rgb(33,87,161);
+}
+
+.portfolio a:hover {
+  color: rgb(209,16,41);
+  text-decoration: none;
+}
+
+.portfolio  hr {
+  border-color: rgb(209,16,41);
+}
+
+.portfolio-item {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  min-width: 380px;
+}
+
+.img-portfolio {
+  margin: 0 auto;
+}
+
+/* Call to Action */
+
+.call-to-action {
+  color: rgb(255,255,255);
+  padding: 50px 0;
+  background-color: rgb(33, 87, 161);
+}
+
+.call-to-action > .container {
+  overflow: hidden;
+}
+
+.call-to-action_contacts {
+  color: rgb(255, 255, 255);
+  padding: 50px 0;
+}
+
+.call-to-action > .container > .row > .col-md-4 > hr {
+  color: rgb(33,87,161);
+}
+
+.call-to-action .btn {
+  margin: 10px;
+}
+
+.call-to-action hr {
+  border-color: rgb(255,255,255);
+}
+
+.video {
+	max-width: 500px;
+	margin: 0 auto;
+}
+
+/* Souvenirs */
+
+@media (min-width:992px) {
+	.photo_title.active {
+		background-color: rgba(33,87,161,0.5);
+		margin-top: -39px;
+	    -webkit-transition: all .2s ease 0s;
+	    -moz-transition: all .2s ease 0s;
+	    -ms-transition: all .2s ease 0s;
+	    -o-transition: all .2s ease 0s;
+	    transition: all .2s ease 0s;
+	}
+	
+	.photo_move {
+		height: 279px;
+		margin-bottom: 10px;
+	}
+}
+
+.photo_title {
+	max-width: 360px;
+	padding: 10px 0 10px 0;
+	margin-top: 0px;
+	background-color: rgba(33,87,161,0.3);
+	color: white;
+    -webkit-transition: all .4s ease 0s;
+    -moz-transition: all .4s ease 0s;
+    -ms-transition: all .4s ease 0s;
+    -o-transition: all .4s ease 0s;
+    transition: all .4s ease 0s;
+}
+
+.photo_link {
+	width: 360px;
+}
+
+.photo_link:hover {
+	text-decoration: none;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+	
+  .header {
+	background: url(../img/header.jpg) no-repeat center center scroll; 
+  }
+  
+  .header_castors {
+  background: url(../img/castors/header_castors.jpg) no-repeat center center scroll; 
+  }
+  
+  .header_louveteaux {
+  background: url(../img/louveteaux/header_louveteaux.jpg) no-repeat center center scroll; 
+  }
+  
+  .header_pis {
+  background: url(../img/pis/header_pis.jpg) no-repeat center center scroll; 
+  }
+
+  .header_castors > .container, .header_louveteaux > .container, .header_scouts > .container, .header_pis > .container {
+  overflow: hidden;
+  }
+  .callout {
+  background: url(../img/fond_mobile.jpg) no-repeat center center scroll; 
+  }
+
+  .callout_min {
+  background: url(../img/fond_mobile.jpg) no-repeat center center scroll; 
+  }
+
+  #big_index {
+    opacity:0;
+    width: 0px;
+    height: 0px;
+  }
+
+  #little_index {
+    margin-top: -62px;
+  }
+
+  .left {
+    margin-left: -13px;
+  }
+
+}
+
+@media (max-width: 991px) {
+  .header_scouts {
+  background: url(../img/scouts/header_scouts_mobile.jpg) no-repeat center center scroll; 
+  }
+
+}
+
+@media (max-width: 1024px) {
+  .body_agenda {
+    background-image: url(../img/patterns/wood_contacts.jpg);
+  }
+
+}
+
+@media (min-width: 768px) {
+  #little_index {
+    width: 0px;
+    height: 0px;
+    opacity: 0;
+  }
+
+  #big_index {
+  }
+}
+
+@media (max-width: 670px) {
+  .team_25 {
+    position: relative;
+    margin-bottom:-17.5%;
+  }
+}
+
+/* Reservation */
+
+#progressBar {
+	width:100%;
+}
+
+#progressBar > #progress {
+	height:32px;
+	background-color: rgb(209,16,41);
+	border-radius: 2px;
+	display: table;
+}
+
+#progress > #progressText {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+/* Junks to sort */
+
+.float_left {
+  float:left;
+  margin-right:40px;
+}
+
+#contenu_acceuil > p {
+  min-height: 345px;
+}
+
+#bouton_default {
+  background-color:rgba(255,255,255,0);
+  color:white;
+  border:3px white solid;
+}
+
+#bouton_default:hover {
+  background-color:white;
+  color: rgb(209,16,41);
+}
+
+#bouton_intro {
+  background-color: rgb(33,87,161);
+  color:white;
+  border: 3px solid white;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+#bouton_intro:hover {
+  background-color: rgb(209,16,41);
+  color: white;
+  border: 3px solid white;
+}
+
+#team_25 {
+  max-width:1058px;
+  max-height:535px;
+  margin: 0 auto;
+}
+
+.team_25 {
+  border:1px solid rgb(255,255,255);
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+#menu-close {
+  background-color: rgba(25,175,255,0);
+  color: white;
+  border: none;
+}
+
+#menu-close:hover {
+  color: black;
+  border: none;
+}
+
+.callout {
+  height:100%;
+}
+
+.img-thumbnail {
+  margin-bottom: 20px;
+}
+
+.container_callout {
+  width:100%;
+  height:100%;
+}
+
+.container_callout_min {
+  width:100%;
+  height:40%;
+}
+
+@media (max-width: 874px) {
+  .container {
+    overflow-x: hidden;
+  }
+}

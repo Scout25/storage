@@ -1,0 +1,35 @@
+// Colors variables
+$white : #FFFFFF;
+$black : black;
+
+$blue : #2157A1;
+$light-blue : lighten(#2157A1, 5%);
+$dark-blue : darken(#2157A1, 5%);
+
+$red: #D11029;
+$light-red : lighten(#D11029, 5%);
+$dark-red : darken(#D11029, 5%);
+
+// Breakpoints
+@mixin bp-small {
+	@media (min-width: 768px) {
+        @content;
+    }
+}
+/* Medium devices (desktops, 992px and up) */
+@mixin bp-medium {
+    @media (min-width: 992px) {
+        @content;
+    }
+}
+/* Large devices (large desktops, 1200px and up) */
+@mixin bp-large {
+    @media (min-width: 1200px) {
+        @content;
+    }
+}
+@mixin bp-navbar {
+    @media (min-width: 980px) {
+        @content;
+    }
+}
