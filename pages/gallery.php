@@ -1,9 +1,13 @@
 <?php
 session_start();
 $current_url = $_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'];
-if ($_GET && $_GET['section'] && $_GET['gallery']) {
+if ($_GET && $_GET['section'] && $_GET['gallery'] && $_GET['title']) {
 	$section = $_GET['section'];
 	$gallery = $_GET['gallery'];
+	$title = str_replace("-", " ", $_GET['title']);
+	$titles = array(
+			"scouts" => "Les scouts et guides",
+		);
 } else {
 	header('Location: /');
 }
@@ -47,8 +51,8 @@ if ($_GET && $_GET['section'] && $_GET['gallery']) {
 
 			<!-- Header -->
 			<header id="header">
-				<h1>Les scouts et Guides</h1>
-				<p>Grand camp 2013 - Carlsbourg</p>
+				<h1><?= $titles[$section] ?></h1>
+				<p><?= $title ?></p>
 			</header>
 
 			<!-- Thumbnail -->
@@ -57,24 +61,23 @@ if ($_GET && $_GET['section'] && $_GET['gallery']) {
 				$folder = "../img/gallery/sections/".$section."/".$gallery."/fulls/";
 				$folderThumbs = "../img/gallery/sections/".$section."/".$gallery."/thumbs/";
 				$files = scandir($folder);
-				$title = "Carlsbourg 2015";
-				$description = array(
-						"L'heure de la douche",
-						"L'heure de la douche",
-						"L'heure de la douche",
-						"Tente camouflage",
-						"Petit coin sympa",
-						"Le terrain",
-						"Les tables à feu",
-						"Repas en préparation",
-						"Une pause s'impose",
-						"Carlsbourg 2015",
-						"Préparation du repas",
-						"Préparation du repas",
-						"Préparation du repas",
-						"Préparation du repas",
-						"Le terrain",
-					);
+				// $description = array(
+				// 		"L'heure de la douche",
+				// 		"L'heure de la douche",
+				// 		"L'heure de la douche",
+				// 		"Tente camouflage",
+				// 		"Petit coin sympa",
+				// 		"Le terrain",
+				// 		"Les tables à feu",
+				// 		"Repas en préparation",
+				// 		"Une pause s'impose",
+				// 		"Carlsbourg 2015",
+				// 		"Préparation du repas",
+				// 		"Préparation du repas",
+				// 		"Préparation du repas",
+				// 		"Préparation du repas",
+				// 		"Le terrain",
+				// 	);
 
 				$i = 0;
 				foreach ($files as $file) :
@@ -87,7 +90,7 @@ if ($_GET && $_GET['section'] && $_GET['gallery']) {
 								<img src="<?= $folderThumbs.$file ?>" alt="<?= $description[$i]?$description[$i]:null ?>" />
 							</a>
 							<h2><?= $title ?></h2>
-							<p><?= $description[$i]?$description[$i]:null ?></p>
+							<!-- <p><?//= $description[$i]?$description[$i]:null ?></p> -->
 						</article>
 					<?php $i++; endif; ?>
 				<?php endforeach; ?>
