@@ -41,7 +41,7 @@ session_start();
     </div>
     <!-- /Full Page Image Header Area -->
 
-    <!-- Services --> 
+    <!-- Services -->
     
     
        
@@ -57,13 +57,14 @@ session_start();
             <div class="row">
                 <div class="col-xs-12">
                     <p class="text-center">
-                        Contrairement à l'information donnée à la gare, la meute n'a pas réunion ce dimanche 22 novembre 2015. Toutes les dates sont disponibles dans la partie <a class="a-white" href="/pages/agenda.php" target="blank">agenda</a> de notre site internet.
+                        Pour une raison d'organisation, la sortie piscine est annulée, cependant les réunions sont maintenues.<br><br>
+                        Merci pour votre compréhension.
                     </p>
                 </div>
             </div>
             
             </div>
-            </div>
+            </div>  
  <!--              
             <div class="row">
                 <div class="col-md-4 col-md-offset-4 text-center">

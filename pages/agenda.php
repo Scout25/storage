@@ -22,6 +22,27 @@ session_start();
             <a href="#services" id="bouton_intro" class="btn btn-lg btn-default little">Poursuivre</a>
         </div>
     </div>
+    
+     <div id="about" class="intro">
+        <div class="container">
+			<div class="row">
+                <div class="col-md-4 col-md-offset-4 text-center">
+                	<h2>ATTENTION</h2>
+                    <hr>
+                </div>
+            </div>
+                
+            <div class="row">
+                <div class="col-xs-12">
+                    <p class="text-center">
+                        Pour une raison d'organisation, la sortie piscine est annulée, cependant les réunions sont maintenues.<br><br>
+                        Merci pour votre compréhension.
+                    </p>
+                </div>
+            </div>
+            
+            </div>
+            </div>
 
     <!-- Services -->
     <div id="services" class="services_contacts">
