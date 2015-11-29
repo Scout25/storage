@@ -1,123 +1,79 @@
-.submit {
-	background-color: rgb(33,87,161);
-	color: rgb(255,255,255);
-	border: 1px solid rgb(255,255,255);
-	border-radius: 3px;
-}
+body.zone_anim {
+    .pdf-zone {
+        .pdf-box {
+            margin-bottom: 30px;
 
-.submit:hover {
-	background-color: rgb(255,255,255);
-	color: rgb(33,87,161);
-	border: 1px solid rgb(255,255,255);
-}
+            i.pdf-file {
+                margin-bottom: 15px;
+                color: $light-blue;
+                cursor: pointer;
 
-#anim-zone {
-  width:200px;
-  font-size: 18px;
-  margin: 0 auto;
-  background-color: rgb(209,16,41);
-  border:none;
-  position:fixed;
-  left:50%;
-  margin-left: -100px;
-  z-index: 1;
-  border-radius: 0 0 5px 5px;
-}
+                &:hover, &.focus {
+                    &:before {
+                        // .fa-download:before{content}
+                        content: "";
+                    }
+                }
 
-#anim-wrapper {
-  margin-top: -300px;
-  top: 0;
-  height: 300px;
-  background: rgb(33,87,161);
-  position: fixed;
-  overflow-x: auto;
-  z-index: 1000;
-  -webkit-transition: all 0.4s ease 0s;
-  -moz-transition: all 0.4s ease 0s;
-  -ms-transition: all 0.4s ease 0s;
-  -o-transition: all 0.4s ease 0s;
-  transition: all 0.4s ease 0s;
-}
+                &:before {
+                    // .fa-file-pdf-o:before{content}
+                    content:"";
+                    font-size: 55px;
+                }
+            }
 
-#anim-wrapper  p, h3 {
-  color: rgb(255,255,255);
-}
+            p {
+                min-height: 38px;
+                max-height: 38px;
+                overflow: hidden;
+            }
+        }
+    }
+    
+    .inscription-zone {
+        .inscription-box {
+            padding: 15px;
+            margin-bottom: 30px;
+            background-color: $light-blue;
+            border: 1px solid $white;
+            @include border-radius(2px);
+            @include transition($transition);
 
-#anim-wrapper h3 {
-  padding-top: 50px;
-}
+            h3 {
+                font-size: 18px;
 
-#anim-wrapper > #anim-close {
-  width:200px;
-  font-size: 18px;
-  margin: 0 auto;
-  color:rgb(255,255,255);
-  background-color: rgb(33,87,161);
-  border:none;
-  position:absolute;
-  bottom:0px;
-  left:50%;
-  margin-left: -100px;
-  z-index: 1;
-  border-radius: 5px 5px 0 0;
-}
+                span {
+                    font-size: 13px;
+                }
+            }
 
-#anim-close:hover {
-  color:rgb(0,0,0);
-}
+            button {
+                margin-top: 15px;
+                padding: 8px 15px;
+                background: transparent;
+                border: 1px solid $white;
+                @include border-radius(2px);
 
-#anim-wrapper.active {
-  top: 300px;
-  -webkit-transition: all 0.4s ease 0s;
-  -moz-transition: all 0.4s ease 0s;
-  -ms-transition: all 0.4s ease 0s;
-  -o-transition: all 0.4s ease 0s;
-  transition: all 0.4s ease 0s;
-}
+                &.ghost {
+                    border: none;
+                    border-bottom: 1px solid $white;
+                    @include transition($transition);
 
-.off {
-  background-color: rgba(0,0,0,0);
-  border: 1 px solid rgb(255,255,255);
-}
+                    &:hover, &:focus {
+                        border-color: $light-blue;
+                    }
+                }
+            }
+        }
+    }
 
-#zone_anim  a {
-  color: rgb(255,255,255);
-}
+    #inscription-modal {
+        h3 {
+            font-size: 18px;
 
-.zoom {
-  width:120px;
-  margin: 0 auto;
-  webkit-transition: 0.3s;
-  moz-transition: 0.3s;
-  o-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.zoom:hover {
-  width:150px;
-}
-
-@media (max-width: 850px) {
-
-  #anim-wrapper {
-    height:350px;
-    margin-top:-350px;
-    z-index: 99999;
-  }
-
-  #anim-wrapper h3 {
-    padding-top: 15px;
-  }
-
-  #anim-wrapper.active {
-    top: 350px;
-  }
-  
-  .navbar-brand {
-	  margin-top: 3px;
-  }
-}
-
-#inscriptions .row {
-  min-height: 100px;
+            e {
+                font-size: 13px;
+            }
+        }
+    }
 }

@@ -9,7 +9,7 @@ javascripts_dir = "/js"
 fonts_dir = "/fonts"
 
 # Set sourcemap to true to show it in browser inspector
-sourcemap = true
+sourcemap = false
 
 # You can select your preferred output style here (can be overridden via the command line):
 # output_style = :expanded or :nested or :compact or :compressed

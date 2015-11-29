@@ -151,8 +151,8 @@
 								<a class="li_navbar" href="/pages/inscriptions.php">Inscriptions</a>
 							</li>
 							
-							<li>
-								<?php 
+							<!-- <li>
+								<?php/* 
 
 								if (isset($_SESSION['password']) AND $_SESSION['password'] == "25Anims1083") {
 								
@@ -164,8 +164,8 @@
 
 								}
 								
-								?>
-							</li>
+								*/?>
+							</li> -->
 							
 							<!-- <li>
 								<?php /*
@@ -186,24 +186,6 @@
 					</div>					
 				</div>
 			</nav>
-			
-			
-            <div id="anim-wrapper" class="col-md-6 col-md-offset-3 col-xs-8 col-xs-offset-2">
-                <form method="POST" action="/includes/password.php">
-                    <div class="row">
-                        <div class="col-md-10 col-md-offset-1 text-center">
-                            <h3 class="center">Cette zone est réservée aux animateurs de la 25ème</h3>
-                            <hr>
-                        </div>
-                    </div>
-
-                    <p class="center">Si tu es animateur, connecte-toi à l'aide de ton <input type="password" name="password" class="input" placeholder=" mot de passe">
-	                    <br />
-	                    <input class="submit" type="submit" name="envoyer">
-                    </p>
-                </form>
-                <a id="anim-close" href="#" class="btn btn-lg toggle">Fermer</a>
-            </div>
 
             <!-- <div id="fbi-wrapper" class="col-md-6 col-md-offset-3 col-xs-8 col-xs-offset-2">
                 <form method="POST" action="/includes/fbi-password.php">

@@ -82,8 +82,7 @@ if ($_GET && $_GET['section'] && $_GET['gallery'] && $_GET['title']) {
 				$i = 0;
 				foreach ($files as $file) :
 					// Prepend mac hidden files issue
-					if ($file == "." || $file == "..") :
-						// Do nothing
+					if ($file == "." || $file == "..") : // Do nothing
 					else : ?>
 						<article>
 							<a class="thumbnail" href="<?= $folder.$file ?>" alt="<?= $description[$i]?$description[$i]:null ?>" >
