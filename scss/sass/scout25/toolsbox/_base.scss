@@ -1,17 +1,18 @@
 // Colors variables
-$white : white;
-$black : black;
+$white: white;
+$black: black;
 
-$blue : #2157A1;
-$light-blue : lighten(#2157A1, 5%);
-$dark-blue : darken(#2157A1, 5%);
+$blue: #2157A1;
+$light-blue: lighten(#2157A1, 5%);
+$dark-blue: darken(#2157A1, 5%);
 
 $red: #D11029;
-$light-red : lighten(#D11029, 5%);
-$dark-red : darken(#D11029, 5%);
+$light-red: lighten(#D11029, 5%);
+$dark-red: darken(#D11029, 5%);
 
-// default transition effect
-$transition : .2s;
+// default effects
+$transition: .2s;
+$box-shadow: 0 1px 16px rgba(0, 0, 0, 0.08);
 
 // Breakpoints
 @mixin bp-small {

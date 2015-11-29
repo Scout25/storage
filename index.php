@@ -345,7 +345,7 @@ session_start();
           marker:{
             latLng: [50.873000,4.310624],
             options:{
-              draggable:true,
+                draggable:true,
             },
             events:{
               dragend: function(infowindow){
@@ -384,7 +384,8 @@ session_start();
 
           map:{
             options:{
-              zoom: 15
+              zoom: 15,
+              scrollwheel: false,
             }
           }
         });

@@ -151,21 +151,9 @@
 								<a class="li_navbar" href="/pages/inscriptions.php">Inscriptions</a>
 							</li>
 							
-							<!-- <li>
-								<?php/* 
-
-								if (isset($_SESSION['password']) AND $_SESSION['password'] == "25Anims1083") {
-								
-								    echo '<a class="li_navbar" href="/pages/zone_anim.php">Zone animateurs</a>';
-								
-								} else {
-									
-									echo '<a href="#" class="li_navbar" id="anim-toggle-off">Zone animateurs</a>';
-
-								}
-								
-								*/?>
-							</li> -->
+							<li>
+								<a class="li_navbar" href="/pages/zone_anim.php">Zone animateurs</a>
+							</li>
 							
 							<!-- <li>
 								<?php /*

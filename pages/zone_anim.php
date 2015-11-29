@@ -153,7 +153,7 @@
 
             <div class="row">
                 <section class="inscription-zone">
-                    <?php $req = $bdd->query('SELECT * FROM inscriptions2015'); //var_dump(count($req->fetch()));exit; ?>
+                    <?php $req = $bdd->query('SELECT * FROM inscriptions2015') ?>
                         <?php while ($donnees = $req->fetch()) : ?>
                             <div class="col-xs-12 col-sm-4 col-md-3">
                                 <article class="inscription-box">
@@ -165,8 +165,9 @@
                                     <input class="mail" type="hidden" value="<?= $donnees['mail'] ?>">
                                     <input class="gsm" type="hidden" value="<?= $donnees['gsm'] ?>">
                                     <input class="infos" type="hidden" value="<?= $donnees['infos'] ?>">
-
-                                    <h3>Nom : <span><?= $donnees['nom'] ?></span></h3>
+                                    
+                                    <p class="text-right">N°<?= $donnees['id'] ?></p>
+                                    <h3 class="first">Nom : <span><?= $donnees['nom'] ?></span></h3>
                                     <h3>Prénom : <span><?= $donnees['prenom'] ?></span></h3>
                                     <h3>Enfant : <span><?= $donnees['prenomEnfant'] ?></span></h3>
 
@@ -181,6 +182,11 @@
             </div>
         </div>
     </div>
+
+    <!-- <div id="about_contacts" class="fileupload-zone">
+        <form id="fileupload" action="/data" method="POST" enctype="multipart/form-data">
+        </form>
+    </div> -->
 
     <!-- Modal -->
     <div id="inscription-modal" class="modal fade" role="dialog">
@@ -217,14 +223,14 @@
         </div>
     </footer>
     <!-- /Footer -->
-    <script src="/js/libraries/jquery-fileupload/vendor/jquery.ui.widget.js"></script>
-    <script src="/js/libraries/jquery-fileupload/jquery.jqueryfileupload.js"></script>
-    <script src="/js/libraries/jquery-fileupload/jquery.iframe-transport.js"></script>
-    <script type="text/javascript">
+    <script async src="/js/libraries/jquery-fileupload/vendor/jquery.ui.widget.js"></script>
+    <script async src="/js/libraries/jquery-fileupload/jquery.fileupload.js"></script>
+    <script async src="/js/libraries/jquery-fileupload/jquery.iframe-transport.js"></script>
+    <script async type="text/javascript">
         // jQuery
         $(document).ready(function (){
             // Settings variables
-            //Download names system
+            // Download names system
             var downloadLinks = $(".download-link");
             var This;
             var thisText;
@@ -241,28 +247,27 @@
 
             // More informations system on inscription-box
             $(".more-btn").on("click", function() {
-                This = $(this);
-                thisBox = This.parent().parent();
+                thisBox = $(this).parent().parent();
 
                 // Collect datas
-                theId = thisBox.find(".id").val();
-                theNom = thisBox.find(".nom").val();
-                thePrenom = thisBox.find(".prenom").val();
-                thePrenomEnfant = thisBox.find(".prenomEnfant").val();
-                theNaissance = thisBox.find(".naissance").val();
-                theMail = thisBox.find(".mail").val();
-                theGsm = thisBox.find(".gsm").val();
-                theInfos = thisBox.find(".infos").val();
+                var Id = thisBox.find(".id").val();
+                var Nom = thisBox.find(".nom").val();
+                var Prenom = thisBox.find(".prenom").val();
+                var PrenomEnfant = thisBox.find(".prenomEnfant").val();
+                var Naissance = thisBox.find(".naissance").val();
+                var Mail = thisBox.find(".mail").val();
+                var Gsm = thisBox.find(".gsm").val();
+                var Infos = thisBox.find(".infos").val();
 
                 // Fill the modal
-                $("#id").html(theId);
-                $("#nom").html(theNom);
-                $("#prenom").html(thePrenom);
-                $("#prenomEnfant").html(thePrenomEnfant);
-                $("#naissance").html(theNaissance);
-                $("#mail").html(theMail);
-                $("#gsm").html(theGsm);
-                $("#infos").html(theInfos);
+                $("#id").html(Id);
+                $("#nom").html(Nom);
+                $("#prenom").html(Prenom);
+                $("#prenomEnfant").html(PrenomEnfant);
+                $("#naissance").html(Naissance);
+                $("#mail").html(Mail);
+                $("#gsm").html(Gsm);
+                $("#infos").html(Infos);
 
                 $("#inscription-modal").modal("toggle");
             });
