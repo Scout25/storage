@@ -20,7 +20,7 @@
 								 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Acceuil<strong class="caret"></strong></a>
 								<ul class="dropdown-menu">
 									<li>
-										<a class="move" href="/">Acceuil</a>
+										<a class="move" href="/">Accueill</a>
 									</li>
 									<li>
 										<a class="move" href="/?#services">News</a>
@@ -50,7 +50,7 @@
 								 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Castors<strong class="caret"></strong></a>
 								<ul class="dropdown-menu">
 									<li>
-										<a class="move" href="/pages/castors.php">Acceuil</a>
+										<a class="move" href="/pages/castors.php">Accueil</a>
 									</li>
 									<li>
 										<a class="move" href="/pages/castors.php?#news_castors">News</a>
@@ -71,7 +71,7 @@
 								 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Louveteaux<strong class="caret"></strong></a>
 								<ul class="dropdown-menu">
 									<li>
-										<a class="move" href="/pages/louveteaux.php">Acceuil</a>
+										<a class="move" href="/pages/louveteaux.php">Accueil</a>
 									</li>
 									<li>
 										<a class="move" href="/pages/louveteaux.php?#news_louveteaux">News</a>
@@ -92,7 +92,7 @@
 								 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Scouts<strong class="caret"></strong></a>
 								<ul class="dropdown-menu">
 									<li>
-										<a class="move" href="/pages/scouts.php">Acceuil</a>
+										<a class="move" href="/pages/scouts.php">Accueil</a>
 									</li>
 									<li>
 										<a class="move" href="/pages/scouts.php?#news_scouts">News</a>
@@ -113,7 +113,7 @@
 								 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pionniers<strong class="caret"></strong></a>
 								<ul class="dropdown-menu">
 									<li>
-										<a class="move" href="/pages/pis.php">Acceuil</a>
+										<a class="move" href="/pages/pis.php">Accueil</a>
 									</li>
 									<li>
 										<a class="move" href="/pages/pis.php?#news_pis">News</a>
@@ -175,21 +175,7 @@
 				</div>
 			</nav>
 
-            <!-- <div id="fbi-wrapper" class="col-md-6 col-md-offset-3 col-xs-8 col-xs-offset-2">
-                <form method="POST" action="/includes/fbi-password.php">
-                    <div class="row">
-                        <div class="col-md-10 col-md-offset-1 text-center">
-                            <h3 class="center">FBI</h3>
-                            <hr>
-                        </div>
-                    </div>
-
-                    <p class="center">Trouve le <input type="password" name="fbi-password" class="input" placeholder=" mot de passe">
-	                    <input class="submit" type="submit" name="envoyer">
-                    </p>
-                </form>
-                <a id="fbi-close" href="#" class="btn btn-lg toggle" onclick="toggleFbi()">Fermer</a>
-            </div> -->
+           
             <script type="text/javascript">
             	function toggleFbi() {
             		var wrapper = $("#fbi-wrapper");
