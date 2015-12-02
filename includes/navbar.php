@@ -20,7 +20,7 @@
 								 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Acceuil<strong class="caret"></strong></a>
 								<ul class="dropdown-menu">
 									<li>
-										<a class="move" href="/">Accueill</a>
+										<a class="move" href="/">Accueil</a>
 									</li>
 									<li>
 										<a class="move" href="/?#services">News</a>
