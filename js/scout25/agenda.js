@@ -6,8 +6,8 @@ $( document ).ready( function() {
 		events: {
 		  	// Décembre
 	  		"2015-12-06": {"number": 2, "badgeClass": "badge-warning", url: "demi,demi,,"},
-	  		"2015-12-12": {"number": 2, "badgeClass": "badge-warning", url: ",,,Marché de Noël Ganshoren,"},
-	  		"2015-12-13": {"number": 2, "badgeClass": "badge-warning", url: ",,,Marché de Noël Ganshoren,"},
+	  		"2015-12-12": {"number": 1, "badgeClass": "badge-warning", url: ",,,Marché de Noël Ganshoren,"},
+	  		"2015-12-13": {"number": 1, "badgeClass": "badge-warning", url: ",,,Marché de Noël Ganshoren,"},
 	  		"2015-12-18": {"number": 1, "badgeClass": "badge-warning", url: ",,cheese,,"},
 
 	  		// Janvier
@@ -66,12 +66,14 @@ $( document ).ready( function() {
 			wePi: "<a href='/pages/pis.php?#news_pis' target='_blank'>Informations sur le week-end</a>",
 			velo: "<a href='/pages/scouts.php?#news_scouts' target='_blank'>Informations sur les 24h vélo</a>",
 		};
+	var reunions;
+	var thisReunion;
+	var section;
+	var content;
 
 	function createContent(params) {
-		var reunions = params.split(",");
-		var thisReunion;
-		var section;
-		var content = "";
+		reunions = params.split(",");
+		content = "";
 
 		for (var i in reunions) {
 			switch (i) {
