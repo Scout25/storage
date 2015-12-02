@@ -2,7 +2,7 @@
     <div class="col-md-6 col-md-offset-3 text-center">
         <hr>
         <p>Copyright &copy; <a target="_blank" href="http://be.linkedin.com/pub/axel-capaert/a8/350/812/">Axel Capaert</a> 2014</p>
-        <p>Dev: Guillaume Piron</p>
+        <p>Dev: <a target="_blank" href="https://be.linkedin.com/in/guillaume-piron-79567810b">Guillaume Piron</a></p>
     </div>
 </div>
 
