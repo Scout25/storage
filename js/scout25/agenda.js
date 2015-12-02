@@ -6,8 +6,8 @@ $( document ).ready( function() {
 		events: {
 		  	// Décembre
 	  		"2015-12-06": {"number": 2, "badgeClass": "badge-warning", url: "demi,demi,,"},
-	  		"2015-12-12": {"number": 2, "badgeClass": "badge-warning", url: ",,,Marché de Noël Ganshoren,Marché de Noël Ganshoren"},
-	  		"2015-12-13": {"number": 2, "badgeClass": "badge-warning", url: ",,,Marché de Noël Ganshoren,Marché de Noël Ganshoren"},
+	  		"2015-12-12": {"number": 2, "badgeClass": "badge-warning", url: ",,,Marché de Noël Ganshoren,"},
+	  		"2015-12-13": {"number": 2, "badgeClass": "badge-warning", url: ",,,Marché de Noël Ganshoren,"},
 	  		"2015-12-18": {"number": 1, "badgeClass": "badge-warning", url: ",,cheese,,"},
 
 	  		// Janvier
