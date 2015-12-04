@@ -1,9 +1,18 @@
+// Template styles
 body {
 	height: 100%;
 	width: 100%;
 	background-image: url(/img/patterns/wood.jpg);
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 14px;
+
+    h2 {
+    	font-size: 30px;
+    	padding-bottom: 20px;
+    	border-bottom: 2px solid $white;
+    	margin-bottom: 45px;
+    	margin-top: 0;
+    }
 
 	header {
 	    display: table;
@@ -33,11 +42,28 @@ body {
 				padding: 0;
 			}
 
+			&.red {
+				background-color: $red;
+
+				.btn {
+					&.outline {
+						&:hover, &:focus {
+							color: $red;
+						}
+					}
+				}
+			}
+
 			.container-fluid {
 				max-width: 1200px;
 			}
 		}
 	}
+}
+
+// Global classes
+.bg_white {
+    background-color: rgba(255,255,255,0.8);
 }
 
 // gallery includes

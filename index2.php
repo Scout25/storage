@@ -15,40 +15,37 @@ session_start();
     <!-- Full Page Image Header Area -->
 <header>
     <section class="vert-text center">
-        <div class="row">
+        <div class="row images hidden-xs">
             <div class="col-md-2 col-md-offset-1 col-xs-5 col-xs-offset-1">
-                <img src="img/logos/logo_min.png" class="img-responsive img_header fond_blanc float" alt="Logo Unité">
+                <img src="img/logos/logo_min.png" class="img-responsive bg_white pull-left" alt="Logo Unité">
             </div>
 
             <div class="col-md-2 col-md-offset-6 col-xs-3 col-xs-offset-2">
-                <a href="http://www.sgp.be" target="new"><img src="img/logos/logo_sgp_min.png" class="img-responsive fond_blanc img_header float_logo_header" alt="Logo SGP"></a>
+                <a href="http://www.sgp.be" target="new">
+                    <img src="img/logos/logo_sgp_min.png" class="img-responsive bg_white pull-right" alt="Logo SGP">
+                </a>
             </div>
         </div>
 
-        <div class="row h1_titre">
+        <div class="row title">
             <div class="col-md-12">
                 <h1>L'unité du Porc-épic</h1>
             </div>
         </div>
 
-        <button href="#services" id="bouton_intro" class="btn btn-lg btn-default littles">
+        <button href="#services" class="btn outline">
             Poursuivre
         </button>
     </section>
 </header>
 
 <main class="index" role="main">
-
     <!-- Services -->
-    
-    <!--
-       
-    <div id="services" class="services">
+    <!-- <div id="services" class="services">
         <div class="container">
 			<div class="row">
                 <div class="col-md-4 col-md-offset-4 text-center">
                 	<h2>ATTENTION</h2>
-                    <hr>
                 </div>
             </div>
                 
@@ -63,11 +60,9 @@ session_start();
             
             </div>
             </div>  
- <!--              
             <div class="row">
                 <div class="col-md-4 col-md-offset-4 text-center">
                     <h2>Infos Week-End de novembre</h2>
-                    <hr>
                 </div>
             </div>
 
@@ -81,53 +76,78 @@ session_start();
                 </div>
             </div>
         </div>
-    </div>   
-    
-    -->
+    </div> -->
 
     <!-- Intro -->
-    <section id="about" class="intro">
+    <section id="about" class="red intro">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-4 col-md-offset-4 text-center">
                     <h2>Les sections</h2>
-                    <hr>
                 </div>
             </div>
             <div class="row">
                 <div class="col-xs-12 col-sm-6 col-md-3 text-center">
-                    <div class="service-item">
-                        <a href="pages/castors.php"><img class="services_img" src="img/sections/castors.jpg" alt="Section Castors"></a>
-                        <h4>Castors 5-8</h4>
-                        <p>La colonie des Castors est <strong>animée</strong> par une équipe <strong>dynamique</strong> symbolisant la famille Dubois. Chez nous, à la 25ème unité du Porc-épic, les Castors sont déjà une longue tradition.</p>
-                        <a href="pages/castors.php" id="bouton_default" class="btn btn-lg btn-default">En savoir plus</a>
+                    <div class="section">
+                        <a href="pages/castors.php">
+                            <img src="img/sections/castors.jpg" alt="Section Castors">
+                        </a>
+
+                        <h3>Castors 5-8</h3>
+
+                        <p>
+                            La colonie des Castors est <strong>animée</strong> par une équipe <strong>dynamique</strong> symbolisant la famille Dubois. Chez nous, à la 25ème unité du Porc-épic, les Castors sont déjà une longue tradition.
+                        </p>
+
+                        <a href="pages/castors.php" class="btn outline">En savoir plus</a>
                     </div>
                 </div>
 
                 <div class="col-xs-12 col-sm-6 col-md-3 text-center">
-                    <div class="service-item">
-                        <a href="pages/louveteaux.php"><img class="services_img" src="img/sections/louveteaux.jpg" alt="Section Louveteaux"></a>
-                        <h4>Louveteaux 8-12</h4>
-                        <p>Si tu aimes les <strong>jeux</strong> de plein air, si tu t'ennuies les <strong>dimanches</strong>, viens vivre des <strong>aventures</strong> avec des filles et des garçons de ton âge, guidés par les "vieux-loups" qui ont plein d'idées.</p>
-                        <a href="pages/louveteaux.php" id="bouton_default" class="btn btn-lg btn-default">En savoir plus</a>
+                    <div class="section">
+                        <a href="pages/louveteaux.php">
+                            <img src="img/sections/louveteaux.jpg" alt="Section Louveteaux">
+                        </a>
+
+                        <h3>Louveteaux 8-12</h3>
+
+                        <p>
+                            Si tu aimes les <strong>jeux</strong> de plein air, si tu t'ennuies les <strong>dimanches</strong>, viens vivre des <strong>aventures</strong> avec des filles et des garçons de ton âge, guidés par les "vieux-loups" qui ont plein d'idées.
+                        </p>
+
+                        <a href="pages/louveteaux.php" class="btn outline">En savoir plus</a>
                     </div>
                 </div>
 
                 <div class="col-xs-12 col-sm-6 col-md-3 text-center">
-                    <div class="service-item">
-                        <a href="pages/scouts.php"><img class="services_img" src="img/sections/scouts.jpg" alt="Section Scouts"></a>
-                        <h4>Scouts 12-15</h4>
-                        <p>Apporter des idées et son enthousiasme, prendre des responsabilités, vivre des aventures passionnantes dans une atmosphère amicale et franche et se retrouver entre amis, entre amies.</p>
-                        <a href="pages/scouts.php" id="bouton_default" class="btn btn-lg btn-default">En savoir plus</a>
+                    <div class="section last-1">
+                        <a href="pages/scouts.php">
+                            <img src="img/sections/scouts.jpg" alt="Section Scouts">
+                        </a>
+
+                        <h3>Scouts 12-15</h3>
+
+                        <p>
+                            Apporter des idées et son enthousiasme, prendre des responsabilités, vivre des aventures passionnantes dans une atmosphère amicale et franche et se retrouver entre amis, entre amies.
+                        </p>
+
+                        <a href="pages/scouts.php" class="btn outline">En savoir plus</a>
                     </div>
                 </div>
 
                 <div class="col-xs-12 col-sm-6 col-md-3 text-center">
-                    <div class="service-item">
-                        <a href="pages/pis.php"><img class="services_img" src="img/sections/pis.jpg" alt="Section Pionniers"></a>
-                        <h4>Pionniers 15-18</h4>
-                        <p>Le relais fonctionne sur base d’<strong>activités</strong> et de <strong>projets</strong> qui visent au développement global du jeune. Le <strong>scoutisme</strong> est présent comme cadre, comme idéal, comme identité.</p>
-                        <a href="pages/pis.php" id="bouton_default" class="btn btn-lg btn-default">En savoir plus</a>
+                    <div class="section last">
+                        <a href="pages/pis.php">
+                            <img src="img/sections/pis.jpg" alt="Section Pionniers">
+                        </a>
+
+                        <h3>Pionniers 15-18</h3>
+
+                        <p>
+                            Le relais fonctionne sur base d’<strong>activités</strong> et de <strong>projets</strong> qui visent au développement global du jeune. Le <strong>scoutisme</strong> est présent comme cadre, comme idéal, comme identité.
+                        </p>
+
+                        <a href="pages/pis.php" class="btn outline">En savoir plus</a>
                     </div>
                 </div>
             </div>
@@ -140,7 +160,6 @@ session_start();
             <div class="row">
                 <div class="col-md-4 col-md-offset-4 text-center">
                     <h2>Qui sommes-nous?</h2>
-                    <hr>
                 </div>
             </div>
 
@@ -177,7 +196,6 @@ session_start();
             <div class="vert-text_top">
                 <div class="col-md-4 col-md-offset-4 text-center">
                     <h2>Notre passion</h2>
-                    <hr>
                 </div>
             </div>
         </div>
@@ -189,7 +207,6 @@ session_start();
             <div class="row">
                 <div class="col-md-4 col-md-offset-4 text-center">
                     <h2>Les animateurs</h2>
-                    <hr>
                 </div>
             </div>
             <div class="row">
@@ -210,7 +227,6 @@ session_start();
             <div class="row">
                 <div class="col-md-4 col-md-offset-4 text-center white">
                     <h2>Le staff d'unité</h2>
-                    <hr>
                 </div>
             </div>
 

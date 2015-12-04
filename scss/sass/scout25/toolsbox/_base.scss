@@ -11,8 +11,9 @@ $light-red: lighten(#D11029, 5%);
 $dark-red: darken(#D11029, 5%);
 
 // default effects
-$transition: .2s;
+$transition-default: .2s;
 $box-shadow: 0 1px 16px rgba(0, 0, 0, 0.08);
+$radius-default: 2px;
 
 // Breakpoints
 @mixin bp-small {
@@ -38,3 +39,8 @@ $box-shadow: 0 1px 16px rgba(0, 0, 0, 0.08);
         @content;
     }
 }
+
+// Reverse breakpoints
+$bp-xsmall: 767px;
+$bp-small: 991px;
+$bp-medium: 1199px;

@@ -1,15 +1,62 @@
 body.index {
     header {
-        background: url(../img/header.jpg) no-repeat center center fixed;
+        padding-top: 0;
+        background: url(../img/header.jpg);
+        
+        .images {
+            margin-bottom: 25px;
+
+            img {
+                max-height: 100px;
+                padding: 1%;
+                @include border-radius($radius-default);
+            }
+        }
+
+        .title {
+            padding-bottom: 75px;
+
+            h1 {
+                margin: 0;
+                font-size: 4.5em;
+                font-weight: 700;
+            }
+        }
     }
 
     main {
-        section {}
+        section {
+            &.intro {
+                .section {
+                    @media screen and (max-width: $bp-small) {
+                        margin-bottom: 45px;
+                    }
+
+                    &.last-1 { 
+                        @include bp-small {
+                            margin-bottom: 0;
+                        }
+                    }
+
+                    &.last {
+                        margin-bottom: 0;
+                    }
+
+                    img {
+                        border: 2px solid $white;
+                        border-radius: 80px;
+                    }
+
+                    p {
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
     }
 }
 
 /* Map */
-
 #gmap3 {
   color: rgb(33,87,161);
 }

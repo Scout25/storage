@@ -1,0 +1,38 @@
+.btn {
+	padding: 10px 20px;
+	font-size: 16px;
+	background: transparent;
+	@include transition($transition-default);
+
+	&.outline {
+		color: $white;
+		border: 2px solid;
+		border-color: $white;
+		@include border-radius($radius-default);
+
+		&:hover, &:focus {
+			background-color: $white;
+			color: $black;
+		}
+
+		&.blue {
+			color: $blue;
+			border-color: $blue;
+
+			&:hover, &:focus {
+				background-color: $blue;
+				color: $white;
+			}
+		}
+
+		&.red {
+			color: $red;
+			border-color: $red;
+
+			&:hover, &:focus {
+				background-color: $red;
+				color: $white;
+			}
+		}
+	}
+}

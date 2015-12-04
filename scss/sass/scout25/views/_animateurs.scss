@@ -37,8 +37,8 @@ body.zone_anim {
             margin-bottom: 30px;
             background-color: $light-blue;
             border: 1px solid $white;
-            @include border-radius(2px);
-            @include transition($transition);
+            @include border-radius($radius-default);
+            @include transition($transition-default);
             @include box-shadow($box-shadow);
 
             h3 {
@@ -58,12 +58,12 @@ body.zone_anim {
                 padding: 8px 15px;
                 background: transparent;
                 border: 1px solid $white;
-                @include border-radius(2px);
+                @include border-radius($radius-default);
 
                 &.ghost {
                     border: none;
                     border-bottom: 1px solid $white;
-                    @include transition($transition);
+                    @include transition($transition-default);
 
                     &:hover, &:focus {
                         border-color: $light-blue;
