@@ -11,7 +11,6 @@
 @import "sass/scout25/toolsbox/base";
 
 // Layout
-@import "sass/scout25/layout/scout25";
 @import "sass/scout25/layout/navbar";
 @import "sass/scout25/layout/footer";
 
@@ -27,3 +26,6 @@
 @import "sass/scout25/views/faq";
 @import "sass/scout25/views/animateurs";
 @import "sass/scout25/views/agenda";
+
+// to move
+@import "sass/scout25/layout/scout25";
