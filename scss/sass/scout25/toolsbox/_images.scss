@@ -1,0 +1,23 @@
+img {
+	&.border {
+		padding: 0;
+		border: 2px solid;
+		@include border-radius($radius-default);
+
+		&.white {
+			border-color: $white;
+		}
+
+		&.blue {
+			border-color: $blue;
+		}
+
+		&.red {
+			border-color: $red;
+		}
+
+		&.rounded {
+			@include border-radius(80px);
+		}
+	}
+}

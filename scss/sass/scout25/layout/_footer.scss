@@ -1,23 +1,24 @@
-footer {
-  background-color: $red;
-  padding: 50px 0;
+footer.footer {
+    background-color: $red;
+    padding: 45px 0;
+    
+    .border {
+        border-top: 2px solid $white;
+        padding-top: 45px;
 
-  hr {
-    border-color: $white;
-  }
+        p {
+            color: $white;
+            margin: 0;
 
-  p {
-    color: $white;
-    margin: 0;
+            a {
+                color: $white;
+                text-decoration: underline;
 
-    a {
-      color: $white;
-      text-decoration: underline;
-
-      &:hover, &:focus {
-        color: $white;
-        text-decoration: none;
-      }
+                &:hover, &:focus {
+                    color: $white;
+                    text-decoration: none;
+                }
+            }
+        }
     }
-  }
 }

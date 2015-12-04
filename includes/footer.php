@@ -1,6 +1,5 @@
-<div class="row" id="row_footer">
-    <div class="col-md-6 col-md-offset-3 text-center">
-        <hr>
+<div class="row">
+    <div class="col-md-6 col-md-offset-3 text-center border">
         <p>Copyright &copy; <a target="_blank" href="http://be.linkedin.com/pub/axel-capaert/a8/350/812/">Axel Capaert</a> 2014</p>
         <p>Dev: <a target="_blank" href="https://be.linkedin.com/in/guillaume-piron-79567810b">Guillaume Piron</a></p>
     </div>

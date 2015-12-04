@@ -44,7 +44,7 @@ nav.navbar {
                         @include border-bottom-right-radius($radius-default);
 
                         @include bp-medium {
-                            border: 1px solid $white;
+                            border: 2px solid $white;
                             border-top: none;
                         }
 

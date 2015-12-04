@@ -1,54 +1,108 @@
 body.index {
     header {
-        padding-top: 0;
-        background: url(../img/header.jpg);
-        
-        .images {
-            margin-bottom: 25px;
+        &.header {
+            padding-top: 0;
+            background: url(../img/header.jpg);
+            
+            .images {
+                margin-bottom: 25px;
 
-            img {
-                max-height: 100px;
-                padding: 1%;
-                @include border-radius($radius-default);
+                img {
+                    max-height: 100px;
+                    padding: 1%;
+                    @include border-radius($radius-default);
+                }
             }
-        }
 
-        .title {
-            padding-bottom: 75px;
+            .title {
+                padding-bottom: 75px;
 
-            h1 {
-                margin: 0;
-                font-size: 4.5em;
-                font-weight: 700;
+                h1 {
+                    margin: 0;
+                    font-size: 4.5em;
+                    font-weight: 700;
+                }
             }
         }
     }
 
     main {
         section {
-            &.intro {
-                .section {
-                    @media screen and (max-width: $bp-small) {
-                        margin-bottom: 45px;
-                    }
+            &.sections {
+                article.section {
+                    margin-bottom: 45px;
+                    @include bp-medium {margin-bottom: 0}
 
                     &.last-1 { 
-                        @include bp-small {
-                            margin-bottom: 0;
-                        }
+                        @include bp-small {margin-bottom: 0}
                     }
 
                     &.last {
                         margin-bottom: 0;
                     }
 
-                    img {
-                        border: 2px solid $white;
-                        border-radius: 80px;
-                    }
-
                     p {
                         margin-bottom: 20px;
+                    }
+                }
+            }
+
+            &.us {
+                article {
+                    img {
+                        margin-right: 15px;
+                    }
+                }
+            }
+
+            &.callout {
+                height: 100%;
+
+                .callout-content {
+                    display: table;
+                    width: 100%;
+                    background: url(/img/fond.jpg) no-repeat center center fixed;
+                    @include background-size(cover);
+                }
+            }
+
+            &.animateurs {
+                article {
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+
+            &.staff {
+                header {
+                    h2 {
+                        margin: 0;
+                        color: $blue;
+                        border-color: $blue;
+                        padding: 20px 0;
+                    }
+                }
+
+                section.board-container {
+                    section {
+                        padding-top: 20px;
+
+                        aside.animateur {
+                            img {
+                                margin-right: 20px;
+                            }
+
+                            address {
+                                h3 {
+                                    font-size: 14px;
+                                    font-weight: bold;
+                                    margin: 0;
+                                    line-height: 20px;
+                                    color: $red;
+                                }
+                            }
+                        }
                     }
                 }
             }
