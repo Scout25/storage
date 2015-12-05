@@ -36,10 +36,13 @@ html {
 			}
 	    }//hn
 
-	    h1 {font-size: 3.5em}
+	    h1 {font-size: 2.5em}
+
+	    h2 {}
+
 
 	    h2 {
-	    	font-size: 30px;
+	    	font-size: 2em;
 	    	padding-bottom: 20px;
 	    	border-bottom: $border-default $white;
 	    	margin-bottom: 45px;
@@ -95,6 +98,7 @@ html {
 			    color: white;
 			    padding-top: 52px;
 			    background-attachment: fixed;
+			    background-position: center;
 			    @include background-size(cover);
 
 			    section {
@@ -207,15 +211,12 @@ html {
 
 	                section.staff-container {
 	                    section.animateur {
-	                        padding: 0 5px;
-	                        padding-top: 20px;
+	                        padding: 15px 0;
 	                        @include display-flex;
 	                        @include flex-wrap(wrap);
 
-	                        &:last-child {padding-bottom: 20px}
-
 	                        aside.animateur-infos {
-	                            img {margin-right: 20px}
+	                            img {margin-right: 15px}
 
 	                            address {
 	                                h3.poste {

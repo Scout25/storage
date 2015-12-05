@@ -21,6 +21,7 @@ body.index {
             h1 {
                 margin: 0;
                 font-weight: 700;
+                font-size: 3.5em;
 
                 @include bp-small {font-size: 4.5em}
             }
