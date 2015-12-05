@@ -1,18 +1,8 @@
 <?php
-session_start();
+$title = "L'unité du Porc-épic 25, scouts et guides pluralistes de Ganshoren, Bruxelles-Norois";
+include("includes/header.php");
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<!-- Head -->
-<title>L'unité du Porc-épic 25, scouts et guides pluralistes de Ganshoren, Bruxelles-Norois</title>
-<meta name="description" content="">
-<?php include("includes/header.php"); ?>
 
-<body class="index">
-    <!-- Navbar -->
-    <?php include("includes/navbar.php"); ?>
-    <!-- Full Page Image Header Area -->
 <header class="header">
     <section class="vert-text center">
         <div class="row images hidden-xs">
@@ -33,56 +23,18 @@ session_start();
             </div>
         </div>
 
-        <button href="#services" class="btn outline">
+        <a href="#sections" class="btn outline btn-intro">
             Poursuivre
-        </button>
+        </a>
     </section>
 </header>
 
 <main class="index" role="main">
-    <!-- Services -->
-    <!-- <div id="services" class="services">
-        <div class="container">
-			<div class="row">
-                <div class="col-md-4 col-md-offset-4 text-center">
-                	<h2>ATTENTION</h2>
-                </div>
-            </div>
-                
-            <div class="row">
-                <div class="col-xs-12">
-                    <p class="text-center">
-                        Pour une raison d'organisation, la sortie piscine est annulée, cependant les réunions sont maintenues.<br><br>
-                        Merci pour votre compréhension.
-                    </p>
-                </div>
-            </div>
-            
-            </div>
-            </div>  
-            <div class="row">
-                <div class="col-md-4 col-md-offset-4 text-center">
-                    <h2>Infos Week-End de novembre</h2>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="service-item text-center">
-                        <a href="/pages/castors.php?#news_castors" id="bouton_default" class="btn btn-lg btn-default littles">Castors</a>
-                        <a href="/pages/louveteaux.php?#news_louveteaux" id="bouton_default" class="btn btn-lg btn-default littles">Louveteaux</a>
-                        <a href="/pages/scouts.php?#news_scouts" id="bouton_default" class="btn btn-lg btn-default littles">Scouts</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-
     <!-- Sections -->
-    <section class="page-section red sections">
+    <section id="sections" class="page-section red sections">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-4 col-md-offset-4 text-center">
+                <div class="col-md-6 col-md-offset-3 text-center">
                     <h2>Les sections</h2>
                 </div>
             </div>
@@ -158,7 +110,7 @@ session_start();
     <section class="page-section blue us">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-4 col-md-offset-4 text-center">
+                <div class="col-md-6 col-md-offset-3 text-center">
                     <h2>Qui sommes-nous?</h2>
                 </div>
             </div>
@@ -200,7 +152,7 @@ session_start();
     <section class="page-section callout">
         <div class="container-fluid">
             <div class="row callout-content">
-                <div class="col-md-4 col-md-offset-4 text-center">
+                <div class="col-md-6 col-md-offset-3 text-center">
                     <h2>Notre passion</h2>
                 </div>
             </div>
@@ -211,7 +163,7 @@ session_start();
     <section class="page-section blue animateurs">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-4 col-md-offset-4 text-center">
+                <div class="col-md-6 col-md-offset-3 text-center">
                     <h2>Les animateurs</h2>
                 </div>
             </div>
@@ -230,7 +182,7 @@ session_start();
         <div class="container-fluid">
             <header>
                 <div class="row">
-                    <div class="col-md-4 col-md-offset-4 text-center bg_white">
+                    <div class="col-md-6 col-md-offset-3 text-center bg_white">
                         <h2>Le staff d'unité</h2>
                     </div>
                 </div>
@@ -403,7 +355,7 @@ session_start();
 
             <footer>
                 <div class="row">
-                    <div class="col-md-4 col-md-offset-4 text-center bg_white">
+                    <div class="col-md-6 col-md-offset-3 text-center bg_white">
                         <p class="section-mail blue">
                             <i class="fa fa-envelope"></i>
                             <a href="mailto:unite&#64scout25.be">
@@ -420,7 +372,7 @@ session_start();
     <section class="map">
         <div class="container" id="gmap3">
             <div class="row">
-                <div class="col-md-4 col-md-offset-4 text-center">
+                <div class="col-md-6 col-md-offset-3 text-center">
                     <h2 class="blue">Nous trouver</h2>
                 </div>
             </div>
@@ -429,80 +381,4 @@ session_start();
     <div id="test" class="gmap3"></div>
 </main>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container" id="footer">
-            <?php include("includes/footer.php"); ?>
-        </div>
-    </footer>
-
-    <!--Gmap3-->
-    <script src="http://maps.googleapis.com/maps/api/js?sensor=false" type="text/javascript"></script>
-    <script type="text/javascript" src="js/gmap3.min.js"></script>
-    <script type="text/javascript">
-      $(function(){
-      
-        $("#test").gmap3({
-          marker:{
-            latLng: [50.873000,4.310624],
-            options:{
-                draggable:true,
-            },
-            events:{
-              dragend: function(infowindow){
-                $(this).gmap3({
-                  getaddress:{
-                    latLng:marker.getPosition(),
-                    callback:function(results){
-                      var map = $(this).gmap3("get"),
-                        infowindow = $(this).gmap3({get:"infowindow"}),
-                        content = results && results[1] ? results && results[1].formatted_address : "25 Avenue du cimetère, ganshoren";
-                      if (infowindow){
-                        infowindow.open(map, marker);
-                        infowindow.setContent(content);
-                      } else {
-                        $(this).gmap3({
-                          infowindow:{
-                            anchor:marker, 
-                            options:{content: content}
-                          }
-                        });
-                      }
-                    }
-                  }
-                });
-              }
-            }
-          },
-
-          infowindow:{
-             latLng: [50.872891,4.310594],
-             draggable: true,
-             options:{
-               content: "<strong>25ème Porc-épic</strong><br/>25 Avenue du cimetère,<br/>1083 Ganshoren"
-             },
-          },
-
-          map:{
-            options:{
-              zoom: 15,
-              scrollwheel: false,
-            }
-          }
-        });
-        
-      });
-    </script>
-
-    <!-- Readmore -->    
-    <script type="text/javascript" src="js/readmore.min.js"></script>
-    <script type="text/javascript">
-	    $('.readmore').readmore({
-		  maxHeight: 160,
-		  moreLink: '<a class="right" href="#">Lire plus</a>',
-		  lessLink: '<a class="right" href="#">Fermer</a>',
-		});
-    </script>
-</body>
-
-</html>
+<?php include("includes/footer.php"); ?>

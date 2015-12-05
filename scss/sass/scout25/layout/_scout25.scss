@@ -233,14 +233,14 @@ html {
 	                    }
 	                }//footer
 	            }//.staff
-
-				.container-fluid {
-					max-width: 1200px;
-				}
 			}
 		}
 
 		// Global classes
+		.container-fluid {
+			max-width: 1200px;
+		}
+		
 		.bg_white {
 		    background-color: rgba(255,255,255,0.8);
 		}

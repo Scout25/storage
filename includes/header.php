@@ -1,6 +1,14 @@
-    <?php 
-        $current_url = $_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'];
-    ?>
+<?php
+session_start();
+$current_url = $_SERVER['HTTP_HOST'];
+$current_uri = $_SERVER['REQUEST_URI'];
+?>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<!-- Head -->
+<title><?= $title ?></title>
+<meta name="description" content="">
     <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
     <meta http-equiv="Content-Language" content="fr">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -46,3 +54,7 @@
 	  ga('send', 'pageview');
 	</script>
 </head>
+
+<body class="index">
+    <!-- Navbar -->
+    <?php include("includes/navbar.php"); ?>
