@@ -1,39 +1,40 @@
 body.index {
-    header {
-        &.header {
-            padding-top: 0;
-            background-image: url(/img/header.jpg);
-            
-            .images {
-                margin-bottom: 25px;
+    header.header {
+        padding-top: 0;
+        background-image: url(/img/header.jpg);
+        
+        .images {
+            margin-bottom: 25px;
 
-                img {
-                    max-height: 100px;
-                    padding: 1%;
-                    @include border-radius($radius-default);
-                }
+            img {
+                max-height: 100px;
+                padding: 1%;
+                @include border-radius($radius-default);
             }
+        }
 
-            .title {
-                padding-bottom: 100px;
+        .title {
+            padding-bottom: 100px;
 
-                h1 {
-                    margin: 0;
+            h1 {
+                margin: 0;
+                font-weight: 700;
+
+                @include bp-small {
                     font-size: 4.5em;
-                    font-weight: 700;
                 }
             }
+        }
 
-            .btn-intro {
-                background-color: $blue;
+        .btn-intro {
+            background-color: $blue;
 
-                &:hover, &:focus {
-                    background-color: $white;
-                    color: $blue;
-                }
+            &:hover, &:focus {
+                background-color: $white;
+                color: $blue;
             }
-        }//.header
-    }//header
+        }
+    }//header.header
 
     main {
         section {
@@ -61,17 +62,6 @@ body.index {
                     img {
                         margin-right: 15px;
                     }
-                }
-            }
-
-            &.callout {
-                height: 100%;
-                background: url(/img/fond.jpg) no-repeat center center fixed;
-                @include background-size(cover);
-
-                .callout-content {
-                    display: table;
-                    width: 100%;
                 }
             }
 

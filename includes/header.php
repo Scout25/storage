@@ -2,6 +2,43 @@
 session_start();
 $current_url = $_SERVER['HTTP_HOST'];
 $current_uri = $_SERVER['REQUEST_URI'];
+$view = false;
+
+// Detect the view system
+// @todo loop to retrieve the view name -> MVC system required
+switch ($current_uri) {
+    case "/pages/castors.php";
+        $view = "castors";
+    break;
+    case "/pages/louveteaux.php";
+        $view = "louveteaux";
+    break;
+    case "/pages/scouts.php";
+        $view = "scouts";
+    break;
+    case "/pages/pis.php";
+        $view = "pionniers";
+    break;
+    case "/pages/infos.php";
+        $view = "infos";
+    break;
+    case "/pages/agenda.php";
+        $view = "agenda";
+    break;
+    case "/pages/faq.php";
+        $view = "faq";
+    break;
+    case "/pages/inscription.php";
+        $view = "inscription";
+    break;
+    case "/pages/animateurs.php";
+        $view = "animateurs";
+    break;
+
+    default : 
+        $view = "index";
+    break;
+}
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -55,6 +92,6 @@ $current_uri = $_SERVER['REQUEST_URI'];
 	</script>
 </head>
 
-<body class="index">
+<body class="<?= $view ?>">
     <!-- Navbar -->
     <?php include("navbar.php"); ?>

@@ -29,9 +29,11 @@
 
         <!-- Galerie effect -->
         <script type="text/javascript">
-            $(".photo_move").hover(function(e) {
-                e.preventDefault();
-                $(this).find(".photo_title").toggleClass("active")
+            var thisTitle;
+            $(".gallery-item > .gallery-link").hover(function (){
+                thisTitle = $(this).find(".gallery-title");
+
+                thisTitle.toggleClass("active");
             });
         </script>
         <!--Gmap3-->

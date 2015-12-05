@@ -52,7 +52,7 @@ nav.navbar {
                         @include border-bottom-left-radius($radius-default);
                         @include border-bottom-right-radius($radius-default);
 
-                        @include bp-medium {
+                        @include bp-small {
                             border: $border-default $white;
                             border-top: none;
                         }

@@ -340,12 +340,6 @@ include("includes/header.php");
                                     <h3 class="poste red">Equipier Affiliation & Trésorie :</h3>
 
                                     <p class="name blue">Bart Corthouts</p>
-
-                                    <p class="totem">
-                                        <a class="red" href="http://fr.wikipedia.org/wiki/Renardeau" target="new">
-                                            Renardeau
-                                        </a>
-                                    </p>
                                 </address>
                             </aside>
                         </div>
