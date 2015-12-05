@@ -1,52 +1,26 @@
 <?php
-session_start();
+$head_title = "Section Castors, unité du Porc-épic 25, scouts et guides pluralistes de Ganshoren, Bruxelles-Norois";
+include("../includes/header.php");
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<!-- Head -->
-<title>Section Castors, unité du Porc-épic 25, scouts et guides pluralistes de Ganshoren, Bruxelles-Norois</title>
-<?php include("../includes/header.php"); ?>
 
-<body>
-
-    <!-- Navbar -->
-    <?php include("../includes/navbar.php"); ?>
-    <!-- /Navbar -->
-    
-    <!-- BreadCrumb -->
-    <!-- /BreadCrumb -->
-
-    <!-- Full Page Image Header Area -->
-    <div id="top" class="header_castors">
-        <div class="container">
+<header class="header">
+    <section>
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-md-4 col-md-offset-4 text-center">
-                    <h1>Les castors</h1>
-                    <hr>
+                    <h1 class="border">Les castors</h1>
+
                     <div class="first_bouton">
-                        <a href="#news_castors" id="bouton_intro" class="btn btn-lg btn-default little">Poursuivre</a>
+                        <a class="btn outline white">
+                            Poursuivre
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- /Full Page Image Header Area -->
-
-    <!-- Services -->
-    
-    <!--
-    
-    <div id="news_castors" class="services">
-        <div class="container">
-            <?php /*?><?php include("../includes/services_2.php"); ?><?php */?>
-        </div>
-    </div>
-    
-    -->
-    
-    <!-- /Services -->
-
+    </section>
+</header>
+<main role="main">
     <!-- Intro -->
     <div id="about_castors" class="intro">
         <div class="container">
@@ -287,23 +261,8 @@ Inquiet, le lapin s'approcha de la hutte, entra et aperçut le jeune Castor.
 	                </div>
                 </div>
             </div>
-
-            <div class="row">
-                <div class="col-md-4 col-md-offset-4 text-center white">
-                <p><a href="mailto:castor&#64scout25.be"><img alt="Icone mail" src="../img/icons/mail.png"> castor&#64scout25.be</a></p>
-                </div>
-            </div>
         </div>
     </div>
-    <!-- /Portfolio --> 
+</main>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container" id="footer">
-            <?php include("../includes/footer.php") ?>
-        </div>
-    </footer>
-    <!-- /Footer -->
-</body>
-
-</html>
+<?php include("../includes/footer.php"); ?>

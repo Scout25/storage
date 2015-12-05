@@ -7,7 +7,7 @@ $current_uri = $_SERVER['REQUEST_URI'];
 <html lang="fr">
 <head>
 <!-- Head -->
-<title><?= $title ?></title>
+<title><?= $head_title ?></title>
 <meta name="description" content="">
     <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
     <meta http-equiv="Content-Language" content="fr">
@@ -57,4 +57,4 @@ $current_uri = $_SERVER['REQUEST_URI'];
 
 <body class="index">
     <!-- Navbar -->
-    <?php include("includes/navbar.php"); ?>
+    <?php include("navbar.php"); ?>
