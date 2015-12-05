@@ -1,4 +1,6 @@
 body.index {
+    // overflow-x: hidden !important;
+
     header.header {
         padding-top: 0;
         background-image: url(/img/header.jpg);
@@ -20,9 +22,7 @@ body.index {
                 margin: 0;
                 font-weight: 700;
 
-                @include bp-small {
-                    font-size: 4.5em;
-                }
+                @include bp-small {font-size: 4.5em}
             }
         }
 
@@ -47,35 +47,25 @@ body.index {
                         @include bp-small {margin-bottom: 0}
                     }
 
-                    &.last {
-                        margin-bottom: 0;
-                    }
+                    &.last {margin-bottom: 0}
 
-                    p {
-                        margin-bottom: 15px;
-                    }
+                    p {margin-bottom: 15px}
                 }//article.section
             }//.sections
 
             &.us {
                 article {
-                    img {
-                        margin-right: 15px;
-                    }
+                    img {margin-right: 15px}
                 }
             }
 
             &.animateurs {
                 article {
-                    img {
-                        width: 100%;
-                    }
+                    img {width: 100%}
                 }
             }
 
-            &.map {
-                height: inherit;
-            }
+            &.map {height: inherit}
         }//section
         .gmap3 {
             height: 50%;

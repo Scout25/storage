@@ -40,9 +40,7 @@ html {
 			}
 	    }//hn
 
-	    h1 {
-	    	font-size: 3.5em;
-	    }
+	    h1 {font-size: 3.5em}
 
 	    h2 {
 	    	font-size: 30px;
@@ -110,9 +108,7 @@ html {
 
 						.btn {
 							&.outline {
-								&:hover, &:focus {
-									color: $red;
-								}
+								&:hover, &:focus {color: $red}
 							}
 						}
 					}
@@ -122,9 +118,7 @@ html {
 
 						.btn {
 							&.outline {
-								&:hover, &:focus {
-									color: $blue;
-								}
+								&:hover, &:focus {color: $blue}
 							}
 						}
 					}
@@ -157,6 +151,13 @@ html {
 		        		.gallery-infos {
 		        			.gallery-picture {
 		        				margin: 0 auto;
+								width: 360px;
+								height: 240px;
+
+								// Gallery includes
+								&#ostende14 {background: url(/img/ostende_2014/img3.jpg)}
+
+								&#nettinne {background: url(/img/we-nettine/we_nettine_little.jpg)}
 		        			}
 
 			        		.gallery-title {
@@ -168,9 +169,7 @@ html {
 							    background-color: $transparent-blue;
 							    @include transition($transition-default);
 
-			        			&.active {
-									margin-top: -39px;
-			        			}
+			        			&.active {margin-top: -39px}
 			        		}
 		        		}
 		        	}//.gallery-item
@@ -193,14 +192,10 @@ html {
 	                        @include display-flex;
 	                        @include flex-wrap(wrap);
 
-	                        &:last-child {
-	                            padding-bottom: 20px;
-	                        }
+	                        &:last-child {padding-bottom: 20px}
 
 	                        aside.animateur-infos {
-	                            img {
-	                                margin-right: 20px;
-	                            }
+	                            img {margin-right: 20px}
 
 	                            address {
 	                                h3.poste {
@@ -236,13 +231,15 @@ html {
 
 		                        article {
 		                            margin-top: 15px;
+		                            margin-left: 15px;
 
 		                            @include bp-medium {
 		                                margin-top: 0;
+		                                margin-left: 0;
 		                            }
 
 		                            img {
-		                                margin-right: 20px;
+		                                margin-right: 15px;
 		                                float: left;
 
 		                                @include bp-medium {
@@ -274,30 +271,11 @@ html {
 		}//main
 
 		// Global classes
-		.container-fluid {
-			max-width: 1200px;
-		}
+		.container-fluid {max-width: 1200px}
 		
-		.bg_white {
-		    background-color: rgba(255,255,255,0.8);
-		}
+		.bg_white {background-color: rgba(255,255,255,0.8)}
 	}//body
 }//html
 
 // Reset boostrap useless classes
-.border {
-	border: none;
-}
-
-// Gallery includes
-#ostende14 {
-	background: url(/img/ostende_2014/img3.jpg) center center;
-	width: 360px;
-	height: 240px;
-}
-
-#nettinne {
-	background: url(/img/we-nettine/we_nettine_little.jpg) center center;
-	width: 360px;
-	height: 240px;
-}
+.border {border: none}

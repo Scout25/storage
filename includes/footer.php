@@ -19,7 +19,7 @@
         <script type="text/javascript" src="/js/plugins.js"></script>
 
         <!-- Mobile toolbar -->
-        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-543a8a2120ff17ef" async></script>
+        <!-- <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-543a8a2120ff17ef" async></script> -->
 
         <!-- Follow buttons -->
         <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-543a8a2120ff17ef" async></script>

@@ -11,7 +11,7 @@ include("../includes/header.php");
                     <h1 class="border">Les castors</h1>
 
                     <div class="first_bouton">
-                        <a class="btn outline white">
+                        <a href="#colonie" class="btn outline white">
                             Poursuivre
                         </a>
                     </div>
@@ -23,7 +23,7 @@ include("../includes/header.php");
 
 <main role="main">
     <!-- Colonie -->
-    <section class="page-section red colonie">
+    <section id="colonie" class="page-section red colonie">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-6 col-md-offset-3 text-center">
