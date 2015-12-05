@@ -2,6 +2,7 @@
 	padding: 10px 20px;
 	font-size: 16px;
 	background: transparent;
+	text-decoration: none;
 	@include transition($transition-default);
 
 	&.outline {

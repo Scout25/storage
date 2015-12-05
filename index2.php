@@ -78,7 +78,7 @@ session_start();
         </div>
     </div> -->
 
-    <!-- Intro -->
+    <!-- Sections -->
     <section class="page-section red sections">
         <div class="container-fluid">
             <div class="row">
@@ -154,8 +154,8 @@ session_start();
         </div>
     </section>
 
-    <!-- Services -->
-    <section id="services_index" class="page-section blue us services_index">
+    <!-- About us -->
+    <section class="page-section blue us">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-4 col-md-offset-4 text-center">
@@ -196,7 +196,7 @@ session_start();
         </div>
     </section>
 
-    <!-- Callout-->
+    <!-- Callout -->
     <section class="page-section callout">
         <div class="container-fluid">
             <div class="row callout-content">
@@ -207,7 +207,7 @@ session_start();
         </div>
     </section>
 
-    <!-- Call to Action -->
+    <!-- Animateurs -->
     <section class="page-section blue animateurs">
         <div class="container-fluid">
             <div class="row">
@@ -216,7 +216,7 @@ session_start();
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-10 col-md-offset-1">
+                <div class="col-xs-12">
                     <article>
                         <img class="img-responsive border white" src="img/team_25.png" alt="Staff 25ème">
                     </article>
@@ -225,8 +225,8 @@ session_start();
         </div>
     </section>
 
-    <!-- Portfolio -->
-    <section id="staff" class="page-section staff portfolio">
+    <!-- Staff -->
+    <section class="page-section staff">
         <div class="container-fluid">
             <header>
                 <div class="row">
@@ -236,104 +236,180 @@ session_start();
                 </div>
             </header>
             
-            <section class="board-container">
+            <!-- Animateurs list -->
+            <section class="staff-container">
+                <!-- Butéo -->
                 <div class="row bg_white">
-                    <section>
+                    <section class="animateur">
                         <div class="col-md-4 col-xs-12">
-                            <aside class="animateur">
+                            <aside class="animateur-infos">
                                 <img alt="Adam" src="img/id_pastilles/adam.jpg" class="pull-left border blue">
                                 <address>
-                                    <h3>Responsable d'Unité :</h3>
-                                    <a href="http://fr.wikipedia.org/wiki/Buse_variable" target="new">
-                                        <p>Butéo</p>
-                                    </a>
-                                    <p>Adam Cambier</p>
-                                    <br/><br/><img alt="Icone téléphone" src="img/icons/tel.png"> 0472/61.43.86
+                                    <h3 class="poste red">Responsable d'Unité :</h3>
+
+                                    <p class="name blue">Adam Cambier</p>
+
+                                    <p class="totem">
+                                        <a class="red" href="http://fr.wikipedia.org/wiki/Buse_variable" target="new">
+                                            Butéo
+                                        </a>
+                                    </p>
+                                    <p class="phone blue">
+                                        <i class="fa fa-mobile"></i>
+                                        0472/61.43.86
+                                    </p>
                                 </address>
                             </aside>
                         </div>
 
                         <div class="col-md-8 col-xs-12">
-        	                <div class="readmore">
-        	                    <a href="http://fr.wikipedia.org/wiki/Buse_variable" target="new"><img alt="Butéo" src="img/totem_pastilles/buteo.jpg" class="img-thumbnail float_right"></a>
-        	                    <p>La Buse variable (Buteo buteo) est une espèce de rapaces diurnes de la famille des Accipitridés aux formes lourdes, au bec et aux serres faibles. Elle est souvent confondue avec le milan noir qui lui a la queue échancrée ; la buse, elle, a la queue arrondie.</p>
-                            </div>
+                            <article>
+                                <a href="http://fr.wikipedia.org/wiki/Buse_variable" target="new">
+                                    <img alt="Butéo" src="img/totem_pastilles/buteo.jpg" class="border blue">
+                                </a>
+
+                                <p class="description blue">
+                                    La Buse variable (Buteo buteo) est une espèce de rapaces diurnes de la famille des Accipitridés aux formes lourdes, au bec et aux serres faibles. Elle est souvent confondue avec le milan noir qui lui a la queue échancrée ; la buse, elle, a la queue arrondie.
+                                </p>
+                            </article>
                         </div>
                     </section>
                 </div>
-                
-                <section>
-                    <div class="row white">
+
+                <!-- Ocelot -->
+                <div class="row bg_white">
+                    <section class="animateur">
                         <div class="col-md-4 col-xs-12">
-                            <img alt="Raphaël" src="img/id_pastilles/raph.jpg" class="img-thumbnail float">
-                            <address>
-                                <strong>Responsable d'Unité adj:</strong>
-                                <br/> <a href="http://fr.wikipedia.org/wiki/Ocelot" target="new">Ocelot</a>
-                                <br/> Raphaël Van Gijsegem
-                            </address>
+                            <aside class="animateur-infos">
+                                <img alt="Raphaël" src="img/id_pastilles/raph.jpg" class="pull-left border blue">
+                                <address>
+                                    <h3 class="poste red">Responsable d'Unité adj :</h3>
+
+                                    <p class="name blue">Raphaël Van Gijsegem</p>
+
+                                    <p class="totem">
+                                        <a class="red" href="http://fr.wikipedia.org/wiki/Ocelot" target="new">
+                                            Ocelot
+                                        </a>
+                                    </p>
+                                </address>
+                            </aside>
                         </div>
 
                         <div class="col-md-8 col-xs-12">
-        	                <div class="readmore">
-                            	<a href="http://fr.wikipedia.org/wiki/Ocelot" target="new"><img alt="Ocelot" src="img/totem_pastilles/ocelot.jpg" class="img-thumbnail float_right"></a>
-        						<p>L’ocelot (Leopardus pardalis ou anciennement Felis pardalis) est un chat sauvage qui vit en Amérique du Sud et en Amérique centrale. On le rencontre aussi dans le sud-est du Texas, aux États-Unis. Il vit dans différents biotopes : marais, palétuviers, prairies, buissons, forêts tropicales. Il chasse la nuit au sol et parfois dans les arbres. Il est appelé Cunaguaro au Venezuela et Jaguatirica au Brésil.</p>
-        	                </div>
-                        </div>
-                    </div>
+                            <article>
+                                <a href="http://fr.wikipedia.org/wiki/Ocelot" target="new">
+                                    <img alt="Ocelot" src="img/totem_pastilles/ocelot.jpg" class="border blue">
+                                </a>
 
-                    <div class="row white">
+                                <p class="description blue">
+                                    L’ocelot (Leopardus pardalis ou anciennement Felis pardalis) est un chat sauvage qui vit en Amérique du Sud et en Amérique centrale. On le rencontre aussi dans le sud-est du Texas, aux États-Unis. Il vit dans différents biotopes : marais, palétuviers, prairies, buissons, forêts tropicales. Il chasse la nuit au sol et parfois dans les arbres. Il est appelé Cunaguaro au Venezuela et Jaguatirica au Brésil.
+                                </p>
+                            </article>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- Jabiru -->
+                <div class="row bg_white">
+                    <section class="animateur">
                         <div class="col-md-4 col-xs-12">
-                            <img alt="Patrick" src="img/id_pastilles/patrick.jpg" class="img-thumbnail float">
-                            <address>
-                                <strong>Responsable d'Unité adj:</strong>
-                                <br/> <a href="http://fr.wikipedia.org/wiki/Jabiru" target="new">Jabiru</a>
-                                <br/> Patrick Vanlaer
-                            </address>
+                            <aside class="animateur-infos">
+                                <img alt="Patrick" src="img/id_pastilles/patrick.jpg" class="pull-left border blue">
+                                <address>
+                                    <h3 class="poste red">Responsable d'Unité adj :</h3>
+
+                                    <p class="name blue">Patrick Vanlaer</p>
+
+                                    <p class="totem">
+                                        <a class="red" href="http://fr.wikipedia.org/wiki/Jabiru" target="new">
+                                            Jabiru
+                                        </a>
+                                    </p>
+                                </address>
+                            </aside>
                         </div>
 
                         <div class="col-md-8 col-xs-12">
-        	                <div class="readmore">
-                            	<a href="http://fr.wikipedia.org/wiki/Jabiru" target="new"><img alt="Jabiru" src="img/totem_pastilles/jabiru.jpg" class="img-thumbnail float_right"></a>
-        						<p>Le jabiru est une grande cigogne au bec épais et massif, à la tête et au cou presque chauves. Lorsqu'il se tient debout la tête "rentrée dans les épaules", il ressemble tout à fait à son parent de l'Ancien-Monde, le marabout africain. Très largement distribué de l'Argentine au Mexique, le jabiru est assez fréquent et on le rencontre sur les berges des fleuves, des rivières et des lacs, ainsi que dans les marécages. Il hante également les vastes savanes de Colombie et du Venezuela, lorsqu'elles sont inondées durant la saison pluvieuse et regorgent de grenouilles et d'autres créatures aquatiques. </p>
-        	                </div>
-                        </div>
-                    </div>
+                            <article>
+                                <a href="http://fr.wikipedia.org/wiki/Jabiru" target="new">
+                                    <img alt="Jabiru" src="img/totem_pastilles/jabiru.jpg" class="border blue">
+                                </a>
 
-                    <div class="row white">
+                                <p class="description blue">
+                                    Le jabiru est une grande cigogne au bec épais et massif, à la tête et au cou presque chauves. Lorsqu'il se tient debout la tête "rentrée dans les épaules", il ressemble tout à fait à son parent de l'Ancien-Monde, le marabout africain. Très largement distribué de l'Argentine au Mexique, le jabiru est assez fréquent et on le rencontre sur les berges des fleuves, des rivières et des lacs, ainsi que dans les marécages. Il hante également les vastes savanes de Colombie et du Venezuela, lorsqu'elles sont inondées durant la saison pluvieuse et regorgent de grenouilles et d'autres créatures aquatiques.
+                                </p>
+                            </article>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- Renardeau -->
+                <div class="row bg_white">
+                    <section class="animateur">
                         <div class="col-md-4 col-xs-12">
-                            <img alt="Rien" src="img/totem_pastilles/rien.jpg" class="img-thumbnail float">
-                            <address>
-                                <strong>Equipier Locaux & Matériel:</strong>
-                                <br/> <a href="http://fr.wikipedia.org/wiki/Renardeau" target="new">Renardeau</a>
-                                <br/> Frédéric Hemeleers
-                                <br><br><a href="mailto:infrastructure&#64;scout25.be"><img src="img/icons/mail.png" alt="Icone mail"> Infrastructure</a>
-                            </address>
+                            <aside class="animateur-infos">
+                                <img alt="Renardeau" src="img/id_pastilles/rien.jpg" class="pull-left border blue">
+                                <address>
+                                    <h3 class="poste red">Equipier Locaux & Matériel :</h3>
+
+                                    <p class="name blue">Frédéric Hemeleers</p>
+
+                                    <p class="totem">
+                                        <a class="red" href="http://fr.wikipedia.org/wiki/Renardeau" target="new">
+                                            Renardeau
+                                        </a>
+                                    </p>
+                                </address>
+                            </aside>
                         </div>
 
                         <div class="col-md-8 col-xs-12">
-        	                <div class="readmore">
-                            	<a href="http://fr.wikipedia.org/wiki/Renardeau" target="new"><img alt="Renardeau" src="img/totem_pastilles/renardeau.jpg" class="img-thumbnail float_right"></a>
-        						<p>Renard est un terme ambigu qui désigne le plus souvent en français les canidés du genre Vulpes, le plus commun étant le Renard roux (Vulpes vulpes). Toutefois, par similitude physique, le terme est aussi employé pour désigner des canidés appartenant à d'autres genres, comme les genres Atelocynus, Cerdocyon, Dusicyon, Otocyon, Lycalopex et Urocyon.</p>
-        	                </div>
-                        </div>
-                    </div>
+                            <article>
+                                <a href="http://fr.wikipedia.org/wiki/Renardeau" target="new">
+                                    <img alt="Renardeau" src="img/totem_pastilles/renardeau.jpg" class="border blue">
+                                </a>
 
-                    <div class="row white">
-                        <div class="col-md-12">
-                            <img alt="Bart" src="img/id_pastilles/bart.jpg" class="img-thumbnail float">
-                            <address>
-                                <strong>Equipier Affiliation & Trésorie:</strong>
-                                <br/> Bart Corthouts
-                            </address>
+                                <p class="description blue">
+                                    Renard est un terme ambigu qui désigne le plus souvent en français les canidés du genre Vulpes, le plus commun étant le Renard roux (Vulpes vulpes). Toutefois, par similitude physique, le terme est aussi employé pour désigner des canidés appartenant à d'autres genres, comme les genres Atelocynus, Cerdocyon, Dusicyon, Otocyon, Lycalopex et Urocyon.
+                                </p>
+                            </article>
                         </div>
-                    </div>
-                </section>
+                    </section>
+                </div>
+
+                <!-- Bart -->
+                <div class="row bg_white">
+                    <section class="animateur">
+                        <div class="col-md-4 col-xs-12">
+                            <aside class="animateur-infos">
+                                <img alt="Bart" src="img/id_pastilles/bart.jpg" class="pull-left border blue">
+                                <address>
+                                    <h3 class="poste red">Equipier Affiliation & Trésorie :</h3>
+
+                                    <p class="name blue">Bart Corthouts</p>
+
+                                    <p class="totem">
+                                        <a class="red" href="http://fr.wikipedia.org/wiki/Renardeau" target="new">
+                                            Renardeau
+                                        </a>
+                                    </p>
+                                </address>
+                            </aside>
+                        </div>
+                    </section>
+                </div>
             </section>
 
             <footer>
                 <div class="row">
-                    <div class="col-md-4 col-md-offset-4 text-center white">
-                    <p><a href="mailto:unite&#64scout25.be"><img src="img/icons/mail.png" alt="Icone mail"> unite&#64;scout25.be</a></p>
+                    <div class="col-md-4 col-md-offset-4 text-center bg_white">
+                        <p class="section-mail blue">
+                            <i class="fa fa-envelope"></i>
+                            <a href="mailto:unite&#64scout25.be">
+                                unite&#64;scout25.be
+                            </a>
+                        </p>
                     </div>
                 </div>
             </footer>
@@ -341,13 +417,15 @@ session_start();
     </section>
 
     <!-- Map -->
-    <div class="container" id="gmap3">
-        <div class="row">
-            <div class="col-md-4 col-md-offset-4 text-center">
-                <h2>Nous trouver</h2>
+    <section class="map">
+        <div class="container" id="gmap3">
+            <div class="row">
+                <div class="col-md-4 col-md-offset-4 text-center">
+                    <h2 class="blue">Nous trouver</h2>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
     <div id="test" class="gmap3"></div>
 </main>
 

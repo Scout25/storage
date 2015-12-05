@@ -23,8 +23,8 @@ body.index {
                     font-weight: 700;
                 }
             }
-        }
-    }
+        }//.header
+    }//header
 
     main {
         section {
@@ -42,10 +42,10 @@ body.index {
                     }
 
                     p {
-                        margin-bottom: 20px;
+                        margin-bottom: 15px;
                     }
-                }
-            }
+                }//article.section
+            }//.sections
 
             &.us {
                 article {
@@ -57,12 +57,12 @@ body.index {
 
             &.callout {
                 height: 100%;
+                background: url(/img/fond.jpg) no-repeat center center fixed;
+                @include background-size(cover);
 
                 .callout-content {
                     display: table;
                     width: 100%;
-                    // background: url(/img/fond.jpg) no-repeat center center fixed;
-                    @include background-size(cover);
                 }
             }
 
@@ -74,41 +74,17 @@ body.index {
                 }
             }
 
-            &.staff {
-                header {
-                    h2 {
-                        margin: 0;
-                        color: $blue;
-                        border-color: $blue;
-                        padding: 20px 0;
-                    }
-                }
-
-                section.board-container {
-                    section {
-                        padding-top: 20px;
-
-                        aside.animateur {
-                            img {
-                                margin-right: 20px;
-                            }
-
-                            address {
-                                h3 {
-                                    font-size: 14px;
-                                    font-weight: bold;
-                                    margin: 0;
-                                    line-height: 20px;
-                                    color: $red;
-                                }
-                            }
-                        }
-                    }
-                }
+            &.map {
+                height: inherit;
             }
+        }//section
+        .gmap3 {
+            height: 50%;
+            width: 100%;
+            color: $blue;
         }
-    }
-}
+    }//main
+}//.body-index
 
 /* Map */
 #gmap3 {

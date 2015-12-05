@@ -1,79 +1,248 @@
 // Template styles
-body {
+html {
 	height: 100%;
-	width: 100%;
-	background-image: url(/img/patterns/wood.jpg);
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 14px;
-    color: $white;
+	overflow-x: hidden;
+	
+	body {
+		height: 100%;
+		width: 100%;
+		background-image: url(/img/patterns/wood.jpg);
+	    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	    font-size: 14px;
+	    color: $white;
 
-    h2 {
-    	font-size: 30px;
-    	padding-bottom: 20px;
-    	border-bottom: $border-default $white;
-    	margin-bottom: 45px;
-    	margin-top: 0;
-    }
+	    h1 ,
+	    h2 ,
+	    h3 ,
+	    h4 ,
+	    h5 ,
+	    h6 {
+			color: $white;
 
-	header {
-		&.header {
-		    display: table;
-		    height: 100%;
-		    width: 100%;
-		    color: white;
-		    padding-top: 52px;
-		    @include background-size(cover);
-
-		    section {
-		    	&.center {
-				    display: table-cell;
-				    vertical-align: middle;
-				    text-align: center;
-				}
-	   		}
+			&.blue {
+				color: $blue;
+			}
+			&.red {
+				color: $red;
+			}
+			&.black {
+				color: $black;
+			}
 	    }
-	}
 
-	main {
-		display: inline;
-		padding-top: 52px;
-		
-		section {
-			&.page-section {
-				padding: 45px 0;
+	    h2 {
+	    	font-size: 30px;
+	    	padding-bottom: 20px;
+	    	border-bottom: $border-default $white;
+	    	margin-bottom: 45px;
+	    	margin-top: 0;
 
-				&.call-out {
-					padding: 0;
-				}
+			&.blue {
+				border-color: $blue;
+			}
+			&.red {
+				border-color: $red;
+			}
+			&.black {
+				border-color: $black;
+			}
+	    }
 
-				&.red {
-					background-color: $red;
+	    a {
+	    	text-decoration: underline;
+	    	@include transition($transition-default);
 
-					.btn {
-						&.outline {
-							&:hover, &:focus {
-								color: $red;
+	    	&:hover {
+	    		text-decoration: none;
+	    	}
+
+	    	&.white {
+		    	color: $white;
+		    }
+	    	&.blue {
+	    		color: $blue;
+	    	}
+	    	&.red {
+	    		color: $red;
+	    	}
+			&.black {
+				color: $black;
+			}
+	    }
+
+	    p {
+	    	font-size: 14px;
+
+	    	&.white {
+		    	color: $white;
+		    }
+	    	&.blue {
+	    		color: $blue;
+	    	}
+	    	&.red {
+	    		color: $red;
+	    	}
+			&.black {
+				color: $black;
+			}
+	    }
+
+		header {
+			&.header {
+			    display: table;
+			    height: 100%;
+			    width: 100%;
+			    color: white;
+			    padding-top: 52px;
+			    @include background-size(cover);
+
+			    section {
+			    	&.center {
+					    display: table-cell;
+					    vertical-align: middle;
+					    text-align: center;
+					}
+		   		}
+		    }
+		}
+
+		main {
+			display: inline;
+			padding-top: 52px;
+			
+			section {
+				&.page-section {
+					padding: 45px 0;
+
+					&.call-out {
+						padding: 0;
+					}
+
+					&.red {
+						background-color: $red;
+
+						.btn {
+							&.outline {
+								&:hover, &:focus {
+									color: $red;
+								}
+							}
+						}
+					}
+
+					&.blue {
+						background-color: $blue;
+
+						.btn {
+							&.outline {
+								&:hover, &:focus {
+									color: $blue;
+								}
 							}
 						}
 					}
 				}
 
-				&.blue {
-					background-color: $blue;
+	            &.staff {
+	                header {
+	                    h2 {
+	                        margin: 0;
+	                        color: $red;
+	                        border-color: $red;
+	                        padding: 20px 0;
+	                    }
+	                }
 
-					.btn {
-						&.outline {
-							&:hover, &:focus {
-								color: $blue;
-							}
-						}
-					}
+	                section.staff-container {
+	                    section.animateur {
+	                        padding: 0 5px;
+	                        padding-top: 20px;
+	                        @include display-flex;
+	                        @include flex-wrap(wrap);
+
+	                        &:last-child {
+	                            padding-bottom: 20px;
+	                        }
+
+	                        aside.animateur-infos {
+	                            img {
+	                                margin-right: 20px;
+	                            }
+
+	                            address {
+	                                h3.poste {
+	                                    font-size: 14px;
+	                                    font-weight: bold;
+	                                    margin: 0;
+	                                    line-height: 15px;
+	                                }
+
+	                                p.name {
+	                                    margin-top: 10px;
+	                                    margin-bottom: 0;
+	                                }
+
+	                                p.totem {
+	                                    margin-bottom: 10px;
+	                                    margin-top: 0;
+	                                }
+
+	                                p.phone {
+	                                    i {
+	                                        font-size: 25px;
+	                                        position: relative;
+	                                        top: 3px;
+	                                        margin-right: 10px;
+	                                    }
+	                                }
+	                            }//address
+	                        }//aside.animateur-infos
+
+	                        article {
+	                            margin-top: 15px;
+
+	                            @include bp-medium {
+	                                margin-top: 0;
+	                            }
+
+	                            img {
+	                                margin-right: 15px;
+	                                float: left;
+
+	                                @include bp-medium {
+	                                    margin-right: 0;
+	                                    margin-left: 15px;
+	                                    float: right;
+	                                }
+	                            }
+	                        }//article
+	                    }//section.animateur
+	                }//section.board-container
+
+	                footer {
+	                    p {
+	                        display: inline-block;
+	                        margin: 15px 0;
+	                        
+	                        i {
+	                            font-size: 18px;
+	                            position: relative;
+	                            top: 1px;
+	                            margin-right: 10px;
+	                        }
+	                    }
+	                }//footer
+	            }//.staff
+
+				.container-fluid {
+					max-width: 1200px;
 				}
 			}
+		}
 
-			.container-fluid {
-				max-width: 1200px;
-			}
+		// Global classes
+		.bg_white {
+		    background-color: rgba(255,255,255,0.8);
 		}
 	}
 }
@@ -81,11 +250,6 @@ body {
 // Reset boostrap useless classes
 .border {
 	border: none;
-}
-
-// Global classes
-.bg_white {
-    background-color: rgba(255,255,255,0.8);
 }
 
 // Gallery includes

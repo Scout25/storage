@@ -10,6 +10,9 @@ $red: #D11029;
 $light-red: lighten(#D11029, 5%);
 $dark-red: darken(#D11029, 5%);
 
+// to test
+$light-grey: darken($white, 20%);
+
 // Effects variables
 $radius-default: 2px;
 $transition-default: .2s;
