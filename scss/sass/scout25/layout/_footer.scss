@@ -3,7 +3,7 @@ footer.footer {
     padding: 45px 0;
     
     .border {
-        border-top: 2px solid $white;
+        border-top: $border-default $white;
         padding-top: 45px;
 
         p {

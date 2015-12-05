@@ -6,7 +6,7 @@
 
 	&.outline {
 		color: $white;
-		border: 2px solid;
+		border: $border-default;
 		border-color: $white;
 		@include border-radius($radius-default);
 

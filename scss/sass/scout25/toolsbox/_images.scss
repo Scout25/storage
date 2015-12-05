@@ -1,7 +1,7 @@
 img {
 	&.border {
 		padding: 0;
-		border: 2px solid;
+		border: $border-default;
 		@include border-radius($radius-default);
 
 		&.white {

@@ -10,10 +10,11 @@ $red: #D11029;
 $light-red: lighten(#D11029, 5%);
 $dark-red: darken(#D11029, 5%);
 
-// default effects
-$transition-default: .2s;
-$box-shadow: 0 1px 16px rgba(0, 0, 0, 0.08);
+// Effects variables
 $radius-default: 2px;
+$transition-default: .2s;
+$border-default: 2px solid;
+$box-shadow: 0 1px 16px rgba(0, 0, 0, 0.08);
 
 // Breakpoints
 @mixin bp-small {
