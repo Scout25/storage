@@ -3,6 +3,7 @@ img {
 		padding: 0;
 		border: $border-default;
 		@include border-radius($radius-default);
+		@include box-shadow($box-shadow);
 
 		&.white {
 			border-color: $white;

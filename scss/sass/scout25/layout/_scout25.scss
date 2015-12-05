@@ -148,7 +148,12 @@ html {
 		        		min-height: 289px;
 
 		        		.gallery-link {text-decoration: none}
+
 		        		.gallery-infos {
+		        			&:hover, &:focus {
+		        				.gallery-picture {border-color: $blue !important}
+		        			}
+
 		        			.gallery-picture {
 		        				margin: 0 auto;
 								width: 360px;
@@ -157,13 +162,9 @@ html {
 								border: $border-default;
 								@include border-radius($radius-default);
 								@include transition($transition-default);
-								@include box-shadow($box-shadow);
 
-								&:hover, &:focus {border-color: $blue !important}
-
-								// Gallery includes
+								// General gallery includes
 								&#ostende14 {background: url(/img/ostende_2014/img3.jpg)}
-
 								&#nettinne {background: url(/img/we-nettine/we_nettine_little.jpg)}
 		        			}
 

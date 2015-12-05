@@ -5,27 +5,29 @@ include("includes/header.php");
 
 <header class="header">
     <section class="vert-text center">
-        <div class="row images hidden-xs">
-            <div class="col-md-2 col-md-offset-1 col-xs-5 col-xs-offset-1">
-                <img src="img/logos/logo_min.png" class="img-responsive bg_white pull-left" alt="Logo Unité">
+        <div class="container-fluid">
+            <div class="row images hidden-xs">
+                <div class="col-md-2 col-md-offset-1 col-xs-5 col-xs-offset-1">
+                    <img src="img/logos/logo_min.png" class="img-responsive bg_white pull-left" alt="Logo Unité">
+                </div>
+
+                <div class="col-md-2 col-md-offset-6 col-xs-3 col-xs-offset-2">
+                    <a href="http://www.sgp.be" target="new">
+                        <img src="img/logos/logo_sgp_min.png" class="img-responsive bg_white pull-right" alt="Logo SGP">
+                    </a>
+                </div>
             </div>
 
-            <div class="col-md-2 col-md-offset-6 col-xs-3 col-xs-offset-2">
-                <a href="http://www.sgp.be" target="new">
-                    <img src="img/logos/logo_sgp_min.png" class="img-responsive bg_white pull-right" alt="Logo SGP">
-                </a>
+            <div class="row title">
+                <div class="col-md-12">
+                    <h1>L'unité du Porc-épic</h1>
+                </div>
             </div>
+
+            <a href="#sections" class="btn outline btn-intro">
+                Poursuivre
+            </a>
         </div>
-
-        <div class="row title">
-            <div class="col-md-12">
-                <h1>L'unité du Porc-épic</h1>
-            </div>
-        </div>
-
-        <a href="#sections" class="btn outline btn-intro">
-            Poursuivre
-        </a>
     </section>
 </header>
 
