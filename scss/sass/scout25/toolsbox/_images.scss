@@ -5,20 +5,9 @@ img {
 		@include border-radius($radius-default);
 		@include box-shadow($box-shadow);
 
-		&.white {
-			border-color: $white;
-		}
-
-		&.blue {
-			border-color: $blue;
-		}
-
-		&.red {
-			border-color: $red;
-		}
-
-		&.rounded {
-			@include border-radius(80px);
-		}
-	}
-}
+		&.white {border-color: $white}
+		&.blue {border-color: $blue}
+		&.red {border-color: $red}
+		&.rounded {@include border-radius(80px);}
+	}//.border
+}//img

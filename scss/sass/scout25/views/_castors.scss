@@ -1,7 +1,7 @@
 body.castors {
 	header.header {
         background-image: url(/img/castors/header_castors.jpg);
-	}
+	}//header
 
 	main {
 		section {
@@ -11,7 +11,7 @@ body.castors {
 						margin-right: 20px;
 					}
 				}
-			}
+			}//.colonie
 
 			&.gallery {
 				#velo {background: url(/img/castors/velo/velo2.jpg)}
@@ -23,7 +23,7 @@ body.castors {
 				#rs {background: url(/img/castors/reunion_spec/img24.jpg)}
 				#langdorp {background: url(/img/castors/we_langdorp/img11.jpg)}
 				#STnic14 {background: url(/img/castors/sint_nic14.jpg)}
-			}	
-		}
-	}
-}
+			}//.gallery
+		}//section
+	}//main
+}//.body.castors

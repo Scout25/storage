@@ -81,7 +81,7 @@ nav.navbar {
                 a {
                     color: $white;
 
-                    &:hover, &:focus {
+                    &:hover, &:focus, &.active {
                         background-color: $white;
                         color: $blue;
                     }

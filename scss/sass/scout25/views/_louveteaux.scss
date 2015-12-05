@@ -1,49 +1,26 @@
-.header_louveteaux {
-  display: table;
-  height: 100%;
-  width: 100%;
-  background: url(../img/louveteaux/header_louveteaux.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  color:white;
-}
+body.louveteaux {
+	header.header {
+		background-image: url(/img/louveteaux/header_louveteaux.jpg);
+	}//header
 
-/* Souvenirs Louveteaux */
+	main {
+		section {
+			&.meute {
+				article {
+					img {
+						margin-right: 20px;
+					}
+				}
+			}//.meute
 
-#WEoct13 {
-	background: url(../img/louveteaux/we_octobre/img5.jpg) center center;
-	width: 360px;
-	height: 240px;
-}
-
-#GDcamp13 {
-	background: url(../img/louveteaux/gd_camp/img8.jpg) center center;
-	width: 360px;
-	height: 240px;
-}
-
-#GDcamp13_2 {
-	background: url(../img/louveteaux/visite_camp/img11.jpg) center center;
-	width: 360px;
-	height: 240px;
-}
-
-#firstRN14 {
-	background: url(../img/louveteaux/first_rn_14/img3.jpg) center center;
-	width: 360px;
-	height: 240px;
-}
-
-#moresnet2015 {
-	background: url(../img/louveteaux/paques2015/img_01.jpg) center center;
-	width: 360px;
-	height: 240px;
-}
-
-#olloy2015 {
-	background: url(../img/louveteaux/grandcamp2015/img_01.jpg) center center;
-	width: 360px;
-	height: 240px;
-}
+			&.gallery {
+				#WEoct13 {background: url(/img/louveteaux/we_octobre/img5.jpg)}
+				#GDcamp13 {background: url(/img/louveteaux/gd_camp/img8.jpg)}
+				#GDcamp13_2 {background: url(/img/louveteaux/visite_camp/img11.jpg)}
+				#firstRN14 {background: url(/img/louveteaux/first_rn_14/img3.jpg)}
+				#moresnet2015 {background: url(/img/louveteaux/paques2015/img_01.jpg)}
+				#olloy2015 {background: url(/img/louveteaux/grandcamp2015/img_01.jpg)}
+			}//.gallery
+		}//section
+	}//main
+}//body.louveteaux

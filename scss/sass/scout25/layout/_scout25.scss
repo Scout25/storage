@@ -20,23 +20,19 @@ html {
 			color: $white;
 			text-decoration: none;
 
+			&.blue {color: $blue}
+			&.red {color: $red}
+			&.black {color: $black}
+
 			&.border {
 				margin-bottom: 20px;
 				padding-bottom: 18px;
 				border-bottom: $border-default;
 				border-color: $white;
-			}
-			&.blue {
-				color: $blue;
-				border-color: $blue;
-			}
-			&.red {
-				color: $red;
-				border-color: $red;
-			}
-			&.black {
-				color: $black;
-				border-color: $black;
+
+				&.blue {border-color: $blue}
+				&.red {border-color: $red}
+				&.black {border-color: $black}
 			}
 	    }//hn
 
@@ -60,10 +56,26 @@ html {
 
 	    	&:hover {text-decoration: none}
 
-	    	&.white {color: $white}
-	    	&.blue {color: $blue}
-	    	&.red {color: $red}
-			&.black {color: $black}
+	    	&.white {
+	    		color: $white;
+
+	    		&:hover {color: $light-grey}
+	    	}
+	    	&.blue {
+	    		color: $blue;
+
+	    		&:hover {color: $light-blue}
+	    	}
+	    	&.red {
+	    		color: $red;
+
+	    		&:hover {color: $light-red}
+	    	}
+	    	&.black {
+	    		color: $black;
+
+	    		&:hover {color: $light-grey}
+	    	}
 	    }//a
 
 	    p {
@@ -166,7 +178,7 @@ html {
 								// General gallery includes
 								&#ostende14 {background: url(/img/ostende_2014/img3.jpg)}
 								&#nettinne {background: url(/img/we-nettine/we_nettine_little.jpg)}
-		        			}
+		        			}//.gallery-picture
 
 			        		.gallery-title {
 			        			width: 100%;
@@ -178,8 +190,8 @@ html {
 							    @include transition($transition-default);
 
 			        			&.active {margin-top: -39px}
-			        		}
-		        		}
+			        		}//.gallery-title
+		        		}//.gallery-infos
 		        	}//.gallery-item
 		        }//.gallery
 
@@ -191,7 +203,7 @@ html {
 	                        border-color: $red;
 	                        padding: 20px 0;
 	                    }
-	                }
+	                }//header
 
 	                section.staff-container {
 	                    section.animateur {
@@ -257,7 +269,7 @@ html {
 		                                }
 		                            }
 		                        }//article
-	                        }
+	                        }//.col-md-8
 	                    }//section.animateur
 	                }//section.staff-container
 
@@ -280,7 +292,6 @@ html {
 
 		// Global classes
 		.container-fluid {max-width: 1200px}
-		
 		.bg_white {background-color: rgba(255,255,255,0.8)}
 	}//body
 }//html

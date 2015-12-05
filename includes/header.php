@@ -5,39 +5,14 @@ $current_uri = $_SERVER['REQUEST_URI'];
 $view = false;
 
 // Detect the view system
-// @todo loop to retrieve the view name -> MVC system required
-switch ($current_uri) {
-    case "/pages/castors.php";
-        $view = "castors";
-    break;
-    case "/pages/louveteaux.php";
-        $view = "louveteaux";
-    break;
-    case "/pages/scouts.php";
-        $view = "scouts";
-    break;
-    case "/pages/pis.php";
-        $view = "pionniers";
-    break;
-    case "/pages/infos.php";
-        $view = "infos";
-    break;
-    case "/pages/agenda.php";
-        $view = "agenda";
-    break;
-    case "/pages/faq.php";
-        $view = "faq";
-    break;
-    case "/pages/inscription.php";
-        $view = "inscription";
-    break;
-    case "/pages/animateurs.php";
-        $view = "animateurs";
-    break;
+$views = array("castors", "louveteaux", "scouts", "pis", "agenda", "infos", "anim", "faq", "inscription");
 
-    default : 
-        $view = "index";
-    break;
+foreach ($views as $uri) {
+    if (strpos($current_uri, $uri)) {
+
+        $view = $uri;
+        break;
+    }
 }
 ?>
 <!DOCTYPE html>
@@ -92,6 +67,6 @@ switch ($current_uri) {
 	</script>
 </head>
 
-<body class="<?= $view ?>">
+<body class="<?= $view?$view:null ?>">
     <!-- Navbar -->
     <?php include("navbar.php"); ?>
