@@ -6,7 +6,6 @@ $view = false;
 
 // Detect the view system
 $views = array("castors", "louveteaux", "scouts", "pis", "agenda", "infos", "anim", "faq", "inscription");
-
 foreach ($views as $uri) {
     if (strpos($current_uri, $uri)) {
 
@@ -14,6 +13,8 @@ foreach ($views as $uri) {
         break;
     }
 }
+if (!$view)
+    $view = $view = "index";
 ?>
 <!DOCTYPE html>
 <html lang="fr">

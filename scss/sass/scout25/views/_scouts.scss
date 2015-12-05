@@ -1,37 +1,23 @@
-.header_scouts {
-  display: table;
-  height: 100%;
-  width: 100%;
-  background: url(../img/scouts/header_scouts.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  color:white;
-}
+body.scouts {
+	header.header {
+		background-image: url(/img/scouts/header_scouts.jpg);
+	}//header
 
-/* Souvenirs Scouts */
+	main {
+		section {
+			&.troupe {
+				article {
+					img {
+						margin-right: 20px;
+					}
+				}
+			}//.troupe
 
-#commemoration {
-	background: url(../img/scouts/commemoration/img1.jpg) center center;
-	width: 360px;
-	height: 240px;
-}
-
-#GDcamp13_sc {
-	background: url(../img/scouts/visite_camp/img19.jpg) center center;
-	width: 360px;
-	height: 240px;
-}
-
-#kynda {
-	background: url(../img/scouts/kyndahyrr/img18.jpg) center center;
-	width: 360px;
-	height: 240px;
-}
-
-// body classes
-body.wood {
-	background-image: url(../img/patterns/wood_contacts.jpg);
-	background-attachment: fixed;
-}
+			&.gallery {
+				#commemoration {background: url(../img/scouts/commemoration/img1.jpg)}
+				#GDcamp13_sc {background: url(../img/scouts/visite_camp/img19.jpg)}
+				#kynda {background: url(../img/scouts/kyndahyrr/img18.jpg)}
+			}//.gallery
+		}//section
+	}//main
+}//body.scouts

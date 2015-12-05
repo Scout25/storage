@@ -48,7 +48,7 @@
 							</li>
 							
 							<li class="dropdown">
-								 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Castors<strong class="caret"></strong></a>
+								 <a href="#" class="dropdown-toggle <?= ($view == "castors")?"active":null ?>" data-toggle="dropdown">Castors<strong class="caret"></strong></a>
 								<ul class="dropdown-menu">
 									<li>
 										<a class="move" href="/pages/castors.php">Accueil</a>
@@ -69,7 +69,7 @@
 							</li>
 							
 							<li class="dropdown">
-								 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Louveteaux<strong class="caret"></strong></a>
+								<a href="#" class="dropdown-toggle <?= ($view == "louveteaux")?"active":null ?>" data-toggle="dropdown">Louveteaux<strong class="caret"></strong></a>
 								<ul class="dropdown-menu">
 									<li>
 										<a class="move" href="/pages/louveteaux.php">Accueil</a>
@@ -90,7 +90,7 @@
 							</li>
 							
 							<li class="dropdown">
-								 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Scouts<strong class="caret"></strong></a>
+								<a href="#" class="dropdown-toggle <?= ($view == "scouts")?"active":null ?>" data-toggle="dropdown">Scouts<strong class="caret"></strong></a>
 								<ul class="dropdown-menu">
 									<li>
 										<a class="move" href="/pages/scouts.php">Accueil</a>
@@ -111,7 +111,7 @@
 							</li>
 							
 							<li class="dropdown">
-								 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pionniers<strong class="caret"></strong></a>
+								<a href="#" class="dropdown-toggle <?= ($view == "pis")?"active":null ?>" data-toggle="dropdown">Pionniers<strong class="caret"></strong></a>
 								<ul class="dropdown-menu">
 									<li>
 										<a class="move" href="/pages/pis.php">Accueil</a>
@@ -135,25 +135,25 @@
 							</li>
 							
 							<li>
-								<a class="li_navbar" href="/pages/agenda.php">Agenda</a>
+								<a class="li_navbar <?= ($view == "agenda")?"active":null ?>" href="/pages/agenda.php">Agenda</a>
 							</li>
 							
 							<li>
-								<a class="li_navbar" href="/pages/infos.php">Infos</a>
+								<a class="li_navbar <?= ($view == "infos")?"active":null ?>" href="/pages/infos.php">Infos</a>
 							</li>
 							
 							<li>
-								<a class="li_navbar" href="/pages/faq.php">FAQ</a>
+								<a class="li_navbar <?= ($view == "faq")?"active":null ?>" href="/pages/faq.php">FAQ</a>
 							</li>
 						</ul>
 
 						<ul class="nav navbar-nav navbar-right">
 							<li>
-								<a class="li_navbar" href="/pages/inscriptions.php">Inscriptions</a>
+								<a class="li_navbar <?= ($view == "inscriptions")?"active":null ?>" href="/pages/inscriptions.php">Inscriptions</a>
 							</li>
 							
 							<li>
-								<a class="li_navbar" href="/pages/zone_anim.php">Zone animateurs</a>
+								<a class="li_navbar <?= ($view == "anim")?"active":null ?>" href="/pages/zone_anim.php">Zone animateurs</a>
 							</li>
 							
 							<!-- <li>

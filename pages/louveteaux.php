@@ -1,5 +1,5 @@
 ﻿<?php
-$head_title = "Section Castors, unité du Porc-épic 25, scouts et guides pluralistes de Ganshoren, Bruxelles-Norois";
+$head_title = "Section Louveteaux, unité du Porc-épic 25, scouts et guides pluralistes de Ganshoren, Bruxelles-Norois";
 include("../includes/header.php");
 ?>
 
@@ -353,8 +353,8 @@ include("../includes/header.php");
                     <div class="col-md-6 col-md-offset-3 text-center bg_white">
                         <p class="section-mail blue">
                             <i class="fa fa-envelope"></i>
-                            <a href="mailto:castor&#64scout25.be">
-                                castor&#64;scout25.be
+                            <a href="mailto:louveteau&#64scout25.be">
+                                louveteau&#64;scout25.be
                             </a>
                         </p>
                     </div>
