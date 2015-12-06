@@ -1,0 +1,23 @@
+body.infos {
+    background-image: url(/img/patterns/wood_contacts.jpg);
+    background-attachment: fixed;
+    background-repeat: repeat;
+    background-size: contain;
+
+    main {
+        section {
+        	&.assurance {
+        		img {
+        			margin-bottom: 20px;
+        		}
+        	}
+
+        	&.comptes {
+        		img {
+        			padding: 15px;
+        			max-height: 404px;
+        		}
+        	}
+        }//section
+    }//main
+}//body.infos

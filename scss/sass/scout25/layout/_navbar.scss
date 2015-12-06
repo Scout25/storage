@@ -17,7 +17,7 @@ nav.navbar {
     .navbar-header {
         .navbar-toggle {
             color: $white;
-            border: $border-default $white;
+            border: $border-default $white !important;
             margin-top: 5px;
             margin-bottom: 0;
             @include border-radius($radius-default);
@@ -33,12 +33,13 @@ nav.navbar {
             padding: 25px;
             font-size: 18px;
             line-height: 20px;
-            background: center center no-repeat url(/img/logos/logo_white_min.png);
+            background: center center no-repeat;
+            background-image: url(/img/logos/logo_white_min.png);
             background-size: auto 40px;
 
             &:hover, &:focus, &:active {
                 text-decoration: none;
-                background: center center no-repeat url(/img/logos/logo_min.png);
+                background-image: url(/img/logos/logo_min.png);
                 background-size: auto 40px;
                 background-color: $white;
             }

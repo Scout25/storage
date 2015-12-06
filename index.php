@@ -8,12 +8,12 @@ include("includes/header.php");
         <div class="container-fluid">
             <div class="row images hidden-xs">
                 <div class="col-md-2 col-md-offset-1 col-xs-5 col-xs-offset-1">
-                    <img src="img/logos/logo_min.png" class="img-responsive bg_white pull-left" alt="Logo Unité">
+                    <img src="img/logos/logo_min.png" class="img-responsive pull-left bg_white border blue" alt="Logo Unité">
                 </div>
 
                 <div class="col-md-2 col-md-offset-6 col-xs-3 col-xs-offset-2">
                     <a href="http://www.sgp.be" target="new">
-                        <img src="img/logos/logo_sgp_min.png" class="img-responsive bg_white pull-right" alt="Logo SGP">
+                        <img src="img/logos/logo_sgp_min.png" class="img-responsive pull-right bg_white border blue" alt="Logo SGP">
                     </a>
                 </div>
             </div>

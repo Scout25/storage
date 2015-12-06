@@ -26,18 +26,7 @@ if (!$view)
     <meta http-equiv="Content-Language" content="fr">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="scouts,scoutisme,guides,pluralistes,jeunes,jeunesse,mouvement de jeunesse,activités,animations,ganshoren,bruxelles,Bruxelles-Noroi,section,animateurs,week-end,adolescents,jeunes adolescents">
-    <meta name="author" content="Axel Capaert">
-
-	<!--link rel="stylesheet/less" href="/less/bootstrap.less" type="text/css" /-->
-	<!--link rel="stylesheet/less" href="/less/responsive.less" type="text/css" /-->
-	<!--script src="/js/bootstrap/less-1.3.3.min.js"></script-->
-	<!--append ‘#!watch’ to the browser URL, then refresh the page. -->
-
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="/js/bootstrap/html5shiv.js"></script>
-    <![endif]-->
-
+    <meta name="author" content="Axel Capaert">>
 
     <!-- Fav and touch icons -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/icons/apple_touch/144.png">
@@ -46,14 +35,13 @@ if (!$view)
     <link rel="apple-touch-icon-precomposed" href="/img/icons/apple_touch/57.png">
     <link rel="shortcut icon" href="/img/icons/favicon.png">
 
-    <!-- Bootstrap core CSS -->
-    <!-- <link rel="stylesheet" type="text/css" href="/css/nprogress/nprogress.css"> -->
-    <!-- <link href="/css/boootstrap.css" rel="stylesheet"> -->
-    <!-- <link href="/css/bootstrap.css" rel="stylesheet"> -->
+	<!--append ‘#!watch’ to the browser URL, then refresh the page. -->
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="/js/bootstrap/html5shiv.js"></script>
+    <![endif]-->
 
-    <!-- Add custom CSS here -->
-    <!-- <link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet"> -->
-    <!-- <link href="/css/stylish-portfolio.css" rel="stylesheet"> -->
+    <!-- Styles -->
     <link href="/css/scout25.css" rel="stylesheet">
     
     <!-- Google Analytics -->

@@ -1,0 +1,30 @@
+section.card {
+	padding: 20px;
+	background-color: $white;
+	border: $border-default $blue;
+	@include border-radius(2px);
+	@include box-shadow($box-shadow);
+
+	header {
+		padding-bottom: 20px;
+
+		h1, h2, h3, h4, h5, h6 {margin: 0}
+	}
+
+	footer {
+		padding-top: 20px;
+
+		p {margin: 0}
+
+		ul, ol {margin-bottom: 0}
+	}
+
+	&.blue {
+		background-color: $blue;
+		border: $border-default $white;
+	}
+	&.red {
+		background-color: $red;
+		border: $border-default $white;
+	}
+}

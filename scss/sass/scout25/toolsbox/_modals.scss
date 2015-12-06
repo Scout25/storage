@@ -25,7 +25,6 @@ aside.modal {
 
 		section {
 			padding: 45px 15px;
-			padding-bottom: 35px;
 			
 			h5 {
 				display: inline;
@@ -33,8 +32,9 @@ aside.modal {
 			}
 
 			p {
-				display: inline-block;
+				display: inline;
 				color: $black;
+				line-height: 30px;
 			}
 		}//section
 

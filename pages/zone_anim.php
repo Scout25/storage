@@ -1,26 +1,23 @@
-<?php session_start(); ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<!-- Head -->
-<title>Zone animateurs, unité du Porc-épic 25, scouts et guides pluralistes de Ganshoren, Bruxelles-Norois</title>
-<?php include("../includes/header.php"); ?>
+<?php
+$head_title = "Zone animateurs, unité du Porc-épic 25, scouts et guides pluralistes de Ganshoren, Bruxelles-Norois";
+include("../includes/header.php");
+?>
 
-<body class="wood zone_anim">
+<header class="header">
+    <section class="vert-text center">
+        <div class="container-fluid">
+            <div class="row title">
+                <div class="col-md-12">
+                    <h1>Zone animateurs</h1>
+                </div>
+            </div>
 
-    <!-- Navbar -->
-    <?php include("../includes/navbar.php"); ?>
-    <!-- /Navbar -->
-
-    <!-- Full Page Image Header Area -->
-    <div id="top" class="header_contacts">
-        <div class="vert-text">
-            <h1>Zone animateurs</h1>
-            <br/>
-            <a href="#about_contacts" id="bouton_intro" class="btn btn-lg btn-default little">Poursuivre</a>
+            <a href="#agenda" class="btn outline btn-intro">
+                Poursuivre
+            </a>
         </div>
-    </div>
-    <!-- /Full Page Image Header Area -->
+    </section>
+</header>
 
     <div id="about_contacts" class="pdf-zone">
         <div class="container" id="zone_anim">
@@ -215,63 +212,5 @@
             </div>
         </div>
     </div>
-    
-    <!-- Footer -->
-    <footer class="footer_contacts">
-        <div class="container" id="footer_contacts">
-            <?php include("../includes/footer.php"); ?>
-        </div>
-    </footer>
-    <!-- /Footer -->
-    <script async src="/js/libraries/jquery-fileupload/vendor/jquery.ui.widget.js"></script>
-    <script async src="/js/libraries/jquery-fileupload/jquery.fileupload.js"></script>
-    <script async src="/js/libraries/jquery-fileupload/jquery.iframe-transport.js"></script>
-    <script async type="text/javascript">
-        // jQuery
-        $(document).ready(function (){
-            // Settings variables
-            // Download names system
-            var downloadLinks = $(".download-link");
-            var This;
-            var thisText;
-            // More informations system
-            var thisBox;
 
-            // Put the name of the files in the download attribute of the links
-            downloadLinks.each(function (){
-                This = $(this);
-                thisText = This.parent().find('p').text();
-
-                This.attr("download", thisText);
-            });
-
-            // More informations system on inscription-box
-            $(".more-btn").on("click", function() {
-                thisBox = $(this).parent().parent();
-
-                // Collect datas
-                var Id = thisBox.find(".id").val();
-                var Nom = thisBox.find(".nom").val();
-                var Prenom = thisBox.find(".prenom").val();
-                var PrenomEnfant = thisBox.find(".prenomEnfant").val();
-                var Naissance = thisBox.find(".naissance").val();
-                var Mail = thisBox.find(".mail").val();
-                var Gsm = thisBox.find(".gsm").val();
-                var Infos = thisBox.find(".infos").val();
-
-                // Fill the modal
-                $("#id").html(Id);
-                $("#nom").html(Nom);
-                $("#prenom").html(Prenom);
-                $("#prenomEnfant").html(PrenomEnfant);
-                $("#naissance").html(Naissance);
-                $("#mail").html(Mail);
-                $("#gsm").html(Gsm);
-                $("#infos").html(Infos);
-
-                $("#inscription-modal").modal("toggle");
-            });
-        });
-    </script>
-</body>
-</html>
+<?php include("../includes/footer.php"); ?>
