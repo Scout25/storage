@@ -11,13 +11,12 @@
 @import "sass/scout25/toolsbox/base";
 @import "sass/scout25/toolsbox/buttons";
 @import "sass/scout25/toolsbox/images";
+@import "sass/scout25/toolsbox/modals";
 
-// Layout
+// Template layout
 @import "sass/scout25/layout/navbar";
 @import "sass/scout25/layout/footer";
-
-// Template
-// @import "sass/scout25/stylish-portfolio";
+@import "sass/scout25/layout/scout25";
 
 // Views
 @import "sass/scout25/views/index";
@@ -29,5 +28,5 @@
 @import "sass/scout25/views/animateurs";
 @import "sass/scout25/views/agenda";
 
-// to move
-@import "sass/scout25/layout/scout25";
+// Resets
+@import "sass/scout25/toolsbox/reset";

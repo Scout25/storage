@@ -1,111 +1,101 @@
 <?php
-// include('../controllers/agendaController.php');
-session_start();
+$head_title = "Agenda, unité du Porc-épic 25, scouts et guides pluralistes de Ganshoren, Bruxelles-Norois";
+include("../includes/header.php");
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<!-- Head -->
-<title>Agenda, unité du Porc-épic 25, scouts et guides pluralistes de Ganshoren, Bruxelles-Norois</title>
-<?php include("../includes/header.php"); ?>
 
-<body id="agenda" class="body_agenda">
-    
-    <!-- Navbar -->
-    <?php include("../includes/navbar.php"); ?>
-    
-    <!-- Full Page Image Header Area -->
-    <div id="top" class="header_contacts">
-        <div class="vert-text">
-            <h1>Agenda de l'année</h1>
-            <br/>
-            <a href="#services" id="bouton_intro" class="btn btn-lg btn-default little">Poursuivre</a>
+<header class="header">
+    <section class="vert-text center">
+        <div class="container-fluid">
+            <div class="row title">
+                <div class="col-md-12">
+                    <h1>Agenda de l'année</h1>
+                </div>
+            </div>
+
+            <a href="#agenda" class="btn outline btn-intro">
+                Poursuivre
+            </a>
         </div>
-    </div>
-    
-     <div id="about" class="intro">
-        <div class="container">
-			<div class="row">
+    </section>
+</header>
+
+<main role="main">
+     <section id="news" class="page-section red">
+        <div class="container-fluid">
+            <div class="row">
                 <div class="col-md-4 col-md-offset-4 text-center">
-                	<h2>ATTENTION</h2>
-                    <hr>
+                    <h2>ATTENTION</h2>
                 </div>
             </div>
                 
             <div class="row">
                 <div class="col-xs-12">
-                    <p class="text-center">
-                        Pour une raison d'organisation, la sortie piscine est annulée, cependant les réunions sont maintenues.<br><br>
-                        Merci pour votre compréhension.
-                    </p>
-                </div>
-            </div>
-            
-            </div>
-            </div>
-
-    <!-- Services -->
-    <div id="services" class="services_contacts">
-        <div class="col-xs-12 col-md-10 col-md-offset-1">
-            <div class="responsive-calendar">
-                <div class="controls row">
-                    <div class="col-xs-3 col-sm-2 col-lg-1 btn-month">
-                        <a data-go="prev"><i class="fa fa-chevron-left"></i></a>
-                    </div>
-                    
-                    <div class="col-xs-6 col-sm-8 col-lg-10">
-                        <h3><span id ="month" data-head-month></span>&nbsp;&nbsp;<span id="year" data-head-year></span></h3>
-                    </div>
-
-                    <div class="col-xs-3 col-sm-2 col-lg-1 btn-month">
-                        <a data-go="next"><i class="fa fa-chevron-right"></i></a>
-                    </div>
-                </div><hr/>
-                <div class="day-headers">
-                    <div class="day header"><h6>Lundi</h6></div>
-                    <div class="day header"><h6>Mardi</h6></div>
-                    <div class="day header"><h6>Mercredi</h6></div>
-                    <div class="day header"><h6>Jeudi</h6></div>
-                    <div class="day header"><h6>Vendredi</h6></div>
-                    <div class="day header"><h6>Samedi</h6></div>
-                    <div class="day header"><h6>Dimanche</h6></div>
-                </div>
-                <div class="days" data-group="days">
-                    <!-- the place where days will be generated -->
+                    <article>
+                        <p class="text-center">
+                            Pour une raison d'organisation, la sortie piscine est annulée, cependant les réunions sont maintenues.<br><br>
+                            Merci pour votre compréhension.
+                        </p>
+                    </article>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <!-- Footer -->
-    <footer class="footer_contacts col-xs-12">
-        <div class="container" id="footer_contacts">
-            <?php include("../includes/footer.php"); ?>
+    <!-- Agenda -->
+    <section id="agenda" class="page-section agenda">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-md-10 col-md-offset-1">
+                    <article class="responsive-calendar">
+                        <div class="controls row">
+                            <div class="col-xs-3 col-sm-2 col-lg-1 btn-month">
+                                <a data-go="prev"><i class="fa fa-chevron-left"></i></a>
+                            </div>
+                            
+                            <div class="col-xs-6 col-sm-8 col-lg-10">
+                                <h3><span id ="month" data-head-month></span>&nbsp;&nbsp;<span id="year" data-head-year></span></h3>
+                            </div>
 
-            <!-- Moment.js -->
-            <script type="text/javascript" src="/js/calendar/responsive-calendar.min.js" async></script>
-            <script type="text/javascript" src="/js/scout25/agenda.js" async></script>
+                            <div class="col-xs-3 col-sm-2 col-lg-1 btn-month">
+                                <a data-go="next"><i class="fa fa-chevron-right"></i></a>
+                            </div>
+                        </div><hr/>
+                        <div class="day-headers">
+                            <div class="day header"><h6>Lundi</h6></div>
+                            <div class="day header"><h6>Mardi</h6></div>
+                            <div class="day header"><h6>Mercredi</h6></div>
+                            <div class="day header"><h6>Jeudi</h6></div>
+                            <div class="day header"><h6>Vendredi</h6></div>
+                            <div class="day header"><h6>Samedi</h6></div>
+                            <div class="day header"><h6>Dimanche</h6></div>
+                        </div>
+                        <div class="days" data-group="days">
+                            <!-- the place where days will be generated -->
+                        </div>
+                    </article>
+                </div>
+            </div>
         </div>
-    </footer>
+    </section>
+</main>
 
-    <!-- Modal -->
-    <div id="calendarModal" class="modal fade" role="dialog">
-      <div class="modal-dialog">
-
+<!-- Modal -->
+<aside id="calendarModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
         <!-- Modal content-->
         <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h4 class="modal-title">Informations du jour</h4>
-          </div>
-          <div id="modalContent" class="modal-body">
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
-          </div>
-        </div>
+            <header class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Informations du jour</h4>
+            </header>
 
-      </div>
+            <section id="modalContent" class="modal-body"></section>
+
+            <footer class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+            </footer>
+        </div>
     </div>
-</body>
-</html>
+</aside>
+
+<?php include("../includes/footer.php"); ?>

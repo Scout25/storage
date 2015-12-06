@@ -8,6 +8,7 @@ nav.navbar {
     z-index: 1000;
     margin: 0;
     @include border-radius(0);
+    @include bp-small {position: fixed}
 
     a {
         text-decoration: none;
@@ -17,7 +18,7 @@ nav.navbar {
         .navbar-toggle {
             color: $white;
             border: $border-default $white;
-            margin-top: 4px;
+            margin-top: 5px;
             margin-bottom: 0;
             @include border-radius($radius-default);
 

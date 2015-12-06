@@ -123,8 +123,8 @@ $( document ).ready( function() {
 		return content;
 	}
 
-	$(document).on("click", ".day.active", function (e){
-		e.preventDefault();
+	$(document).on("click", ".day.active", function (event){
+		event.preventDefault();
 		var params = $(this).find("a").attr("href");
 
 		modalContent.html(createContent(params));

@@ -11,12 +11,7 @@ html {
 	    font-size: 14px;
 	    color: $white;
 
-	    h1 ,
-	    h2 ,
-	    h3 ,
-	    h4 ,
-	    h5 ,
-	    h6 {
+	    h1 , h2 , h3 , h4 , h5 , h6 {
 			color: $white;
 			text-decoration: none;
 
@@ -37,9 +32,6 @@ html {
 	    }//hn
 
 	    h1 {font-size: 2.5em}
-
-	    h2 {}
-
 
 	    h2 {
 	    	font-size: 2em;
@@ -96,7 +88,7 @@ html {
 			    height: 100%;
 			    width: 100%;
 			    color: white;
-			    padding-top: 52px;
+		    	padding-top: 32px;
 			    background-attachment: scroll;
 			    background-position: center;
 			    @include background-size(cover);
@@ -111,6 +103,27 @@ html {
 					    vertical-align: middle;
 					    text-align: center;
 					}
+				
+			        .title {
+			            padding-bottom: 100px;
+
+			            h1 {
+			                margin: 0;
+			                font-weight: 700;
+			                font-size: 3.5em;
+
+			                @include bp-small {font-size: 4.5em}
+			            }
+			        }
+
+			        .btn-intro {
+			            background-color: $blue;
+
+			            &:hover, &:focus {
+			                background-color: $white;
+			                color: $blue;
+			            }
+			        }
 		   		}
 		    }//.header
 		}//header
@@ -308,6 +321,3 @@ html {
 		.bg_white {background-color: rgba(255,255,255,0.8)}
 	}//body
 }//html
-
-// Reset boostrap useless classes
-.border {border: none}
