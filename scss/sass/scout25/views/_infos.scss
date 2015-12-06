@@ -8,16 +8,33 @@ body.infos {
         section {
         	&.assurance {
         		img {
+        			margin: 0 auto;
         			margin-bottom: 20px;
+
+        			@include bp-small {
+        				margin: 0;
+        			}
         		}
-        	}
+        	}//.assurance
+
+        	&.uniforme {
+        		img {
+        			margin: 0 auto;
+        		}
+        	}//.uniforme
 
         	&.comptes {
         		img {
         			padding: 15px;
         			max-height: 404px;
+        			margin: 0 auto;
+        			margin-bottom: 20px;
+
+        			@include bp-small {
+        				margin: 0;
+        			}
         		}
-        	}
+        	}//.compte
         }//section
     }//main
 }//body.infos

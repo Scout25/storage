@@ -30,13 +30,13 @@ include("../includes/header.php");
             </div>
 
             <div class="row">
-                <div class="col-md-5 col-xs-12">
+                <div class="col-sm-5 col-xs-12">
                     <a href="http://www.sgp.be" target="new">
                         <img alt="Logo SGP" class="img-responsive border blue bg_white" src="/img/logos/logo_sgp.png">
                     </a>
                 </div>
 
-                <div class="col-md-6 col-md-offset-1 col-xs-12">
+                <div class="col-sm-6 col-sm-offset-1 col-xs-12">
                     <section class="card blue">
                         <header>
                             <h3 class="bleu text-center">Pourquoi 62€ d'affiliation?</h3>
@@ -82,7 +82,7 @@ include("../includes/header.php");
             </div>
             
             <div class="row">
-                <div class="hidden-xs hidden-sm col-md-6 col-md-offset-3">
+                <div class="hidden-xs col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
                     <section class="card blue">
                         <section>
                             <img alt="Uniforme" class="img-responsive fond_blanc paddings uniforme_contacts" src="/img/uniforme/uniforme.png">
@@ -90,7 +90,7 @@ include("../includes/header.php");
                     </section>
                 </div>
 
-                <div class="col-xs-12 hidden-md hidden-lg">
+                <div class="col-xs-12 hidden-sm hidden-md hidden-lg">
                     <section class="card blue">
                         <section>
                             <img alt="Uniforme" class="img-responsive" src="/img/uniforme/uniforme_mobile.png">
@@ -111,11 +111,11 @@ include("../includes/header.php");
             </div>
 
             <div class="row">
-                <div class="col-md-4 col-md-offset-1 col-xs-12">
+                <div class="col-sm-6 col-md-4 col-md-offset-1 col-xs-12">
                     <img alt="Logo Unité" class="img-responsive bg_white border blue" src="/img/logos/logo.png">
                 </div>
 
-                <div class="col-md-3 col-md-offset-2 col-xs-12">
+                <div class="col-sm-6 col-md-3 col-md-offset-2 col-xs-12">
                     <section class="card blue">
                         <header class="text-center">
                             <dl>
