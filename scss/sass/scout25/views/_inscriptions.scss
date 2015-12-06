@@ -1,0 +1,35 @@
+body.inscriptions {
+    background-image: url(/img/patterns/wood_contacts.jpg);
+    background-attachment: fixed;
+    background-repeat: repeat;
+    background-size: contain;
+
+    main {
+        section {
+            &.formulaire {
+                section.card {
+                    section {
+                        input, textarea {
+                            display: block;
+                            width: 100%;
+                        }
+
+                        .bottom {
+                            margin-bottom: 20px;
+                        }
+                    }
+
+                    footer {
+                        .form-group {
+                            margin: 0;
+
+                            button.right {
+                                margin-left: 15px;
+                            }
+                        }
+                    }
+                }
+            }//.formulaire
+        }//section
+    }//main
+}//body.inscriptions

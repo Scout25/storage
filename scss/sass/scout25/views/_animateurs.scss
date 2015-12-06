@@ -1,85 +1,63 @@
 body.zone_anim {
-    overflow-x: hidden;
-    .pdf-zone {
-        .pdf-box {
-            margin-bottom: 30px;
+    background-image: url(/img/patterns/wood_contacts.jpg);
+    background-attachment: fixed;
+    background-repeat: repeat;
+    background-size: contain;
 
-            i.pdf-file {
-                margin-bottom: 15px;
-                color: $light-blue;
-                cursor: pointer;
+    main {
+        section {
+            &.pdf-zone {
+                .pdf-box {
+                    margin-bottom: 30px;
 
-                &:hover, &.focus {
-                    &:before {
-                        // .fa-download:before{content}
-                        content: "";
+                    i.pdf-file {
+                        margin-bottom: 15px;
+                        color: $light-blue;
+                        cursor: pointer;
+
+                        &:hover, &.focus {
+                            &:before {
+                                // .fa-download:before{content}
+                                content: "";
+                            }
+                        }
+
+                        &:before {
+                            // .fa-file-pdf-o:before{content}
+                            content:"";
+                            font-size: 55px;
+                        }
+                    }//.pdf-file
+
+                    p {
+                        min-height: 38px;
+                        max-height: 38px;
+                        overflow: hidden;
                     }
+                }//.pdf-box
+            }//.pdf-zone
+            
+            &.inscriptions {
+                padding-bottom: 35px;
+
+                .inscription {
+                    margin-bottom: 30px;
                 }
+            }//.inscriptions
+        }//section
+    }//main
 
-                &:before {
-                    // .fa-file-pdf-o:before{content}
-                    content:"";
-                    font-size: 55px;
-                }
-            }
-
-            p {
-                min-height: 38px;
-                max-height: 38px;
-                overflow: hidden;
-            }
-        }
-    }
-    
-    .inscription-zone {
-        .inscription-box {
-            padding: 15px;
-            margin-bottom: 30px;
-            background-color: $light-blue;
-            border: 1px solid $white;
-            @include border-radius($radius-default);
-            @include transition($transition-default);
-            @include box-shadow($box-shadow);
-
-            h3 {
-                font-size: 18px;
-
-                &.first {
-                    margin-top: 0;
-                }
-
-                span {
-                    font-size: 13px;
-                }
-            }
-
-            button {
-                margin-top: 15px;
-                padding: 8px 15px;
-                background: transparent;
-                border: 1px solid $white;
-                @include border-radius($radius-default);
-
-                &.ghost {
-                    border: none;
-                    border-bottom: 1px solid $white;
-                    @include transition($transition-default);
-
-                    &:hover, &:focus {
-                        border-color: $light-blue;
-                    }
-                }
-            }
-        }
-    }
-
-    #inscription-modal {
+    aside#inscription-modal {
         h3 {
             font-size: 18px;
+            color: $red;
+            margin: 0;
+            line-height: 30px;
 
             e {
                 font-size: 13px;
+                color: $black;
             }
         }
-    }
-}
+    }//aside
+}//body.zone_anim

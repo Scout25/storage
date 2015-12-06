@@ -16,7 +16,7 @@
 <!-- <script async type="text/javascript" src="/js/nprogress/nprogress.min.js"></script> -->
 
 <!-- Plugins to remove -->
-<!-- <script async type="text/javascript" src="/js/plugins.js"></script> -->
+<script async type="text/javascript" src="/js/plugins.js"></script>
 
 <!-- Addthis -->
 <!-- Mobile toolbar -->
@@ -140,7 +140,7 @@
 <?php endif ?>
 
 <!-- Animateurs -->
-<?php if ($view == "anim") : ?>
+<?php if ($view == "zone_anim") : ?>
     <script async src="/js/libraries/jquery-fileupload/vendor/jquery.ui.widget.js"></script>
     <script async src="/js/libraries/jquery-fileupload/jquery.fileupload.js"></script>
     <script async src="/js/libraries/jquery-fileupload/jquery.iframe-transport.js"></script>
@@ -165,7 +165,7 @@
 
             // More informations system on inscription-box
             $(".more-btn").on("click", function() {
-                thisBox = $(this).parent().parent();
+                thisBox = $(this).parent().parent().parent();
 
                 // Collect datas
                 var Id = thisBox.find(".id").val();

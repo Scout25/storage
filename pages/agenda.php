@@ -12,7 +12,7 @@ include("../includes/header.php");
                 </div>
             </div>
 
-            <a href="#agenda" class="btn outline btn-intro">
+            <a href="#news" class="btn outline btn-intro">
                 Poursuivre
             </a>
         </div>

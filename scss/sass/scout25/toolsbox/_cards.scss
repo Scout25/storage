@@ -1,7 +1,7 @@
 section.card {
 	padding: 20px;
 	background-color: $white;
-	border: $border-default $blue;
+	border: $border-default $light-blue;
 	@include border-radius(2px);
 	@include box-shadow($box-shadow);
 
@@ -20,11 +20,11 @@ section.card {
 	}
 
 	&.blue {
-		background-color: $blue;
+		background-color: $light-blue;
 		border: $border-default $white;
 	}
 	&.red {
-		background-color: $red;
+		background-color: $light-red;
 		border: $border-default $white;
 	}
 }
