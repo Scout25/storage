@@ -160,8 +160,11 @@ html {
 		        }//.callout
 
 		        &.gallery {
+		        	padding-bottom: 0;
+		        	
 		        	.gallery-item {
 		        		min-height: 289px;
+		        		margin-bottom: 45px;
 
 		        		.gallery-link {text-decoration: none}
 

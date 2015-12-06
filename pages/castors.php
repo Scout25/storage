@@ -67,140 +67,142 @@ include("../includes/header.php");
                     <h2>Ancienne galerie</h2>
                 </div>
             </div>
-
-            <div class="col-xs-12 col-sm-6 col-md-4 text-center">
-                <article class="gallery-item">
-    	            <a
-                        class="gallery-link"
-                        target="blank"
-                        href="https://plus.google.com/photos/115374913306463354607/albums/5998182137645586225"
-                    >
-                        <div class="gallery-infos">
-    						<div id="velo" class="gallery-picture img-responsive"></div>
-    						<h4 class="gallery-title">Journée vélo</h4>
-    					</div>
-    	            </a>
-                </article>
-            </div>
-               
-            <div class="col-xs-12 col-sm-6 col-md-4 text-center">
-                <article class="gallery-item">
-                    <a
-                        class="gallery-link"
-                        target="blank"
-                        href="https://plus.google.com/photos/115374913306463354607/albums/5998182972417052193"
-                    >
-                        <div class="gallery-infos">
-                            <div id="gand" class="gallery-picture img-responsive"></div>
-                            <h4 class="gallery-title">Week-end à Gand</h4>
-                        </div>
-                    </a>
-                    </a>
-                </article>
-            </div>
-                
-            <div class="col-xs-12 col-sm-6 col-md-4 text-center">
-                <article class="gallery-item">
-                    <a class="gallery-link" target="blank" href="https://plus.google.com/photos/115374913306463354607/albums/5951463344031201505">
-                        <div class="gallery-infos">
-                            <div id="lasagnes" class="gallery-picture img-responsive"></div>
-                            <h4 class="gallery-title">Opération lasagnes</h4>
-                        </div>
-                    </a>
-                </article>
-            </div>
-
-            <div class="col-xs-12 col-sm-6 col-md-4 text-center">
-                <article class="gallery-item">
-                    <a
-                        class="gallery-link"
-                        target="blank"
-                        href="https://plus.google.com/photos/115374913306463354607/albums/5945135638681924705?authkey=CN-0pKfb6pOujwE"
-                    >
-                        <div class="gallery-infos">
-                            <div id="kluis" class="gallery-picture img-responsive"></div>
-                            <h4 class="gallery-title">Week-end au Kluis</h4>
-                        </div>
-                    </a>
-                </article>
-            </div>
-                
-            <div class="col-xs-12 col-sm-6 col-md-4 text-center">
-                <article class="gallery-item">
-                    <a
-                        class="gallery-link"
-                        target="blank"
-                        href="https://plus.google.com/photos/115374913306463354607/albums/5921717151286394913"
-                    >
-                        <div class="gallery-infos">
-                            <div id="firstRN13" class="gallery-picture img-responsive"></div>
-                            <h4 class="gallery-title">Première réunion 2013</h4>
-                        </div>
-                    </a>
-                </article>
-            </div>
-                
-            <div class="col-xs-12 col-sm-6 col-md-4 text-center">
-                <article class="gallery-item">
-                    <a
-                        class="gallery-link"
-                        target="blank"
-                        href="https://plus.google.com/photos/115374913306463354607/albums/5874473700773921041?authkey=CKbMh6L5ia7hHA"
-                    >
-                        <div class="gallery-infos">
-                            <div id="paques13" class="gallery-picture img-responsive"></div>
-                            <h4 class="gallery-title">Camp de pâques 2013</h4>
-                        </div>
-                    </a>
-                </article>
-            </div>
-
-            <div class="col-xs-12 col-sm-6 col-md-4 text-center">
-                <article class="gallery-item">
-                    <a
-                        class="gallery-link"
-                        target="blank"
-                        href="https://plus.google.com/photos/115374913306463354607/albums/5849376862351780401?authkey=CPG5mPOnmf2niQE"
-                    >
-                        <div class="gallery-infos">
-                            <div id="rs" class="gallery-picture img-responsive"></div>
-                            <h4 class="gallery-title">Réunion spéciale Leuven</h4>
-                        </div>
-                    </a>
-                </article>
-            </div>
-                
-            <div class="col-xs-12 col-sm-6 col-md-4 text-center">
-                <article class="gallery-item">
-                    <a
-                        class="gallery-link"
-                        target="blank"
-                        href="https://plus.google.com/photos/115374913306463354607/albums/5849341856958518753?authkey=CJPZmPa7w8KdMQ"
-                    >
-                        <div class="gallery-infos">
-                            <div id="langdorp" class="gallery-picture img-responsive"></div>
-                            <h4 class="gallery-title">Week-end à Langdorp 2013</h4>
-                        </div>
-                    </a>
-                </article>
-            </div>
-    
-            <?php include("../includes/ostende_2014.php");
             
-	              include("../includes/we_nettinne.php"); ?>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-4 text-center">
+                    <article class="gallery-item">
+                        <a
+                            class="gallery-link"
+                            target="blank"
+                            href="https://plus.google.com/photos/115374913306463354607/albums/5998182137645586225"
+                        >
+                            <div class="gallery-infos">
+                                <div id="velo" class="gallery-picture img-responsive"></div>
+                                <h4 class="gallery-title">Journée vélo</h4>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+                   
+                <div class="col-xs-12 col-sm-6 col-md-4 text-center">
+                    <article class="gallery-item">
+                        <a
+                            class="gallery-link"
+                            target="blank"
+                            href="https://plus.google.com/photos/115374913306463354607/albums/5998182972417052193"
+                        >
+                            <div class="gallery-infos">
+                                <div id="gand" class="gallery-picture img-responsive"></div>
+                                <h4 class="gallery-title">Week-end à Gand</h4>
+                            </div>
+                        </a>
+                        </a>
+                    </article>
+                </div>
+                    
+                <div class="col-xs-12 col-sm-6 col-md-4 text-center">
+                    <article class="gallery-item">
+                        <a class="gallery-link" target="blank" href="https://plus.google.com/photos/115374913306463354607/albums/5951463344031201505">
+                            <div class="gallery-infos">
+                                <div id="lasagnes" class="gallery-picture img-responsive"></div>
+                                <h4 class="gallery-title">Opération lasagnes</h4>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-4 text-center">
+                    <article class="gallery-item">
+                        <a
+                            class="gallery-link"
+                            target="blank"
+                            href="https://plus.google.com/photos/115374913306463354607/albums/5945135638681924705?authkey=CN-0pKfb6pOujwE"
+                        >
+                            <div class="gallery-infos">
+                                <div id="kluis" class="gallery-picture img-responsive"></div>
+                                <h4 class="gallery-title">Week-end au Kluis</h4>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+                    
+                <div class="col-xs-12 col-sm-6 col-md-4 text-center">
+                    <article class="gallery-item">
+                        <a
+                            class="gallery-link"
+                            target="blank"
+                            href="https://plus.google.com/photos/115374913306463354607/albums/5921717151286394913"
+                        >
+                            <div class="gallery-infos">
+                                <div id="firstRN13" class="gallery-picture img-responsive"></div>
+                                <h4 class="gallery-title">Première réunion 2013</h4>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+                    
+                <div class="col-xs-12 col-sm-6 col-md-4 text-center">
+                    <article class="gallery-item">
+                        <a
+                            class="gallery-link"
+                            target="blank"
+                            href="https://plus.google.com/photos/115374913306463354607/albums/5874473700773921041?authkey=CKbMh6L5ia7hHA"
+                        >
+                            <div class="gallery-infos">
+                                <div id="paques13" class="gallery-picture img-responsive"></div>
+                                <h4 class="gallery-title">Camp de pâques 2013</h4>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-4 text-center">
+                    <article class="gallery-item">
+                        <a
+                            class="gallery-link"
+                            target="blank"
+                            href="https://plus.google.com/photos/115374913306463354607/albums/5849376862351780401?authkey=CPG5mPOnmf2niQE"
+                        >
+                            <div class="gallery-infos">
+                                <div id="rs" class="gallery-picture img-responsive"></div>
+                                <h4 class="gallery-title">Réunion spéciale Leuven</h4>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+                    
+                <div class="col-xs-12 col-sm-6 col-md-4 text-center">
+                    <article class="gallery-item">
+                        <a
+                            class="gallery-link"
+                            target="blank"
+                            href="https://plus.google.com/photos/115374913306463354607/albums/5849341856958518753?authkey=CJPZmPa7w8KdMQ"
+                        >
+                            <div class="gallery-infos">
+                                <div id="langdorp" class="gallery-picture img-responsive"></div>
+                                <h4 class="gallery-title">Week-end à Langdorp 2013</h4>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+        
+                <?php include("../includes/ostende_2014.php");
                 
-            <div class="col-xs-12 col-sm-6 col-md-4 text-center">
-                <article class="gallery-item">
-                    <a
-                        class="gallery-link"
-                        target="blank"
-                        href="https://plus.google.com/u/0/photos/115489595897846391409/albums/6091496628010559601">
-                        <div class="gallery-infos">
-                            <div id="STnic14" class="gallery-picture img-responsive"></div>
-                            <h4 class="gallery-title">Saint-Nicolas 2014</h4>
-                        </div>
-                    </a>
-                </article>
+                      include("../includes/we_nettinne.php"); ?>
+                    
+                <div class="col-xs-12 col-sm-6 col-md-4 text-center">
+                    <article class="gallery-item">
+                        <a
+                            class="gallery-link"
+                            target="blank"
+                            href="https://plus.google.com/u/0/photos/115489595897846391409/albums/6091496628010559601">
+                            <div class="gallery-infos">
+                                <div id="STnic14" class="gallery-picture img-responsive"></div>
+                                <h4 class="gallery-title">Saint-Nicolas 2014</h4>
+                            </div>
+                        </a>
+                    </article>
+                </div>
             </div>
         </div>
     </section>

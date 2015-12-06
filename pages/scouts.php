@@ -70,54 +70,56 @@ include("../includes/header.php");
                     <h2>Les souvenirs</h2>
                 </div>
             </div>
-
-            <div class="col-xs-12 col-sm-6 col-md-4 text-center">
-                <article class="gallery-item">
-                    <a
-                        class="gallery-link"
-                        target="blank"
-                        href="https://plus.google.com/photos/115374913306463354607/albums/5946240039219359569?authkey=CK7VhKjiw9KvIQ"
-                    >
-                        <div class="gallery-infos">
-                            <div id="commemoration" class="gallery-picture img-responsive"></div>
-                            <h4 class="gallery-title">Commémoration 11/11/2013</h4>
-                        </div>
-                    </a>
-                </article>
+            
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-4 text-center">
+                    <article class="gallery-item">
+                        <a
+                            class="gallery-link"
+                            target="blank"
+                            href="https://plus.google.com/photos/115374913306463354607/albums/5946240039219359569?authkey=CK7VhKjiw9KvIQ"
+                        >
+                            <div class="gallery-infos">
+                                <div id="commemoration" class="gallery-picture img-responsive"></div>
+                                <h4 class="gallery-title">Commémoration 11/11/2013</h4>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+                   
+                <div class="col-xs-12 col-sm-6 col-md-4 text-center">
+                    <article class="gallery-item">
+                        <a
+                            class="gallery-link"
+                            target="blank"
+                            href="/pages/gallery.php?section=scouts&gallery=carlsbourg2013&title=Grand-camp-2013-Carlsbourg"
+                        >
+                            <div class="gallery-infos">
+                                <div id="GDcamp13_sc" class="gallery-picture img-responsive"></div>
+                                <h4 class="gallery-title">Grand camp Scouts 2013</h4>
+                            </div>
+                        </a>
+                        </a>
+                    </article>
+                </div>
+                    
+                <div class="col-xs-12 col-sm-6 col-md-4 text-center">
+                    <article class="gallery-item">
+                        <a 
+                            class="gallery-link"
+                            target="blank"
+                            href="https://plus.google.com/photos/110512392953493590464/albums/5872556221613136097"
+                        >
+                            <div class="gallery-infos">
+                                <div id="kynda" class="gallery-picture img-responsive"></div>
+                                <h4 class="gallery-title">Kynda Hyrr 2013</h4>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+                    
+                <?php include("../includes/ostende_2014.php"); ?>
             </div>
-               
-            <div class="col-xs-12 col-sm-6 col-md-4 text-center">
-                <article class="gallery-item">
-                    <a
-                        class="gallery-link"
-                        target="blank"
-                        href="/pages/gallery.php?section=scouts&gallery=carlsbourg2013&title=Grand-camp-2013-Carlsbourg"
-                    >
-                        <div class="gallery-infos">
-                            <div id="GDcamp13_sc" class="gallery-picture img-responsive"></div>
-                            <h4 class="gallery-title">Grand camp Scouts 2013</h4>
-                        </div>
-                    </a>
-                    </a>
-                </article>
-            </div>
-                
-            <div class="col-xs-12 col-sm-6 col-md-4 text-center">
-                <article class="gallery-item">
-                    <a 
-                        class="gallery-link"
-                        target="blank"
-                        href="https://plus.google.com/photos/110512392953493590464/albums/5872556221613136097"
-                    >
-                        <div class="gallery-infos">
-                            <div id="kynda" class="gallery-picture img-responsive"></div>
-                            <h4 class="gallery-title">Kynda Hyrr 2013</h4>
-                        </div>
-                    </a>
-                </article>
-            </div>
-                
-            <?php include("../includes/ostende_2014.php"); ?>
         </div>
     </section>
 

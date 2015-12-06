@@ -75,51 +75,53 @@ include("../includes/header.php");
                     <h2>Les souvenirs</h2>
                 </div>
             </div>
-
-            <div class="col-xs-12 col-sm-6 col-md-4 text-center">
-                <article class="gallery-item">
-                    <a
-                        class="gallery-link"
-                        target="blank"
-                        href="https://plus.google.com/photos/115374913306463354607/albums/5904245670637041857"
-                    >
-                        <div class="gallery-infos">
-                            <div id="GDcamp13" class="gallery-picture img-responsive"></div>
-                            <h4 class="gallery-title">Grand camp Louveteaux 2013</h4>
-                        </div>
-                    </a>
-                </article>
-            </div>
-               
-            <div class="col-xs-12 col-sm-6 col-md-4 text-center">
-                <article class="gallery-item">
-                    <a
-                        class="gallery-link"
-                        target="blank"
-                        href="https://plus.google.com/photos/115374913306463354607/albums/5904245670637041857"
-                    >
-                        <div class="gallery-infos">
-                            <div id="GDcamp13_2" class="gallery-picture img-responsive"></div>
-                            <h4 class="gallery-title">Visite Grand camp</h4>
-                        </div>
-                    </a>
-                    </a>
-                </article>
-            </div>
-                
-            <div class="col-xs-12 col-sm-6 col-md-4 text-center">
-                <article class="gallery-item">
-                    <a 
-                        class="gallery-link"
-                        target="blank"
-                        href="https://plus.google.com/photos/115374913306463354607/albums/5904245670637041857"
-                    >
-                        <div class="gallery-infos">
-                            <div id="firstRN14" class="gallery-picture img-responsive"></div>
-                            <h4 class="gallery-title">Première réunion 2014</h4>
-                        </div>
-                    </a>
-                </article>
+            
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-4 text-center">
+                    <article class="gallery-item">
+                        <a
+                            class="gallery-link"
+                            target="blank"
+                            href="https://plus.google.com/photos/115374913306463354607/albums/5904245670637041857"
+                        >
+                            <div class="gallery-infos">
+                                <div id="GDcamp13" class="gallery-picture img-responsive"></div>
+                                <h4 class="gallery-title">Grand camp Louveteaux 2013</h4>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+                   
+                <div class="col-xs-12 col-sm-6 col-md-4 text-center">
+                    <article class="gallery-item">
+                        <a
+                            class="gallery-link"
+                            target="blank"
+                            href="https://plus.google.com/photos/115374913306463354607/albums/5904245670637041857"
+                        >
+                            <div class="gallery-infos">
+                                <div id="GDcamp13_2" class="gallery-picture img-responsive"></div>
+                                <h4 class="gallery-title">Visite Grand camp</h4>
+                            </div>
+                        </a>
+                        </a>
+                    </article>
+                </div>
+                    
+                <div class="col-xs-12 col-sm-6 col-md-4 text-center">
+                    <article class="gallery-item">
+                        <a 
+                            class="gallery-link"
+                            target="blank"
+                            href="https://plus.google.com/photos/115374913306463354607/albums/5904245670637041857"
+                        >
+                            <div class="gallery-infos">
+                                <div id="firstRN14" class="gallery-picture img-responsive"></div>
+                                <h4 class="gallery-title">Première réunion 2014</h4>
+                            </div>
+                        </a>
+                    </article>
+                </div>
             </div>
         </div>
     </section>

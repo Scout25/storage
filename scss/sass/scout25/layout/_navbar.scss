@@ -33,7 +33,7 @@ nav.navbar {
             background: center center no-repeat url(/img/logos/logo_white_min.png);
             background-size: auto 40px;
 
-            &:hover, &:focus {
+            &:hover, &:focus, &:active {
                 text-decoration: none;
                 background: center center no-repeat url(/img/logos/logo_min.png);
                 background-size: auto 40px;
@@ -47,6 +47,7 @@ nav.navbar {
             li {
                 &.dropdown {
                     ul.dropdown-menu {
+                        top: 52px;
                         padding: 0;
                         background-color: $blue;
                         @include border-bottom-left-radius($radius-default);
@@ -75,6 +76,13 @@ nav.navbar {
                     &:hover, &:focus, &:visited {
                         background-color: $blue;
                         color: $white;
+                    }
+
+                    &.open {
+                        a.dropdown-toggle {
+                            background-color: $white;
+                            color: $blue;
+                        }
                     }
                 }
 
