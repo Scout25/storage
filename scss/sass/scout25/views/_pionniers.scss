@@ -1,11 +1,17 @@
-.header_pis {
-  display: table;
-  height: 100%;
-  width: 100%;
-  background: url(../img/pis/header_pis.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  color:white;
+body.pis {
+	header.header {
+		background-image: url(/img/pis/header_pis.jpg);
+	}
+
+	main {
+		section {
+			&.relais {
+				article {
+					img {
+						margin-right: 20px;
+					}
+				}
+			}
+		}
+	}
 }

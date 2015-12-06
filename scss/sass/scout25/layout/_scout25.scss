@@ -97,9 +97,13 @@ html {
 			    width: 100%;
 			    color: white;
 			    padding-top: 52px;
-			    background-attachment: fixed;
+			    background-attachment: scroll;
 			    background-position: center;
 			    @include background-size(cover);
+
+			    @include bp-small {
+				    background-attachment: fixed;
+				}
 
 			    section {
 			    	&.center {
@@ -142,9 +146,14 @@ html {
 
 		        &.callout {
 		            height: 100%;
-		            background-image: url(/img/fond.jpg);
-		            background-attachment: fixed;
+		            background-image: url(/img/fond_mobile.jpg);
+		            background-attachment: scroll;
 		            @include background-size(cover);
+
+		            @include bp-small {
+			            background-image: url(/img/fond.jpg);
+			            background-attachment: fixed;
+		            }
 
 					&.callout-min {
 					    width: 100%;

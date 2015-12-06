@@ -163,7 +163,7 @@ include("../includes/header.php");
 
                         <div class="col-md-8 col-xs-12">
                             <article>
-                                <a href="http://www.sgp.be/IMG/pdf/fiche_lx.pdf#page=11" target="new">
+                                <a href="http://fr.wikipedia.org/wiki/Hemione" target="new">
                                     <img alt="Hémione" src="../img/totem_pastilles/hemione.jpg" class="border blue">
                                 </a>
 
@@ -197,7 +197,7 @@ include("../includes/header.php");
 
                         <div class="col-md-8 col-xs-12">
                             <article>
-                                <a href="http://www.sgp.be/IMG/pdf/fiche_lx.pdf#page=12" target="new">
+                                <a href="http://www.totems-scouts.be/165-colfeo.html" target="new">
                                     <img alt="Colféo" src="../img/totem_pastilles/colfeo.jpg" class="border blue">
                                 </a>
 

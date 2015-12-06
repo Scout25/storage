@@ -17,6 +17,8 @@ nav.navbar {
         .navbar-toggle {
             color: $white;
             border: $border-default $white;
+            margin-top: 4px;
+            margin-bottom: 0;
             @include border-radius($radius-default);
 
             &:hover, &:focus {
