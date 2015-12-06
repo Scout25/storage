@@ -5,7 +5,7 @@ $current_uri = $_SERVER['REQUEST_URI'];
 $view = false;
 
 // Detect the view system
-$views = array("castors", "louveteaux", "scouts", "pis", "agenda", "infos", "anim", "faq", "inscription");
+$views = array("castors", "louveteaux", "scouts", "pis", "agenda", "infos", "anim", "faq", "inscriptions");
 foreach ($views as $uri) {
     if (strpos($current_uri, $uri)) {
 

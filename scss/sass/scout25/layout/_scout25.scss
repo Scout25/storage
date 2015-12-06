@@ -84,6 +84,13 @@ html {
 			&.black {color: $black}
 	    }//p
 
+	    input, textarea {
+	    	padding: 5px 10px;
+	    	background-color: transparent;
+	    	border: $border-default $white;
+	    	@include border-radius(2px);
+	    }
+
 		header {
 			&.header {
 			    display: table;

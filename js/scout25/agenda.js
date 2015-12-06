@@ -1,6 +1,6 @@
-$(document).ready( function() {
+$(document).ready(function() {
 	$(".responsive-calendar").responsiveCalendar({
-		time: '2015-12',
+		time: thisMonth,
 		translateMonths: ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Decembre"],
 		monthChangeAnimation: false,
 		events: {

@@ -4,7 +4,7 @@ include("../includes/header.php");
 ?>
 
 <header class="header">
-    <section class="vert-text center">
+    <section class="center">
         <div class="container-fluid">
             <div class="row title">
                 <div class="col-md-12">
@@ -97,5 +97,9 @@ include("../includes/header.php");
         </div>
     </div>
 </aside>
+
+<script type"text/javascript">
+    var thisMonth = <?= json_encode(date("Y-m")) ?>;
+</script>
 
 <?php include("../includes/footer.php"); ?>

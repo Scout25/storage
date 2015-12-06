@@ -20,11 +20,11 @@
 
 <!-- Addthis -->
 <!-- Mobile toolbar -->
-<!-- <script async type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-543a8a2120ff17ef" async></script> -->
+<!-- <script async type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-543a8a2120ff17ef"></script> -->
 <!-- Follow buttons -->
-<script async type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-543a8a2120ff17ef" async></script>
+<script async type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-543a8a2120ff17ef"></script>
 <!-- Sidebar buttons -->
-<script async type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-543a8a2120ff17ef" async></script>
+<script async type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-543a8a2120ff17ef"></script>
 
 <!-- Readmore -->
 <?php if (!$view) : ?>
@@ -121,9 +121,9 @@
 <!-- Agenda -->
 <?php if ($view == "agenda") : ?>
 	<!-- Libraries -->
-	<script async type="text/javascript" src="/js/calendar/responsive-calendar.min.js" async></script>
+	<script async type="text/javascript" src="/js/calendar/responsive-calendar.min.js"></script>
 	<!-- agenda.js -->
-	<script async type="text/javascript" src="/js/scout25/agenda.js" async></script>
+	<script async type="text/javascript" src="/js/scout25/agenda.js"></script>
 <?php endif ?>
 
 <!-- FAQ -->

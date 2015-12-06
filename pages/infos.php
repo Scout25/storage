@@ -4,7 +4,7 @@ include("../includes/header.php");
 ?>
 
 <header class="header">
-    <section class="vert-text center">
+    <section class="center">
         <div class="container-fluid">
             <div class="row title">
                 <div class="col-md-12">

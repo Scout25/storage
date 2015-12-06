@@ -4,7 +4,7 @@ include("../includes/header.php");
 ?>
 
 <header class="header">
-    <section class="vert-text center">
+    <section class="center">
         <div class="container-fluid">
             <div class="row title">
                 <div class="col-md-12">
@@ -51,7 +51,7 @@ include("../includes/header.php");
 			            </header>
 
 	            		<section class="readmore">
-							<p>Les réunions ont lieu 2 à 3 dimanches par mois de 09h30 à 17h00 le lieu de rendez-vous par défaut est notre <a href="../index.php#gmap3">local</a>. De là les groupes partent à l’aventure pour la journée.</p>
+							<p>Les réunions ont lieu 2 à 3 dimanches par mois de 09h30 à 17h00 le lieu de rendez-vous par défaut est notre <a class="white" href="../index.php#gmap3">local</a>. De là les groupes partent à l’aventure pour la journée.</p>
 							
 							<p>Nos réunions intenses et fréquentes permettent de construire et de poursuivre notre idéal scout au mieux. Être réguliers permet de créer des liens solides avec le groupe. Prévenez les animateurs le plus tôt possible d’une absence qu’ils puissent adapter leurs jeux.</p>
 
@@ -69,7 +69,7 @@ include("../includes/header.php");
 			            </header>
 
 	            		<section class="readmore">
-							<p>Vous trouverez dans la rubrique <a href="agenda.php">agenda</a> les dates de nos prochains rendez-vous !</p>
+							<p>Vous trouverez dans la rubrique <a class="white" href="agenda.php">agenda</a> les dates de nos prochains rendez-vous !</p>
 			            </section>
 	            	</section>
                 </div>
@@ -247,12 +247,12 @@ include("../includes/header.php");
 		        			<section>
 								<div class="form-group">
 									<label>Votre email</label>
-									<input type="email" name="email" class="form-control input">
+									<input type="email" name="email">
 								</div>
 
 								<div class="form-group">
 									<label>Votre question*</label></br>
-									<textarea class="form-control input" required ROWS="6" name="comments"></textarea>
+									<textarea required ROWS="6" name="comments"></textarea>
 								</div>
 
 								<div class="form-group">
@@ -273,8 +273,5 @@ include("../includes/header.php");
         </div>
     </section>
 </main>
-
-    <div id="about_contacts" class="intro">
-    </div>
 
 <?php include("../includes/footer.php"); ?>
