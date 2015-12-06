@@ -1,4 +1,4 @@
-$( document ).ready( function() {
+$(document).ready( function() {
 	$(".responsive-calendar").responsiveCalendar({
 		time: '2015-12',
 		translateMonths: ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Decembre"],
@@ -54,6 +54,7 @@ $( document ).ready( function() {
 		}
 	});
 	
+	var body = $("body");
 	var calendarModal = $("#calendarModal");
 	var modalContent = $("#modalContent");
 	var reunion = {
@@ -115,7 +116,7 @@ $( document ).ready( function() {
 				thisReunion = reunions[i];
 
 			if (thisReunion) {
-				thisContent = "<p>"+section+" : "+thisReunion+"</p>";
+				thisContent = "<h5>"+section+"</h5><p>"+"&nbsp;: "+thisReunion+"</p><br>";
 				content += thisContent;
 			}
 		}
@@ -123,11 +124,12 @@ $( document ).ready( function() {
 		return content;
 	}
 
-	$(document).on("click", ".day.active", function (event){
-		event.preventDefault();
-		var params = $(this).find("a").attr("href");
+	$(document).on("click", ".day.active a", function (e){
+		e.preventDefault();
+		var params = $(this).attr("href");
 
 		modalContent.html(createContent(params));
+		body.css("overflow", "visible");
 		calendarModal.modal("toggle");
 	});
 });

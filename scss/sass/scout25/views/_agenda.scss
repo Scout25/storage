@@ -56,11 +56,12 @@ body.agenda {
                                 color: $white;
                                 border-bottom: 1px solid $white;
 
-                                h6 {
+                                h4 {
                                     width: 100%;
                                     overflow: hidden;
                                     //text-overflow: ellipsis;
                                     white-space: nowrap;
+                                    font-size: 13px;
                                 }
                             }
                         }//.day

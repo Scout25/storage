@@ -1,19 +1,24 @@
+// Reset inherit button border
+button {
+	border: none !important;
+}
+
 .btn {
-	padding: 10px 20px;
 	font-size: 16px;
-	background: transparent;
+	padding: 10px 20px;
 	text-decoration: none;
+	background: transparent;
 	@include transition($transition-default);
 
 	&.outline {
 		color: $white;
-		border: $border-default;
 		border-color: $white;
+		border: $border-default !important;
 		@include border-radius($radius-default);
 
 		&:hover, &:focus {
-			background-color: $white;
 			color: $blue;
+			background-color: $white;
 		}
 
 		&.blue {
@@ -21,8 +26,8 @@
 			border-color: $blue;
 
 			&:hover, &:focus {
-				background-color: $blue;
 				color: $white;
+				background-color: $blue;
 			}
 		}
 
@@ -31,9 +36,32 @@
 			border-color: $red;
 
 			&:hover, &:focus {
-				background-color: $red;
 				color: $white;
+				background-color: $red;
 			}
 		}
-	}
-}
+	}//.outline
+
+	&.ghost {
+		color: $white;
+		border-color: $white;
+		border-bottom: $border-default !important;
+		@include border-radius(0);
+
+		&:hover, &:focus {border-color: transparent !important}
+
+		&.blue {
+			color: $blue;
+			border-color: $blue;
+
+			&:hover, &:focus {border-color: $blue !important}
+		}
+
+		&.red {
+			color: $red;
+			border-color: $red;
+
+			&:hover, &:focus {border-color: $red !important}
+		}
+	}//.ghost
+}//.btn

@@ -61,13 +61,13 @@ include("../includes/header.php");
                             </div>
                         </div><hr/>
                         <div class="day-headers">
-                            <div class="day header"><h6>Lundi</h6></div>
-                            <div class="day header"><h6>Mardi</h6></div>
-                            <div class="day header"><h6>Mercredi</h6></div>
-                            <div class="day header"><h6>Jeudi</h6></div>
-                            <div class="day header"><h6>Vendredi</h6></div>
-                            <div class="day header"><h6>Samedi</h6></div>
-                            <div class="day header"><h6>Dimanche</h6></div>
+                            <div class="day header"><h4>Lundi</h4></div>
+                            <div class="day header"><h4>Mardi</h4></div>
+                            <div class="day header"><h4>Mercredi</h4></div>
+                            <div class="day header"><h4>Jeudi</h4></div>
+                            <div class="day header"><h4>Vendredi</h4></div>
+                            <div class="day header"><h4>Samedi</h4></div>
+                            <div class="day header"><h4>Dimanche</h4></div>
                         </div>
                         <div class="days" data-group="days">
                             <!-- the place where days will be generated -->
@@ -85,14 +85,14 @@ include("../includes/header.php");
         <!-- Modal content-->
         <div class="modal-content">
             <header class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <button type="button" class="close" data-dismiss="modal"><i class="fa fa-close"></i></button>
                 <h4 class="modal-title">Informations du jour</h4>
             </header>
 
             <section id="modalContent" class="modal-body"></section>
 
             <footer class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+                <button type="button" class="btn ghost" data-dismiss="modal">Fermer</button>
             </footer>
         </div>
     </div>
