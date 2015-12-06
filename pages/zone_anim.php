@@ -1,4 +1,12 @@
 <?php
+try {
+    //$bdd = new PDO('mysql:host=rdbms.strato.de;dbname=DB1981852', 'U1981852', 'W3bma5t3r355610');
+    $bdd = new PDO('mysql:host=localhost;dbname=scout', 'root', '');
+} 
+catch(Exception $e) {
+    die('Erreur : '.$e->getMessage());
+}
+
 $head_title = "Zone animateurs, unité du Porc-épic 25, scouts et guides pluralistes de Ganshoren, Bruxelles-Norois";
 include("../includes/header.php");
 ?>
@@ -139,16 +147,6 @@ include("../includes/header.php");
                     <h2>Inscriptions 2015-2016</h2>
                 </div>
             </div>
-            
-            <?php
-                try {
-                    //$bdd = new PDO('mysql:host=rdbms.strato.de;dbname=DB1981852', 'U1981852', 'W3bma5t3r355610');
-                    $bdd = new PDO('mysql:host=localhost;dbname=scout', 'root', '');
-                } 
-                catch(Exception $e) {
-                    die('Erreur : '.$e->getMessage());
-                }
-            ?>
 
             <div class="row">
                 <?php $req = $bdd->query('SELECT * FROM inscriptions2015') ?>
