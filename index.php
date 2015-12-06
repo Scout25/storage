@@ -3,7 +3,7 @@ $head_title = "L'unité du Porc-épic 25, scouts et guides pluralistes de Gansho
 include("includes/header.php");
 ?>
 
-<header class="header">
+<header id="top" class="header">
     <section class="vert-text center">
         <div class="container-fluid">
             <div class="row images hidden-xs">
@@ -109,7 +109,7 @@ include("includes/header.php");
     </section>
 
     <!-- About us -->
-    <section class="page-section blue us">
+    <section id="nous" class="page-section blue us">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-6 col-md-offset-3 text-center">
@@ -151,7 +151,7 @@ include("includes/header.php");
     </section>
 
     <!-- Callout -->
-    <section class="page-section callout">
+    <section id="passion" class="page-section callout">
         <div class="container-fluid">
             <div class="row callout-content">
                 <div class="col-md-6 col-md-offset-3 text-center">
@@ -162,7 +162,7 @@ include("includes/header.php");
     </section>
 
     <!-- Animateurs -->
-    <section class="page-section blue animateurs">
+    <section id="animateurs" class="page-section blue animateurs">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-6 col-md-offset-3 text-center">
@@ -180,7 +180,7 @@ include("includes/header.php");
     </section>
 
     <!-- Staff -->
-    <section class="page-section staff">
+    <section id="staff" class="page-section staff">
         <div class="container-fluid">
             <header>
                 <div class="row">
@@ -365,7 +365,7 @@ include("includes/header.php");
     </section>
 
     <!-- Map -->
-    <section class="map">
+    <section id="contact" class="map">
         <div class="container" id="gmap3">
             <div class="row">
                 <div class="col-md-6 col-md-offset-3 text-center">

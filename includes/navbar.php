@@ -24,7 +24,7 @@ $news = false;
 					<a href="#" class="dropdown-toggle <?= ($view == "index")?"active":null ?>" data-toggle="dropdown">Accueil<strong class="caret"></strong></a>
 					<ul class="dropdown-menu">
 						<li>
-							<a class="move" href="/">Accueil</a>
+							<a class="move" href="/<?= ($view == "index")?"#top":null ?>">Accueil</a>
 						</li>
 						<?php if ($news) : ?>
 							<li>
@@ -35,19 +35,19 @@ $news = false;
 							<a class="move" href="/?#sections">Les sections</a>
 						</li>
 						<li>
-							<a class="move" href="/?#">Qui somme-nous?</a>
+							<a class="move" href="/?#nous">Qui somme-nous?</a>
 						</li>
 						<li>
 							<a class="move" href="/?#passion">Notre passion</a>
 						</li>
 						<li>
-							<a class="move" href="/?#anims">Animateurs</a>
+							<a class="move" href="/?#animateurs">Animateurs</a>
 						</li>
 						<li>
 							<a class="move" href="/?#staff">Staff d'Unité</a>
 						</li>
 						<li>
-							<a class="move" href="/?#gmap3">Nous trouver</a>
+							<a class="move" href="/?#contact">Nous trouver</a>
 						</li>
 					</ul>
 				</li>
@@ -56,19 +56,21 @@ $news = false;
 					 <a href="#" class="dropdown-toggle <?= ($view == "castors")?"active":null ?>" data-toggle="dropdown">Castors<strong class="caret"></strong></a>
 					<ul class="dropdown-menu">
 						<li>
-							<a class="move" href="/pages/castors.php">Accueil</a>
+							<a class="move" href="/<?= ($view == "castors")?"#top":"pages/castors.php" ?>">Accueil</a>
 						</li>
+						<?php if ($news) : ?>
+							<li>
+								<a class="move" href="/?#news">News</a>
+							</li>
+						<?php endif ?>
 						<li>
-							<a class="move" href="/pages/castors.php?#news_castors">News</a>
-						</li>
-						<li>
-							<a class="move" href="/pages/castors.php?#about_castors">La colonie</a>
+							<a class="move" href="/pages/castors.php?#colonie">La colonie</a>
 						</li>
 						<li>
 							<a class="move" href="/pages/castors.php?#galerie">Ancienne galerie</a>
 						</li>
 						<li>
-							<a class="move" href="/pages/castors.php?#anim_castors">Animateurs</a>
+							<a class="move" href="/pages/castors.php?#animateurs">Animateurs</a>
 						</li>
 					</ul>
 				</li>
@@ -77,19 +79,21 @@ $news = false;
 					<a href="#" class="dropdown-toggle <?= ($view == "louveteaux")?"active":null ?>" data-toggle="dropdown">Louveteaux<strong class="caret"></strong></a>
 					<ul class="dropdown-menu">
 						<li>
-							<a class="move" href="/pages/louveteaux.php">Accueil</a>
+							<a class="move" href="/<?= ($view == "louveteaux")?"#top":"pages/louveteaux.php" ?>">Accueil</a>
+						</li>
+						<?php if ($news) : ?>
+							<li>
+								<a class="move" href="/?#news">News</a>
+							</li>
+						<?php endif ?>
+						<li>
+							<a class="move" href="/pages/louveteaux.php?#meute">La meute</a>
 						</li>
 						<li>
-							<a class="move" href="/pages/louveteaux.php?#news_louveteaux">News</a>
+							<a class="move" href="/pages/louveteaux.php?#souvenirs">Souvenirs</a>
 						</li>
 						<li>
-							<a class="move" href="/pages/louveteaux.php?#about_louveteaux">La meute</a>
-						</li>
-						<li>
-							<a class="move" href="/pages/louveteaux.php?#souvenirs_louveteaux">Souvenirs</a>
-						</li>
-						<li>
-							<a class="move" href="/pages/louveteaux.php?#anim_louveteaux">Animateurs</a>
+							<a class="move" href="/pages/louveteaux.php?#animateurs">Animateurs</a>
 						</li>
 					</ul>
 				</li>
@@ -98,19 +102,21 @@ $news = false;
 					<a href="#" class="dropdown-toggle <?= ($view == "scouts")?"active":null ?>" data-toggle="dropdown">Scouts<strong class="caret"></strong></a>
 					<ul class="dropdown-menu">
 						<li>
-							<a class="move" href="/pages/scouts.php">Accueil</a>
+							<a class="move" href="/<?= ($view == "scouts")?"#top":"pages/scouts.php" ?>">Accueil</a>
+						</li>
+						<?php if ($news) : ?>
+							<li>
+								<a class="move" href="/?#news">News</a>
+							</li>
+						<?php endif ?>
+						<li>
+							<a class="move" href="/pages/scouts.php?#troupe">La troupe</a>
 						</li>
 						<li>
-							<a class="move" href="/pages/scouts.php?#news_scouts">News</a>
+							<a class="move" href="/pages/scouts.php?#souvenirs">Souvenirs</a>
 						</li>
 						<li>
-							<a class="move" href="/pages/scouts.php?#about_scouts">La troupe</a>
-						</li>
-						<li>
-							<a class="move" href="/pages/scouts.php?#souvenirs_scouts">Souvenirs</a>
-						</li>
-						<li>
-							<a class="move" href="/pages/scouts.php?#anim_scouts">Animateurs</a>
+							<a class="move" href="/pages/scouts.php?#animateurs">Animateurs</a>
 						</li>
 					</ul>
 				</li>
@@ -119,19 +125,21 @@ $news = false;
 					<a href="#" class="dropdown-toggle <?= ($view == "pis")?"active":null ?>" data-toggle="dropdown">Pionniers<strong class="caret"></strong></a>
 					<ul class="dropdown-menu">
 						<li>
-							<a class="move" href="/pages/pis.php">Accueil</a>
+							<a class="move" href="/<?= ($view == "pis")?"#top":"pages/pis.php" ?>">Accueil</a>
+						</li>
+						<?php if ($news) : ?>
+							<li>
+								<a class="move" href="/?#news">News</a>
+							</li>
+						<?php endif ?>
+						<li>
+							<a class="move" href="/pages/pis.php?#relais">Le relais</a>
 						</li>
 						<li>
-							<a class="move" href="/pages/pis.php?#news_pis">News</a>
+							<a class="move" href="/pages/pis.php?#souvenirs">Souvenirs</a>
 						</li>
 						<li>
-							<a class="move" href="/pages/pis.php?#about_pis">Le relais</a>
-						</li>
-						<li>
-							<a class="move" href="/pages/pis.php?#souvenirs_pis">Souvenirs</a>
-						</li>
-						<li>
-							<a class="move" href="/pages/pis.php?#anim_pis">Animateurs</a>
+							<a class="move" href="/pages/pis.php?#animateurs">Animateurs</a>
 						</li>
 						<li>
 							<a class="move" href="http://roumanie.esy.es" target="blank">Roumanie 2015</a>

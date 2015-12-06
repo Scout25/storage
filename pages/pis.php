@@ -3,7 +3,7 @@ $head_title = "Section Pionniers, unité du Porc-épic 25, scouts et guides plur
 include("../includes/header.php");
 ?>
 
-<header class="header">
+<header id="top" class="header">
     <section>
         <div class="container-fluid">
             <div class="row">
@@ -63,7 +63,7 @@ include("../includes/header.php");
     </section>
 
     <!-- Gallery -->
-    <section class="page-section blue gallery">
+    <section id="souvenirs" class="page-section blue gallery">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-6 col-md-offset-3 text-center">
@@ -77,7 +77,7 @@ include("../includes/header.php");
     </section>
 
     <!-- Staff -->
-    <section class="page-section staff">
+    <section id="animateurs" class="page-section staff">
         <div class="container-fluid">
             <header>
                 <div class="row">
