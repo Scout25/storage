@@ -149,6 +149,7 @@
         $(document).ready(function (){
             // Settings variables
             // Download names system
+            var body = $("body");
             var downloadLinks = $(".download-link");
             var This;
             var thisText;
@@ -187,6 +188,7 @@
                 $("#gsm").html(Gsm);
                 $("#infos").html(Infos);
 
+				body.css("overflow", "visible");
                 $("#inscription-modal").modal("toggle");
             });
         });
