@@ -14,11 +14,6 @@
 <script type="text/javascript" src="/js/jquery-1.11.2.min.js"></script>
 <script type="text/javascript" src="/js/bootstrap/bootstrap.min.js"></script>
 <!-- <script async type="text/javascript" src="/js/nprogress/nprogress.min.js"></script> -->
-<!-- GoogleMap -->
-<?php if ($view == "index") : ?>
-	<script src="http://maps.googleapis.com/maps/api/js?sensor=false" type="text/javascript"></script>
-	<script type="text/javascript" src="js/gmap3.min.js"></script>
-<?php endif ?>
 
 <!-- Plugins to remove -->
 <!-- <script async type="text/javascript" src="/js/plugins.js"></script> -->
@@ -49,6 +44,10 @@
 
 <!-- Index -->
 <?php if ($view == "index") : ?>
+	<!-- Google map -->
+	<script src="http://maps.googleapis.com/maps/api/js?sensor=false" type="text/javascript"></script>
+	<script type="text/javascript" src="js/gmap3.min.js"></script>
+
   	<!-- Google map config -->
 	<script async type="text/javascript">
 		$(function(){
@@ -125,6 +124,19 @@
 	<script async type="text/javascript" src="/js/calendar/responsive-calendar.min.js" async></script>
 	<!-- agenda.js -->
 	<script async type="text/javascript" src="/js/scout25/agenda.js" async></script>
+<?php endif ?>
+
+<!-- FAQ -->
+<?php if ($view == "faq") : ?>
+    <!-- Readmore -->
+    <script type="text/javascript" src="../js/readmore.min.js"></script>
+    <script async type="text/javascript">
+	    $('.readmore').readmore({
+		  maxHeight: 0,
+		  moreLink: '<a class="btn ghost" href="#">Voir la réponse</a>',
+		  lessLink: '<a class="btn ghost" href="#">Fermer</a>',
+		});
+    </script>
 <?php endif ?>
 
 <!-- Animateurs -->
