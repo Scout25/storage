@@ -19,12 +19,14 @@ include("../includes/header.php");
     </section>
 </header>
 
+
+
 <main role="main">
      <section id="news" class="page-section red">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-4 col-md-offset-4 text-center">
-                    <h2>ATTENTION</h2>
+                    <h2>Cette semaine:</h2>
                 </div>
             </div>
                 
@@ -32,8 +34,7 @@ include("../includes/header.php");
                 <div class="col-xs-12">
                     <article>
                         <p class="text-center">
-                            Pour une raison d'organisation, la sortie piscine est annulée, cependant les réunions sont maintenues.<br><br>
-                            Merci pour votre compréhension.
+                            Nous serons présents ce samedi et dimanche au marché de Noël de Ganhsoren.
                         </p>
                     </article>
                 </div>
