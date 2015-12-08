@@ -59,9 +59,9 @@ $(document).ready(function() {
 	var calendarModal = $("#calendarModal");
 	var modalContent = $("#modalContent");
 	var reunion = {
-		    	patinoire: "Réunion patinoire, infos suivront",
-		        cheese: "Soirée Cheese and Movies | de 18 à 22h30, prix: 5,00€",
-		        piscine: "Réunion piscine : prévoir maillot, bonnet, essuie, (lunettes) et 5,00€",
+	    	patinoire: "Réunion patinoire, infos suivront",
+	        cheese: "Soirée Cheese and Movies | de 18 à 22h30, prix: 5,00€",
+	        piscine: "Réunion piscine : prévoir maillot, bonnet, essuie, (lunettes) et 5,00€",
 			normale: "Réunion normale",
 			speciale: "Réunion spéciale",
 			demi: "Demi Réunion, de 14h à 17h.",
