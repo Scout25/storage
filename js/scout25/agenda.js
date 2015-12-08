@@ -9,6 +9,7 @@ $(document).ready(function() {
 	  		"2015-12-12": {"number": 1, "badgeClass": "badge-warning", url: ",,,Marché de Noël Ganshoren,"},
 	  		"2015-12-13": {"number": 1, "badgeClass": "badge-warning", url: ",,,Marché de Noël Ganshoren,"},
 	  		"2015-12-18": {"number": 1, "badgeClass": "badge-warning", url: ",,cheese,,"},
+	  		"2015-12-19": {"number": 1, "badgeClass": "badge-warning", url: ",,,bar,"},
 
 	  		// Janvier
 	  		"2016-01-10": {"number": 3, "badgeClass": "badge-warning", url: "normale,normale,,normale"},
@@ -59,13 +60,14 @@ $(document).ready(function() {
 	var modalContent = $("#modalContent");
 	var reunion = {
 		    	patinoire: "Réunion patinoire, infos suivront",
-		        cheese: "Soirée Cheese and Movies, infos à suivre",
+		        cheese: "Soirée Cheese and Movies | de 18 à 22h30, prix: 5,00€",
 		        piscine: "Réunion piscine : prévoir maillot, bonnet, essuie, (lunettes) et 5,00€",
 			normale: "Réunion normale",
 			speciale: "Réunion spéciale",
 			demi: "Demi Réunion, de 14h à 17h.",
 			wePi: "<a href='/pages/pis.php?#news_pis' target='_blank'>Informations sur le week-end</a>",
 			velo: "<a href='/pages/scouts.php?#news_scouts' target='_blank'>Informations sur les 24h vélo</a>",
+			bar: "Bar pi de noël, de 20h à 03h00",
 		};
 	var reunions;
 	var thisReunion;
@@ -112,6 +114,8 @@ $(document).ready(function() {
 				thisReunion = reunion.wePi;
 			else if (reunions[i] == "velo")
 				thisReunion = reunion.velo;
+			else if (reunions[i] == "bar")
+				thisReunion = reunion.bar;
 			else
 				thisReunion = reunions[i];
 
