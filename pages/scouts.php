@@ -63,7 +63,7 @@ include("../includes/header.php");
     </section>
 
     <!-- Gallery -->
-    <section id="souvenirs" class="page-section blue gallery">
+    <section id="souvenirs_scouts" class="page-section blue gallery">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-6 col-md-offset-3 text-center">
@@ -124,7 +124,7 @@ include("../includes/header.php");
     </section>
 
     <!-- Staff -->
-    <section id="animateurs" class="page-section staff">
+    <section id="animateurs_scouts" class="page-section staff">
         <div class="container-fluid">
             <header>
                 <div class="row">

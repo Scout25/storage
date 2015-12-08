@@ -208,7 +208,7 @@ include("../includes/header.php");
     </section>
 
     <!-- Staff -->
-    <section id="animateurs" class="page-section staff">
+    <section id="animateurs_castors" class="page-section staff">
         <div class="container-fluid">
             <header>
                 <div class="row">

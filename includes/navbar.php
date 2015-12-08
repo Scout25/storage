@@ -60,7 +60,7 @@ $news = false;
 						</li>
 						<?php if ($news) : ?>
 							<li>
-								<a class="move" href="/?#news">News</a>
+								<a class="move" href="/?#news_castors">News</a>
 							</li>
 						<?php endif ?>
 						<li>
@@ -70,7 +70,7 @@ $news = false;
 							<a class="move" href="/pages/castors.php?#galerie">Ancienne galerie</a>
 						</li>
 						<li>
-							<a class="move" href="/pages/castors.php?#animateurs">Animateurs</a>
+							<a class="move" href="/pages/castors.php?#animateurs_castors">Animateurs</a>
 						</li>
 					</ul>
 				</li>
@@ -83,17 +83,17 @@ $news = false;
 						</li>
 						<?php if ($news) : ?>
 							<li>
-								<a class="move" href="/?#news">News</a>
+								<a class="move" href="/?#news_louveteaux">News</a>
 							</li>
 						<?php endif ?>
 						<li>
 							<a class="move" href="/pages/louveteaux.php?#meute">La meute</a>
 						</li>
 						<li>
-							<a class="move" href="/pages/louveteaux.php?#souvenirs">Souvenirs</a>
+							<a class="move" href="/pages/louveteaux.php?#souvenirs_louveteaux">Souvenirs</a>
 						</li>
 						<li>
-							<a class="move" href="/pages/louveteaux.php?#animateurs">Animateurs</a>
+							<a class="move" href="/pages/louveteaux.php?#animateurs_louveteaux">Animateurs</a>
 						</li>
 					</ul>
 				</li>
@@ -106,17 +106,17 @@ $news = false;
 						</li>
 						<?php if ($news) : ?>
 							<li>
-								<a class="move" href="/?#news">News</a>
+								<a class="move" href="/?#news_scouts">News</a>
 							</li>
 						<?php endif ?>
 						<li>
 							<a class="move" href="/pages/scouts.php?#troupe">La troupe</a>
 						</li>
 						<li>
-							<a class="move" href="/pages/scouts.php?#souvenirs">Souvenirs</a>
+							<a class="move" href="/pages/scouts.php?#souvenirs_scouts">Souvenirs</a>
 						</li>
 						<li>
-							<a class="move" href="/pages/scouts.php?#animateurs">Animateurs</a>
+							<a class="move" href="/pages/scouts.php?#animateurs_scouts">Animateurs</a>
 						</li>
 					</ul>
 				</li>
@@ -129,17 +129,17 @@ $news = false;
 						</li>
 						<?php if ($news) : ?>
 							<li>
-								<a class="move" href="/?#news">News</a>
+								<a class="move" href="/?#news_pis">News</a>
 							</li>
 						<?php endif ?>
 						<li>
 							<a class="move" href="/pages/pis.php?#relais">Le relais</a>
 						</li>
 						<li>
-							<a class="move" href="/pages/pis.php?#souvenirs">Souvenirs</a>
+							<a class="move" href="/pages/pis.php?#souvenirs_pis">Souvenirs</a>
 						</li>
 						<li>
-							<a class="move" href="/pages/pis.php?#animateurs">Animateurs</a>
+							<a class="move" href="/pages/pis.php?#animateurs_pis">Animateurs</a>
 						</li>
 						<li>
 							<a class="move" href="http://roumanie.esy.es" target="blank">Roumanie 2015</a>
