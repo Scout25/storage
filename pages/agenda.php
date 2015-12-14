@@ -34,7 +34,7 @@ include("../includes/header.php");
                 <div class="col-xs-12">
                     <article>
                         <p class="text-center">
-                            Nous serons présents ce samedi et dimanche au marché de Noël de Ganhsoren.
+                            Soirée Cheese and movies vendredi, bar pi de Noël samedi.
                         </p>
                     </article>
                 </div>
