@@ -4,7 +4,7 @@
 		<div class="row">
 			<div class="col-md-6 col-md-offset-3 text-center border">
 				<p>Copyright &copy; <a target="_blank" href="http://be.linkedin.com/pub/axel-capaert/a8/350/812/">Axel Capaert</a> 2014</p>
-				<p>Dev: <a target="_blank" href="https://www.guillaumepiron.com">Guillaume Piron</a></p>
+				<p>Dev: <a target="_blank" href="http://www.guillaumepiron.com">Guillaume Piron</a></p>
 			</div>
 		</div>
 	</div>
