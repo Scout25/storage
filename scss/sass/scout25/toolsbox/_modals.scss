@@ -20,7 +20,7 @@ aside.modal {
 					    text-shadow: 0 1px 0 $red;
 					}
 				}
-			}
+			}//button.close
 		}//header
 
 		section {
@@ -41,5 +41,5 @@ aside.modal {
 		footer {
 			background-color: $light-blue;
 		}//footer
-	}
-}
+	}//.modal-content
+}//aside.modal
