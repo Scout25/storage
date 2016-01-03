@@ -190,6 +190,25 @@ include("../includes/header.php");
         <div class="container-fluid">
             <!-- The file upload form used as target for the file upload widget -->
             <form id="fileupload" action="/data/index.php" method="POST" enctype="multipart/form-data">
+                <div class="row input-zone">
+                    <div class="col-md-12">
+                        <div class="first-input">
+                            <label for="section">Section</label><br>
+                            <select required name="section" id="">
+                                <option selected="selected" disabled="true" value="">Choisir une section</option>
+                                <option value="castors">Castors</option>
+                                <option value="louveteaux">Louveteaux</option>
+                                <option value="scouts">Scouts</option>
+                                <option value="pis">Pionniers</option>
+                            </select>
+                        </div>
+
+                        <div class="">
+                            <label for="album">Album</label><br>
+                            <input type="text" name="album">
+                        </div>
+                    </div>
+                </div>
                 <!-- The fileupload-buttonbar contains buttons to add/delete files and start/cancel the upload -->
                <div class="row fileupload-buttonbar">
                     <div class="col-lg-7 main-action-zone">

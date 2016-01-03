@@ -12,4 +12,7 @@
 
 error_reporting(E_ALL | E_STRICT);
 require('UploadHandler.php');
-$upload_handler = new UploadHandler();
+$section = (isset($_POST['section'])) ? $_POST['section'] : null;
+$album = (isset($_POST['album'])) ? $_POST['album'] : null;
+
+$upload_handler = new UploadHandler(null, true, null, $section, $album);

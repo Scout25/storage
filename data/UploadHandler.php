@@ -40,12 +40,14 @@ class UploadHandler
 
     protected $image_objects = array();
 
-    function __construct($options = null, $initialize = true, $error_messages = null) {
+    function __construct($options = null, $initialize = true, $error_messages = null, $section_dir=null, $gallery_dir=null) {
+
+        $scout25_dir = (!empty($section_dir) && !empty($gallery_dir)) ? $section_dir."/".$gallery_dir."/" : null;
         $this->response = array();
         $this->options = array(
             'script_url' => $this->get_full_url().'/'.basename($this->get_server_var('SCRIPT_NAME')),
-            'upload_dir' => dirname($this->get_server_var('SCRIPT_FILENAME')).'/files/',
-            'upload_url' => $this->get_full_url().'/files/',
+            'upload_dir' => dirname($this->get_server_var('SCRIPT_FILENAME')).'/files/'.$scout25_dir,
+            'upload_url' => $this->get_full_url().'/files/'.$scout25_dir,
             'user_dirs' => false,
             'mkdir_mode' => 0755,
             'param_name' => 'files',
@@ -153,8 +155,7 @@ class UploadHandler
                     // Uncomment the following to force the max
                     // dimensions and e.g. create square thumbnails:
                     //'crop' => true,
-                    'max_width' => 80,
-                    'max_height' => 80
+                    'max_width' => 360
                 )
             ),
             'print_response' => true

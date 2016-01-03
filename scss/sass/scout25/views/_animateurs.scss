@@ -65,6 +65,14 @@ body.zone_anim {
                         margin-top: 5px;
                     }
                 }
+
+                .input-zone {
+                    margin-bottom: 20px;
+
+                    .first-input {
+                        margin-bottom: 15px;
+                    }
+                }
                 
                 .fileupload-buttonbar {
                     .main-action-zone {
@@ -87,6 +95,12 @@ body.zone_anim {
                         tr {
                             &.template-download, &.template-upload {
                                 background-color: transparent;
+
+                                .preview {
+                                    img {
+                                        max-width: 80px;
+                                    }
+                                }
 
                                 p.name {
                                     a {

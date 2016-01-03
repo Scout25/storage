@@ -122,6 +122,8 @@ include("../includes/header.php");
                         </a>
                     </article>
                 </div>
+
+                <?php include("../includes/gallery.php"); ?>
             </div>
         </div>
     </section>

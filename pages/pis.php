@@ -72,6 +72,8 @@ include("../includes/header.php");
             </div>
 
                 <?php include("../includes/ostende_2014.php"); ?>
+
+                <?php include("../includes/gallery.php"); ?>
             </div>
         </div>
     </section>

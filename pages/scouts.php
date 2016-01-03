@@ -118,7 +118,9 @@ include("../includes/header.php");
                     </article>
                 </div>
                     
-                <?php include("../includes/ostende_2014.php"); ?>
+                <?php include("../includes/ostende_2014.php");
+
+                      include("../includes/gallery.php"); ?>
             </div>
         </div>
     </section>

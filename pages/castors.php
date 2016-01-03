@@ -188,7 +188,9 @@ include("../includes/header.php");
         
                 <?php include("../includes/ostende_2014.php");
                 
-                      include("../includes/we_nettinne.php"); ?>
+                      include("../includes/we_nettinne.php");
+
+                      include("../includes/gallery.php"); ?>
                     
                 <div class="col-xs-12 col-sm-6 col-md-4 text-center">
                     <article class="gallery-item">
