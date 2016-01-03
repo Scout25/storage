@@ -149,7 +149,7 @@ include("../includes/header.php");
             </div>
 
             <div class="row">
-                <?php $req = $bdd->query('SELECT * FROM inscriptions2015') ?>
+                <?php $req = $bdd->query('SELECT * FROM inscriptions2015 order by id desc') ?>
                     <?php while ($donnees = $req->fetch()) : ?>
                         <div class="col-xs-12 col-sm-6 col-md-4">
                             <section class="card blue inscription"> <!-- inscription-box -->
@@ -186,10 +186,54 @@ include("../includes/header.php");
         </div>
     </section>
 
-    <!-- <div id="about_contacts" class="fileupload-zone">
-        <form id="fileupload" action="/data" method="POST" enctype="multipart/form-data">
-        </form>
-    </div> -->
+    <section class="page-section blue fileupload-zone">
+        <div class="container-fluid">
+            <!-- The file upload form used as target for the file upload widget -->
+            <form id="fileupload" action="/data/index.php" method="POST" enctype="multipart/form-data">
+                <!-- The fileupload-buttonbar contains buttons to add/delete files and start/cancel the upload -->
+               <div class="row fileupload-buttonbar">
+                    <div class="col-lg-7 main-action-zone">
+                        <!-- The fileinput-button span is used to style the file input field as button -->
+                        <button class="btn outline fileinput-button">
+                            <i class="icon-plus icon-white"></i>
+                            <span>Ajouter des fichiers...</span>
+                            <input type="file" name="files[]" multiple>
+                        </button>
+
+                        <button type="submit" class="btn outline start">
+                            <i class="icon-upload icon-white"></i>
+                            <span>Envoyer</span>
+                        </button>
+
+                        <button type="reset" class="btn outline cancel">
+                            <i class="icon-ban-circle icon-white"></i>
+                            <span>Annuler</span>
+                        </button>
+
+                        <button type="button" class="btn outline delete">
+                            <i class="icon-trash icon-white"></i>
+                            <span>Supprimer</span>
+                        </button>
+
+                        <input type="checkbox" class="toggle">
+                        <!-- The global file processing state -->
+                        <span class="fileupload-process"></span>
+                    </div>
+                    <!-- The global progress state -->
+                    <div class="col-lg-5 fileupload-progress">
+                        <!-- The global progress bar -->
+                        <div class="progress progress-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar progress-bar-success" style="width:0%;"></div>
+                        </div>
+                        <!-- The extended global progress state -->
+                        <div class="progress-extended">&nbsp;</div>
+                    </div>
+                </div>
+                <!-- The table listing the files available for upload/download -->
+                <table role="presentation" class="table table-striped"><tbody class="files"></tbody></table>
+            </form>
+        </div>
+    </section>
 
     <!-- Modal -->
     <aside id="inscription-modal" class="modal fade" role="dialog">
@@ -219,5 +263,82 @@ include("../includes/header.php");
         </div>
     </aside>
 </main>
+
+
+<!-- The template to display files available for upload -->
+<script id="template-upload" type="text/x-tmpl">
+{% for (var i=0, file; file=o.files[i]; i++) { %}
+    <tr class="template-upload">
+        <td>
+            <span class="preview"></span>
+        </td>
+        <td>
+            <p class="name">{%=file.name%}</p>
+            <strong class="error text-danger"></strong>
+        </td>
+        <td>
+            <p class="size">En cours...</p>
+            <div class="progress progress-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div class="progress-bar progress-bar-success" style="width:0%;"></div></div>
+        </td>
+        <td>
+            {% if (!i && !o.options.autoUpload) { %}
+                <button class="btn outline list-btn start" disabled>
+                    <i class="glyphicon glyphicon-upload"></i>
+                    <span>Envoyer</span>
+                </button>
+            {% } %}
+            {% if (!i) { %}
+                <button class="btn outline list-btn cancel">
+                    <i class="glyphicon glyphicon-ban-circle"></i>
+                    <span>Annuler</span>
+                </button>
+            {% } %}
+        </td>
+    </tr>
+{% } %}
+</script>
+<!-- The template to display files available for download -->
+<script id="template-download" type="text/x-tmpl">
+{% for (var i=0, file; file=o.files[i]; i++) { %}
+    <tr class="template-download">
+        <td>
+            <span class="preview">
+                {% if (file.thumbnailUrl) { %}
+                    <a href="{%=file.url%}" title="{%=file.name%}" download="{%=file.name%}" data-gallery><img src="{%=file.thumbnailUrl%}"></a>
+                {% } %}
+            </span>
+        </td>
+        <td>
+            <p class="name">
+                {% if (file.url) { %}
+                    <a href="{%=file.url%}" title="{%=file.name%}" download="{%=file.name%}" {%=file.thumbnailUrl?'data-gallery':''%}>{%=file.name%}</a>
+                {% } else { %}
+                    <span>{%=file.name%}</span>
+                {% } %}
+            </p>
+            {% if (file.error) { %}
+                <div><span class="label label-danger">Error</span> {%=file.error%}</div>
+            {% } %}
+        </td>
+        <td>
+            <span class="size">{%=o.formatFileSize(file.size)%}</span>
+        </td>
+        <td>
+            {% if (file.deleteUrl) { %}
+                <button class="btn outline list-btn delete" data-type="{%=file.deleteType%}" data-url="{%=file.deleteUrl%}"{% if (file.deleteWithCredentials) { %} data-xhr-fields='{"withCredentials":true}'{% } %}>
+                    <i class="glyphicon glyphicon-trash"></i>
+                    <span>Supprimer</span>
+                </button>
+                <input type="checkbox" name="delete" value="1" class="toggle">
+            {% } else { %}
+                <button class="btn outline list-btn cancel">
+                    <i class="glyphicon glyphicon-ban-circle"></i>
+                    <span>Annuler</span>
+                </button>
+            {% } %}
+        </td>
+    </tr>
+{% } %}
+</script>
 
 <?php include("../includes/footer.php"); ?>

@@ -12,6 +12,7 @@
 
 <!-- Librairies -->
 <script type="text/javascript" src="/js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="/js/libraries/jquery-ui-1.11.4/jquery-ui.min.js"></script>
 <script type="text/javascript" src="/js/bootstrap/bootstrap.min.js"></script>
 <!-- <script async type="text/javascript" src="/js/nprogress/nprogress.min.js"></script> -->
 
@@ -22,9 +23,9 @@
 <!-- Mobile toolbar -->
 <!-- <script async type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-543a8a2120ff17ef"></script> -->
 <!-- Follow buttons -->
-<script async type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-543a8a2120ff17ef"></script>
+<!-- <script async type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-543a8a2120ff17ef"></script> -->
 <!-- Sidebar buttons -->
-<script async type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-543a8a2120ff17ef"></script>
+<!-- <script async type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-543a8a2120ff17ef"></script> -->
 
 <!-- Readmore -->
 <?php if (!$view) : ?>
@@ -49,60 +50,7 @@
 	<script type="text/javascript" src="js/gmap3.min.js"></script>
 
   	<!-- Google map config -->
-	<script async type="text/javascript">
-		$(function(){
-
-			$("#test").gmap3({
-				marker: {
-					latLng: [50.873000,4.310624],
-					options: {
-						draggable:true,
-					},
-					events: {
-						dragend: function(infowindow) {
-						  	$(this).gmap3({
-								getaddress:{
-							  		latLng:marker.getPosition(),
-							  		callback:function(results){
-										var map = $(this).gmap3("get"),
-								  		infowindow = $(this).gmap3({get:"infowindow"}),
-							  			content = results && results[1] ? results && results[1].formatted_address : "25 Avenue du cimetère, ganshoren";
-										if (infowindow){
-							  				infowindow.open(map, marker);
-								  			infowindow.setContent(content);
-										} else {
-								  			$(this).gmap3({
-												infowindow:{
-									  				anchor:marker, 
-									  				options:{content: content}
-												}
-								  			});
-										}
-							  		}
-								}
-						  	});
-						}
-			  		}
-				},
-
-				infowindow:{
-			   		latLng: [50.872891,4.310594],
-			   		draggable: true,
-			   		options:{
-				 		content: "<strong>25ème Porc-épic</strong><br/>25 Avenue du cimetère,<br/>1083 Ganshoren"
-				   	},
-				},
-
-				map:{
-			  		options:{
-						zoom: 15,
-						scrollwheel: false,
-				  	}
-				}
-			});
-		  
-		});
-	</script>
+	<script async src="/js/scout25/index.js" type="text/javascript"></script>
 <?php endif ?>
 
 <!-- Castors, Louveteaux, Scouts, Pis -->
@@ -141,58 +89,33 @@
 
 <!-- Animateurs -->
 <?php if ($view == "zone_anim") : ?>
-    <script async src="/js/libraries/jquery-fileupload/vendor/jquery.ui.widget.js"></script>
-    <script async src="/js/libraries/jquery-fileupload/jquery.fileupload.js"></script>
-    <script async src="/js/libraries/jquery-fileupload/jquery.iframe-transport.js"></script>
-    <script async type="text/javascript">
-        // jQuery
-        $(document).ready(function (){
-            // Settings variables
-            // Download names system
-            var body = $("body");
-            var downloadLinks = $(".download-link");
-            var This;
-            var thisText;
-            // More informations system
-            var thisBox;
+	<!-- External -->
+	<script src="//code.jquery.com/qunit/qunit-1.15.0.js"></script>
+	<script src="//blueimp.github.io/JavaScript-Templates/js/tmpl.min.js"></script>
+	<script src="//blueimp.github.io/JavaScript-Load-Image/js/load-image.all.min.js"></script>
+	<script src="//blueimp.github.io/JavaScript-Canvas-to-Blob/js/canvas-to-blob.min.js"></script>
 
-            // Put the name of the files in the download attribute of the links
-            downloadLinks.each(function (){
-                This = $(this);
-                thisText = This.parent().find('p').text();
+	<!-- Libraries -->
+    <script src="/js/libraries/jquery-fileupload/vendor/jquery.ui.widget.js"></script>
+    <script src="/js/libraries/jquery-fileupload/jquery.iframe-transport.js"></script>
+    <script src="/js/libraries/jquery-fileupload/jquery.fileupload.js"></script>
+	<script>
+		/* global window, $ */
+		window.testBasicWidget = $.blueimp.fileupload;
+	</script>
+	<script src="/js/libraries/jquery-fileupload/jquery.fileupload-process.js"></script>
+	<script src="/js/libraries/jquery-fileupload/jquery.fileupload-image.js"></script>
+	<script src="/js/libraries/jquery-fileupload/jquery.fileupload-validate.js"></script>
+	<script src="/js/libraries/jquery-fileupload/jquery.fileupload-ui.js"></script>
+	<script>
+		/* global window, $ */
+		window.testUIWidget = $.blueimp.fileupload;
+	</script>
+	<!--<script src="/js/libraries/jquery-fileupload/test-fileupload.js"></script>-->
+	<script src="/js/libraries/jquery-fileupload/main.js"></script>
+	<!-- View script -->
+    <script src="/js/scout25/zone_anim.js" type="text/javascript"></script>
 
-                This.attr("download", thisText);
-            });
-
-            // More informations system on inscription-box
-            $(".more-btn").on("click", function() {
-                thisBox = $(this).parent().parent().parent();
-
-                // Collect datas
-                var Id = thisBox.find(".id").val();
-                var Nom = thisBox.find(".nom").val();
-                var Prenom = thisBox.find(".prenom").val();
-                var PrenomEnfant = thisBox.find(".prenomEnfant").val();
-                var Naissance = thisBox.find(".naissance").val();
-                var Mail = thisBox.find(".mail").val();
-                var Gsm = thisBox.find(".gsm").val();
-                var Infos = thisBox.find(".infos").val();
-
-                // Fill the modal
-                $("#id").html(Id);
-                $("#nom").html(Nom);
-                $("#prenom").html(Prenom);
-                $("#prenomEnfant").html(PrenomEnfant);
-                $("#naissance").html(Naissance);
-                $("#mail").html(Mail);
-                $("#gsm").html(Gsm);
-                $("#infos").html(Infos);
-
-				body.css("overflow", "visible");
-                $("#inscription-modal").modal("toggle");
-            });
-        });
-    </script>
 <?php endif ?>
 </body>
 </html>

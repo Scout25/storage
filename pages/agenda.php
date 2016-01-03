@@ -12,7 +12,7 @@ include("../includes/header.php");
                 </div>
             </div>
 
-            <a href="#news" class="btn outline btn-intro">
+            <a href="#agenda" class="btn outline btn-intro">
                 Poursuivre
             </a>
         </div>
@@ -22,11 +22,11 @@ include("../includes/header.php");
 
 
 <main role="main">
-     <section id="news" class="page-section red">
+    <!-- <section id="news" class="page-section red">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-4 col-md-offset-4 text-center">
-                    <h2>Cette semaine:</h2>
+                    <h2>Cette semaine</h2>
                 </div>
             </div>
                 
@@ -40,7 +40,7 @@ include("../includes/header.php");
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- Agenda -->
     <section id="agenda" class="page-section agenda">

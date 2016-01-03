@@ -44,6 +44,60 @@ body.zone_anim {
                     margin-bottom: 30px;
                 }
             }//.inscriptions
+
+            &.fileupload-zone {
+                button {
+                    margin-right: 7px;
+
+                    &:hover {
+                        border-color: $white !important;
+                    }
+
+                    &.delete {
+                        &:hover, &:focus {
+                            background-color: $red;
+                            border-color: $red !important;
+                            color: $white !important;
+                        }
+                    }
+
+                    &.list-btn {
+                        margin-top: 5px;
+                    }
+                }
+                
+                .fileupload-buttonbar {
+                    .main-action-zone {
+                        margin-bottom: 15px;
+                    }
+
+                    .fileupload-progress {
+                        height: 46px;
+                        margin-bottom: 15px;
+
+                        .progress {
+                            margin-bottom: 0;
+                            margin-top: 13px;
+                        }
+                    }
+                }//.fileupload-buttonbar
+
+                table {
+                    tbody.files {
+                        tr {
+                            &.template-download, &.template-upload {
+                                background-color: transparent;
+
+                                p.name {
+                                    a {
+                                        color: $white;
+                                    }
+                                }
+                            }
+                        }
+                    }//.tbody.files
+                }//table
+            }//.fileupload-zone
         }//section
     }//main
 

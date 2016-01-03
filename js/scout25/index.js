@@ -6,9 +6,10 @@ if ( navigator.userAgent.match(/Android/i)
 	 || navigator.userAgent.match(/iPad/i)
 	 || navigator.userAgent.match(/iPod/i)
 	 || navigator.userAgent.match(/BlackBerry/i)
-	 || navigator.userAgent.match(/Windows Phone/i) )
+	 || navigator.userAgent.match(/Windows Phone/i) ) {
 
 	userIsMobile = true;
+}
 
 $(function(){
 
@@ -57,7 +58,7 @@ $(function(){
 	  		options:{
 				zoom: 15,
 				scrollwheel: false,
-				draggable: userIsMobile ? false : true,
+				draggable: userIsMobile ? false : true
 		  	}
 		}
 	});
