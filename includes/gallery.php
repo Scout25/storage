@@ -5,16 +5,16 @@ $this_gallery = 0;
 $thumb_gallery = null;
 
 // Check if there's a directory for this section
-if (is_dir($data)) {
+if (is_dir($data)) :
 
     // Get all galleries
     $galleries = scandir($data);
 
     // Check if there's galleries
-    if (!empty($galleries)) {
+    if (!empty($galleries)) :
 
-        // Check each gallery for its thubnail
-        foreach ($galleries as $gallery) {
+        // Check each gallery for its thumbnail
+        foreach ($galleries as $gallery) :
 
             // Prevent mac hidden file
             if ($gallery == "." || $gallery == "..") :
@@ -24,18 +24,18 @@ if (is_dir($data)) {
                 $thumbs = scandir($data."/".$gallery."/thumbnail");
                 $images_dir = $data."/".$gallery."/";
 
-                foreach ($thumbs as $thumb) {
+                foreach ($thumbs as $thumb) :
 
                     // Prevent mac hidden file
                     if ($thumb == "." || $thumb == "..") {
                         // Do nothing
                     }
                     else {
-                        // Take the first thumb as gallerie thumb
+                        // Take the first thumb as gallery thumb
                         $thumb_gallery = $thumb;
                         break;
                     }
-                }
+                endforeach;
             ?>
 
                 <div class="col-xs-12 col-sm-6 col-md-4 text-center">
@@ -56,7 +56,7 @@ if (is_dir($data)) {
             <?php endif;
 
             $this_gallery++;
-        }
-    }
-}
+        endforeach;
+    endif;
+endif;
 ?>
