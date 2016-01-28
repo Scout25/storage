@@ -4,13 +4,7 @@ $(document).ready(function() {
 		translateMonths: ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Decembre"],
 		monthChangeAnimation: false,
 		events: {
-		  	// Décembre
-	  		"2015-12-06": {"number": 2, "badgeClass": "badge-warning", url: "demi,demi,,"},
-	  		"2015-12-12": {"number": 1, "badgeClass": "badge-warning", url: ",,,Marché de Noël Ganshoren,"},
-	  		"2015-12-13": {"number": 1, "badgeClass": "badge-warning", url: ",,,Marché de Noël Ganshoren,"},
-	  		"2015-12-18": {"number": 1, "badgeClass": "badge-warning", url: ",,cheese,,"},
-	  		"2015-12-19": {"number": 1, "badgeClass": "badge-warning", url: ",,,bar,"},
-
+		  	
 	  		// Janvier
 	  		"2016-01-10": {"number": 3, "badgeClass": "badge-warning", url: "normale,normale,,normale"},
 	  		"2016-01-24": {"number": 2, "badgeClass": "badge-warning", url: ",normale,,normale"},
@@ -22,7 +16,7 @@ $(document).ready(function() {
 	  		"2016-02-08": {"number": 1, "badgeClass": "badge-warning", url: ",,,wePi"},
 	  		"2016-02-09": {"number": 1, "badgeClass": "badge-warning", url: ",,,wePi"},
 	  		"2016-02-14": {"number": 1, "badgeClass": "badge-warning", url: ",,normale,"},
-	  		"2016-02-21": {"number": 4, "badgeClass": "badge-warning", url: "patinoire,patinoire,patinoire,patinoire"},
+	  		"2016-02-21": {"number": 4, "badgeClass": "badge-warning", url: "patinoire,patinoire,patinoire,"},
 	  		"2016-02-28": {"number": 3, "badgeClass": "badge-warning", url: "normale,normale,normale,"},
 
 	  		// Mars
@@ -54,14 +48,14 @@ $(document).ready(function() {
 	  		"2016-06-26": {"number": 2, "badgeClass": "badge-warning", url: "Uniquement la matinée,,,,Barbecue l'après-midi"},
 		}
 	});
-	
+	<!---->
 	var body = $("body");
 	var calendarModal = $("#calendarModal");
 	var modalContent = $("#modalContent");
 	var reunion = {
-	    	patinoire: "Réunion patinoire, infos suivront",
-	        cheese: "Soirée Cheese and Movies | de 18 à 22h30, prix: 5,00€",
-	        piscine: "Réunion piscine : prévoir maillot, bonnet, essuie, (lunettes) et 5,00€",
+		    	patinoire: "Réunion patinoire, rendez-vous à 10H00 à la patinoire Poseidon (Avenue des Vaillants 4, 1200 Bruxelles). Prévoir GANTS, 10,00€ + abonnement STIB, Fin de la réunion 17h au local",
+		        cheese: "Soirée Cheese and Movies | de 18 à 22h30, prix: 5,00€",
+		        piscine: "Réunion piscine : prévoir maillot, bonnet, essuie, (lunettes) et 5,00€",
 			normale: "Réunion normale",
 			speciale: "Réunion spéciale",
 			demi: "Demi Réunion, de 14h à 17h.",
