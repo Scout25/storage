@@ -122,6 +122,51 @@ include("../includes/header.php");
                         </a>
                     </article>
                 </div>
+                
+                <div class="col-xs-12 col-sm-6 col-md-4 text-center">
+                    <article class="gallery-item">
+                        <a 
+                            class="gallery-link"
+                            target="blank"
+                            href="https://www.youtube.com/watch?v=FSZwS4lqH1A"
+                        >
+                            <div class="gallery-infos">
+                                <div id="moresnet2015" class="gallery-picture img-responsive"></div>
+                                <h4 class="gallery-title">Pâques 2015</h4>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+                
+                <div class="col-xs-12 col-sm-6 col-md-4 text-center">
+                    <article class="gallery-item">
+                        <a 
+                            class="gallery-link"
+                            target="blank"
+                            href="https://www.youtube.com/watch?v=sY3N-hsQnu4"
+                        >
+                            <div class="gallery-infos">
+                                <div id="olloy2015" class="gallery-picture img-responsive"></div>
+                                <h4 class="gallery-title">Grand-camp 2015</h4>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+                
+                <div class="col-xs-12 col-sm-6 col-md-4 text-center">
+                    <article class="gallery-item">
+                        <a 
+                            class="gallery-link"
+                            target="blank"
+                            href="https://www.youtube.com/watch?v=sY3N-hsQnu4"
+                        >
+                            <div class="gallery-infos">
+                                <div id="we_novembre_2015" class="gallery-picture img-responsive"></div>
+                                <h4 class="gallery-title">Week-end novembre 2015</h4>
+                            </div>
+                        </a>
+                    </article>
+                </div>
 
                 <?php include("../includes/gallery.php"); ?>
             </div>
