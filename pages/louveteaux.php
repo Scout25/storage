@@ -158,7 +158,7 @@ include("../includes/header.php");
                         <a 
                             class="gallery-link"
                             target="blank"
-                            href="https://www.youtube.com/watch?v=sY3N-hsQnu4"
+                            href="https://www.youtube.com/watch?v=ZE6x94_Cx7A"
                         >
                             <div class="gallery-infos">
                                 <div id="we_novembre_2015" class="gallery-picture img-responsive"></div>
