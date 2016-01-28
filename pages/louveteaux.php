@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 $head_title = "Section Louveteaux, unité du Porc-épic 25, scouts et guides pluralistes de Ganshoren, Bruxelles-Norois";
 include("../includes/header.php");
 ?>
@@ -154,7 +154,7 @@ include("../includes/header.php");
 
                                     <p class="totem">
                                         <a class="red" href="http://fr.wikipedia.org/wiki/Opposum" target="_blank">
-                                            Opposum
+                                            Opossum
                                         </a>
                                     </p>
 
@@ -228,6 +228,52 @@ include("../includes/header.php");
                     </section>
                 </div>
 
+                <!-- Arthur -->
+                <div class="row bg_white">
+                    <section class="animateur">
+                        <div class="col-md-4 col-xs-12">
+                            <aside class="animateur-infos">
+                                <img alt="Arthur" src="../img/id_pastilles/arthur.jpg" class="pull-left border blue">
+                                <address>
+                                    <h3 class="poste red">Animateur :</h3>
+
+                                    <p class="name blue">Arthur Moulin</p>
+
+                                    <p class="totem">
+                                         <a class="red" href="https://fr.wikipedia.org/wiki/Faucon" target="_blank">
+                                            Falco
+                                         </a> 
+                                    </p>
+
+                                    <p class="staff-totem blue">
+                                        Meute :
+                                        <a class="red" href="http://www.sgp.be/IMG/pdf/fiche_lx.pdf#page=12" target="new">
+                                            Frère Gris
+                                        </a>
+                                    </p>
+                                </address>
+                            </aside>
+                        </div>
+
+                        <div class="col-md-8 col-xs-12">
+                            <article>
+                                <a href="http://www.sgp.be/IMG/pdf/fiche_lx.pdf#page=12" target="new">
+                                    <img alt="Frere" src="../img/totem_pastilles/frere_gris.jpg" class="border blue">
+                                </a>
+
+                                <p class="description blue">
+                                    L'aîné des louveteaux de Père Loup et de Mère Louve ; il vient en aide au
+Petit d'homme en guidant, avec Akela, le troupeau de buffles vers le ravin
+où Shere Khan se fait piétiner. Intrépide, Frère Gris n'a pas peur de
+rendre visite à Mowgli, le soir, au Village des hommes. Il aide même le
+Petit d'homme à délivrer Messua, sa mère adoptive. Ses mâchoires sont
+d'un grand secours dans le combat contre les Dholes
+                                </p>
+                            </article>
+                        </div>
+                    </section>
+                </div>
+                
                 <!-- Mao -->
                 <div class="row bg_white">
                     <section class="animateur">
