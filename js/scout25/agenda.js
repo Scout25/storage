@@ -1,7 +1,7 @@
 $(document).ready(function() {
 	$(".responsive-calendar").responsiveCalendar({
 		time: thisMonth,
-		translateMonths: ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Decembre"],
+		translateMonths: ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"],
 		monthChangeAnimation: false,
 		events: {
 		  	
@@ -16,14 +16,17 @@ $(document).ready(function() {
 	  		"2016-02-08": {"number": 1, "badgeClass": "badge-warning", url: ",,,wePi"},
 	  		"2016-02-09": {"number": 1, "badgeClass": "badge-warning", url: ",,,wePi"},
 	  		"2016-02-14": {"number": 1, "badgeClass": "badge-warning", url: ",,normale,"},
-	  		"2016-02-21": {"number": 4, "badgeClass": "badge-warning", url: "patinoire,patinoire,patinoire,"},
-	  		"2016-02-28": {"number": 3, "badgeClass": "badge-warning", url: "normale,normale,normale,"},
+	  		"2016-02-21": {"number": 4, "badgeClass": "badge-warning", url: "patinoire,patinoire,patinoire,demi"},
+	  		"2016-02-26": {"number": 1, "badgeClass": "badge-warning", url: ",,,wePi"},
+	  		"2016-02-27": {"number": 1, "badgeClass": "badge-warning", url: ",,,wePi"},
+	  		"2016-02-28": {"number": 4, "badgeClass": "badge-warning", url: "normale,normale,normale,wePi"},
 
 	  		// Mars
+	  		"2016-03-04": {"number": 1, "badgeClass": "badge-warning", url: ",,,bar"},
 	  		"2016-03-06": {"number": 2, "badgeClass": "badge-warning", url: "normale,,normale,"},
 	  		"2016-03-13": {"number": 3, "badgeClass": "badge-warning", url: "normale,normale,,normale"},
-	  		"2016-03-19": {"number": 1, "badgeClass": "badge-warning", url: ",,24h vélo,"},
-	  		"2016-03-20": {"number": 1, "badgeClass": "badge-warning", url: ",,24h vélo,"},
+	  		"2016-03-19": {"number": 2, "badgeClass": "badge-warning", url: ",,24h velo,Présence au 24h vélo"},
+	  		"2016-03-20": {"number": 2, "badgeClass": "badge-warning", url: ",,24h velo,Présence au 24h vélo"},
 	  		"2016-03-26": {"number": 1, "badgeClass": "badge-warning", url: ",,,Repas Pionniers"},
 
 	  		// Avril
@@ -35,6 +38,7 @@ $(document).ready(function() {
 	  		"2016-04-07": {"number": 3, "badgeClass": "badge-warning", url: ",Camp de pâques,Camp de pâques,Camp de pâques"},
 	  		"2016-04-08": {"number": 3, "badgeClass": "badge-warning", url: ",Camp de pâques,Camp de pâques,Camp de pâques"},
 	  		"2016-04-09": {"number": 3, "badgeClass": "badge-warning", url: ",Camp de pâques,Camp de pâques,Camp de pâques"},
+	  		"2016-04-15": {"number": 1, "badgeClass": "badge-warning", url: ",,,Soirée pi"},
 	  		"2016-04-17": {"number": 4, "badgeClass": "badge-warning", url: "normale,normale,normale,normale"},
 	  		"2016-04-23": {"number": 1, "badgeClass": "badge-warning", url: ",,,,Fête d'Unité"},
 
@@ -53,16 +57,16 @@ $(document).ready(function() {
 	var calendarModal = $("#calendarModal");
 	var modalContent = $("#modalContent");
 	var reunion = {
-		    	patinoire: "Réunion patinoire, rendez-vous à 10H00 à la patinoire Poseidon (Avenue des Vaillants 4, 1200 Bruxelles). Prévoir GANTS, 10,00€ + abonnement STIB, Fin de la réunion 17h au local",
-		        cheese: "Soirée Cheese and Movies | de 18 à 22h30, prix: 5,00€",
-		        piscine: "Réunion piscine : prévoir maillot, bonnet, essuie, (lunettes) et 5,00€",
-			normale: "Réunion normale",
-			speciale: "Réunion spéciale",
-			demi: "Demi Réunion, de 14h à 17h.",
-			wePi: "<a href='/pages/pis.php?#news_pis' target='_blank'>Informations sur le week-end</a>",
-			velo: "<a href='/pages/scouts.php?#news_scouts' target='_blank'>Informations sur les 24h vélo</a>",
-			bar: "Bar pi de noël, de 20h à 03h00",
-		};
+    	patinoire: "Réunion patinoire, rendez-vous à 10H00 à la patinoire Poseidon (Avenue des Vaillants 4, 1200 Bruxelles). Prévoir GANTS, 10,00€ + abonnement STIB, Fin de la réunion 17h au local",
+        cheese: "Soirée Cheese and Movies | de 18 à 22h30, prix: 5,00€",
+        piscine: "Réunion piscine : prévoir maillot, bonnet, essuie, (lunettes) et 5,00€",
+		normale: "Réunion normale",
+		speciale: "Réunion spéciale",
+		demi: "Demi Réunion, de 13h à 17h.",
+		wePi: "<a href='/pages/pis.php?#news_pis' target='_blank'>Informations sur le week-end</a>",
+		velo: "<a href='/pages/scouts.php?#news_scouts' target='_blank'>Informations sur les 24h vélo</a>",
+		bar: "Bar pi",
+	};
 	var reunions;
 	var thisReunion;
 	var section;
