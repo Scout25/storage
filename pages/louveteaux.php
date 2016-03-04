@@ -307,12 +307,7 @@ include("../includes/header.php");
                                 </a>
 
                                 <p class="description blue">
-                                    L'aîné des louveteaux de Père Loup et de Mère Louve ; il vient en aide au
-Petit d'homme en guidant, avec Akela, le troupeau de buffles vers le ravin
-où Shere Khan se fait piétiner. Intrépide, Frère Gris n'a pas peur de
-rendre visite à Mowgli, le soir, au Village des hommes. Il aide même le
-Petit d'homme à délivrer Messua, sa mère adoptive. Ses mâchoires sont
-d'un grand secours dans le combat contre les Dholes
+                                    L'aîné des louveteaux de Père Loup et de Mère Louve ; il vient en aide au Petit d'homme en guidant, avec Akela, le troupeau de buffles vers le ravin où Shere Khan se fait piétiner. Intrépide, Frère Gris n'a pas peur de rendre visite à Mowgli, le soir, au Village des hommes. Il aide même le Petit d'homme à délivrer Messua, sa mère adoptive. Ses mâchoires sont d'un grand secours dans le combat contre les Dholes
                                 </p>
                             </article>
                         </div>
@@ -448,7 +443,7 @@ d'un grand secours dans le combat contre les Dholes
                     <div class="col-md-6 col-md-offset-3 text-center bg_white">
                         <p class="section-mail blue">
                             <i class="fa fa-envelope"></i>
-                            <a href="mailto:louveteau&#64scout25.be">
+                            <a href="mailto:louveteau&#64scout25.be?subject=Envoyé depuis scout25.be">
                                 louveteau&#64;scout25.be
                             </a>
                         </p>

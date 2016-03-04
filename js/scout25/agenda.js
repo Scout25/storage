@@ -40,7 +40,7 @@ $(document).ready(function() {
 	  		"2016-04-09": {"number": 3, "badgeClass": "badge-warning", url: ",Camp de pâques,Camp de pâques,Camp de pâques"},
 	  		"2016-04-15": {"number": 1, "badgeClass": "badge-warning", url: ",,,Soirée pi"},
 	  		"2016-04-17": {"number": 4, "badgeClass": "badge-warning", url: "normale,normale,normale,normale"},
-	  		"2016-04-30": {"number": 1, "badgeClass": "badge-warning", url: ",,,,"},
+	  		"2016-04-30": {"number": 1, "badgeClass": "badge-warning", url: ",,,,Fête d'Unité"},
 
 	  		// Mai
 	  		// "2016-05-01": {"number": 4, "badgeClass": "badge-warning", url: "normale,normale,normale,normale"},

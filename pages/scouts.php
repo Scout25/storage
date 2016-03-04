@@ -353,7 +353,7 @@ include("../includes/header.php");
                     <div class="col-md-6 col-md-offset-3 text-center bg_white">
                         <p class="section-mail blue">
                             <i class="fa fa-envelope"></i>
-                            <a href="mailto:scout&#64scout25.be">
+                            <a href="mailto:scout&#64scout25.be?subject=Envoyé depuis scout25.be">
                                 scout&#64;scout25.be
                             </a>
                         </p>

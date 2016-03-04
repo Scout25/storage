@@ -186,7 +186,7 @@ include("../includes/header.php");
         </div>
     </section>
 
-    <section class="page-section blue fileupload-zone">
+    <section class="page-section blue fileupload-zone" style="display:none">
         <div class="container-fluid">
             <!-- The file upload form used as target for the file upload widget -->
             <form id="fileupload" action="/data/index.php" method="POST" enctype="multipart/form-data">
