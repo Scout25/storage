@@ -1,5 +1,7 @@
 <?php
 $news = false;
+$newsLouveteaux = false;
+$newsCastors = true;
 ?>
 <div class="alert-error">
 	<h3 id="alertText"></h3>
@@ -58,9 +60,9 @@ $news = false;
 						<li>
 							<a class="move" href="/<?= ($view == "castors")?"#top":"pages/castors.php" ?>">Accueil</a>
 						</li>
-						<?php if ($news) : ?>
+						<?php if ($newsCastors) : ?>
 							<li>
-								<a class="move" href="/?#news_castors">News</a>
+								<a class="move" href="/pages/castors.php?#news_castors">News</a>
 							</li>
 						<?php endif ?>
 						<li>
@@ -81,7 +83,7 @@ $news = false;
 						<li>
 							<a class="move" href="/<?= ($view == "louveteaux")?"#top":"pages/louveteaux.php" ?>">Accueil</a>
 						</li>
-						<?php if ($news) : ?>
+						<?php if ($newsLouveteaux) : ?>
 							<li>
 								<a class="move" href="/?#news_louveteaux">News</a>
 							</li>
