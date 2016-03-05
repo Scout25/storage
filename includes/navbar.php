@@ -66,9 +66,6 @@ $newsCastors = true;
 							</li>
 						<?php endif ?>
 						<li>
-							<a class="move" href="/pages/castors.php?#colonie">Infos Pâques</a>
-						</li>
-						<li>
 							<a class="move" href="/pages/castors.php?#colonie">La colonie</a>
 						</li>
 						<li>
@@ -86,14 +83,11 @@ $newsCastors = true;
 						<li>
 							<a class="move" href="/<?= ($view == "louveteaux")?"#top":"pages/louveteaux.php" ?>">Accueil</a>
 						</li>
-						<?php if ($newsLouveteaux) : ?>
+						<?php if ($newsCastors) : ?>
 							<li>
-								<a class="move" href="/?#news_louveteaux">News</a>
+								<a class="move" href="/pages/louveteaux.php?#news_louveteaux">News</a>
 							</li>
 						<?php endif ?>
-						<li>
-							<a class="move" href="/pages/castors.php?#colonie">Infos Pâques</a>
-						</li>
 						<li>
 							<a class="move" href="/pages/louveteaux.php?#meute">La meute</a>
 						</li>
@@ -112,14 +106,11 @@ $newsCastors = true;
 						<li>
 							<a class="move" href="/<?= ($view == "scouts")?"#top":"pages/scouts.php" ?>">Accueil</a>
 						</li>
-						<?php if ($news) : ?>
+						<?php if ($newsCastors) : ?>
 							<li>
-								<a class="move" href="/?#news_scouts">News</a>
+								<a class="move" href="/pages/scouts.php?#news_scouts">News</a>
 							</li>
 						<?php endif ?>
-						<li>
-							<a class="move" href="/pages/castors.php?#colonie">Infos Pâques</a>
-						</li>
 						<li>
 							<a class="move" href="/pages/scouts.php?#troupe">La troupe</a>
 						</li>
@@ -138,14 +129,11 @@ $newsCastors = true;
 						<li>
 							<a class="move" href="/<?= ($view == "pis")?"#top":"pages/pis.php" ?>">Accueil</a>
 						</li>
-						<?php if ($news) : ?>
+						<?php if ($newsCastors) : ?>
 							<li>
-								<a class="move" href="/?#news_pis">News</a>
+								<a class="move" href="/pages/pis.php?#news_pis">News</a>
 							</li>
 						<?php endif ?>
-						<li>
-							<a class="move" href="/pages/castors.php?#colonie">Infos Pâques</a>
-						</li>
 						<li>
 							<a class="move" href="/pages/pis.php?#relais">Le relais</a>
 						</li>
