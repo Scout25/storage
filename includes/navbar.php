@@ -66,6 +66,9 @@ $newsCastors = true;
 							</li>
 						<?php endif ?>
 						<li>
+							<a class="move" href="/pages/castors.php?#colonie">Infos Pâques</a>
+						</li>
+						<li>
 							<a class="move" href="/pages/castors.php?#colonie">La colonie</a>
 						</li>
 						<li>
@@ -88,6 +91,9 @@ $newsCastors = true;
 								<a class="move" href="/?#news_louveteaux">News</a>
 							</li>
 						<?php endif ?>
+						<li>
+							<a class="move" href="/pages/castors.php?#colonie">Infos Pâques</a>
+						</li>
 						<li>
 							<a class="move" href="/pages/louveteaux.php?#meute">La meute</a>
 						</li>
@@ -112,6 +118,9 @@ $newsCastors = true;
 							</li>
 						<?php endif ?>
 						<li>
+							<a class="move" href="/pages/castors.php?#colonie">Infos Pâques</a>
+						</li>
+						<li>
 							<a class="move" href="/pages/scouts.php?#troupe">La troupe</a>
 						</li>
 						<li>
@@ -134,6 +143,9 @@ $newsCastors = true;
 								<a class="move" href="/?#news_pis">News</a>
 							</li>
 						<?php endif ?>
+						<li>
+							<a class="move" href="/pages/castors.php?#colonie">Infos Pâques</a>
+						</li>
 						<li>
 							<a class="move" href="/pages/pis.php?#relais">Le relais</a>
 						</li>
