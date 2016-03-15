@@ -38,7 +38,7 @@ include("../includes/header.php");
                     <article>
                         <h3>Lieu :</h3>
                         <br/>
-                        <p class="p1 lead">Panhuis - 4851 Plombières</p>
+                        <p class="p1 lead">Terhaegen, 48 - 4851 Plombières</p>
                         <h3>Départ :</h3>
                         <br/>
                         <p class="p1 lead">02 avril 2016 à 08h30 à la Gare du Nord</p>
