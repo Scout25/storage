@@ -38,7 +38,7 @@ include("../includes/header.php");
                     <article>
                         <h3>Lieu :</h3>
                         <br/>
-                        <p class="p1 lead">Panhuis - 4851 Plombières</p>
+                        <p class="p1 lead">Terhaegen, 48 - 4851 Plombières</p>
                         <h3>Départ :</h3>
                         <br/>
                         <p class="p1 lead">02 avril 2016 à 08h30 à la Gare du Nord</p>
@@ -78,49 +78,7 @@ include("../includes/header.php");
 
 
 <main role="main">
-<!-- ////////////// INFOS -->
-<section id="news_castors" class="page-section blue">
-    <div class="row">
-        <div class="col-md-4 col-md-offset-4 text-center">
-            <h2>Infos camp de Pâques colonie</h2>
-            <hr>
-        </div>
-    </div>
 
-    <div class="row">
-        <div class="col-md-6 column col-xs-12">
-            <div class="service-item">
-                <h3>Lieu :</h3>
-                <p class="lead">Panhuis - 4851 Plombières</p>
-
-                <h3>Départ :</h3>
-                <p class="lead">02 avril 2016 à 08h30 à la Gare du Nord</p>
-
-                <h3>Retour :</h3>
-                <p class="lead">Le 04 avril 2016 à 18h20 à la Gare du Nord</p>
-            </div>
-        </div>
-        
-        <div class="col-md-6 column col-xs-12">
-            <div class="service-item">
-                <h3>Thème :</h3>
-                <p class="lead">British</p>
-
-                <h3>Prix :</h3><p class="lead">35,00€ à verser avant le 15/03/16 sur le compte BE12-3101-5849-8692, communication : PAQUES - nom(s) prénom(s)</p>
-
-                <h3>Matériel :</h3><p class="lead">à venir...</p> 
-            </div>
-        </div>
-        
-        <div class="col-xs-12">
-            <div class="service-item text-center">
-                <p><img class="attention" src="/img/icons/attention.png" alt="Important" title="Important"> Confirmer la présence le plus vite possible par <a class="a-white" href="mailto:unite@scout25.be?subject=Envoyé depuis scout25.be">email</a> (le versement ne confirme pas la présence)</p>
-
-                <p><img class="attention" src="/img/icons/attention.png" alt="Important" title="Important"> Apporter la <a class="a-white" href="../documents/fiche_medic.pdf" target="blank">fiche médicale</a>, <a class="a-white" href="../documents/autor_parent_lx.pdf" target="blank">l'autorisation parentale</a> le jour du départ</p>
-            </div>
-        </div>
-</div>
-</section>
     <!-- Colonie -->
     <section id="colonie" class="page-section red colonie">
         <div class="container-fluid">
