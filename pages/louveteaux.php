@@ -57,7 +57,7 @@ include("../includes/header.php");
                         <p class="p1 lead">110,00€ (100,00€ à partir du 3eme enfant) à verser avant le 15/03/16 sur le compte BE12-3101-5849-8692, communication : PAQUES - nom(s) prénom(s)</p>
                         <h3>Matériel :</h3>
                         <br/>
-                        <p class="p1 lead">à venir...</p>
+                        <p class="p1 lead"><a style="color:#fff;" href="http://scout25.be/documents/LX_PLOMBIERES2016_Liste%20matos.pdf" target="new">Liste ici</a></p>
                     </article>
                 </div>
                 <div class="col-xs-12">
@@ -215,7 +215,7 @@ include("../includes/header.php");
                             href="https://www.youtube.com/watch?v=ZE6x94_Cx7A"
                         >
                             <div class="gallery-infos">
-                                <div id="we_novembre_2015" class="gallery-picture img-responsive"></div>
+                                <div id="we_novembre_2015" class="gallery-picture img-responsive" style="background: url(/img/louveteaux/we_novembre_2015/img_01.jpg);"></div>
                                 <h4 class="gallery-title">Week-end novembre 2015</h4>
                             </div>
                         </a>
