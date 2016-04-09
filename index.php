@@ -32,7 +32,7 @@ include("includes/header.php");
 </header>
 
 <main class="index" role="main">
-    <section class="page-section blue">
+    <section class="page-section red">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-6 col-md-offset-3 text-center">
