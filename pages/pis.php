@@ -11,7 +11,7 @@ include("../includes/header.php");
                     <h1 class="border">Les pionniers</h1>
 
                     <div class="first_bouton">
-                        <a href="#relais" class="btn outline white">
+                        <a href="#infos" class="btn outline white">
                             Poursuivre
                         </a>
                     </div>
@@ -20,6 +20,61 @@ include("../includes/header.php");
         </div>
     </section>
 </header>
+
+
+
+
+
+<section id="infos" class="page-section blue" style="background-color:#2157A1;">
+    <br><br>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 text-center">
+                    <h2>Infos camp de Pâques relais</h2>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-12 col-md-6">
+                    <article>
+                        <h3>Lieu :</h3>
+                        <br/>
+                        <p class="p1 lead">Terhaegen, 48 - 4851 Plombières</p>
+                        <h3>Départ :</h3>
+                        <br/>
+                        <p class="p1 lead">02 avril 2016 à 08h30 à la Gare du Nord</p>
+                        <h3>Retour :</h3>
+                        <br/>
+                        <p class="p1 lead">Le 09 avril 2016 entre 11h30 et 11h45 <strong>sur le lieu du camp</strong> (Sippenaeken)</p>
+                    </article>
+                </div>
+                <div class="col-xs-12 col-md-6">
+                    <article>
+                        <h3>Thème :</h3>
+                        <br/>
+                        <p class="p1 lead">British</p>
+                        <h3>Prix :</h3>
+                        <br/>
+                        <p class="p1 lead">110,00€ (100,00€ à partir du 3eme enfant) à verser avant le 15/03/16 sur le compte BE12-3101-5849-8692, communication : PAQUES - nom(s) prénom(s)</p>
+                        <h3>Matériel :</h3>
+                        <br/>
+                        <p class="p1 lead">à venir...</p>
+                    </article>
+                </div>
+                <div class="col-xs-12">
+                    <article>
+                        <div class="service-item text-center">
+                            <p><img class="attention" src="/img/icons/attention.png" alt="Important" title="Important"> Confirmer la présence le plus vite possible par <a style="color:#fff;" href="mailto:unite@scout25.be">email</a> (le versement ne confirme pas la présence)</p>
+                            <p><img class="attention" src="/img/icons/attention.png" alt="Important" title="Important"> Apporter la <a style="color:#fff;" href="../documents/fiche_medic.pdf" target="blank">fiche médicale</a>, <a style="color:#fff;" href="../documents/autor_parent.pdf" target="blank">l'autorisation parentale</a> le jour du départ</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    <br><br>
+</section>
+
+
 
 <main role="main">
     <!-- Relais -->

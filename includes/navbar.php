@@ -83,9 +83,9 @@ $newsCastors = true;
 						<li>
 							<a class="move" href="/<?= ($view == "louveteaux")?"#top":"pages/louveteaux.php" ?>">Accueil</a>
 						</li>
-						<?php if ($newsLouveteaux) : ?>
+						<?php if ($newsCastors) : ?>
 							<li>
-								<a class="move" href="/?#news_louveteaux">News</a>
+								<a class="move" href="/pages/louveteaux.php?#news_louveteaux">News</a>
 							</li>
 						<?php endif ?>
 						<li>
@@ -106,9 +106,9 @@ $newsCastors = true;
 						<li>
 							<a class="move" href="/<?= ($view == "scouts")?"#top":"pages/scouts.php" ?>">Accueil</a>
 						</li>
-						<?php if ($news) : ?>
+						<?php if ($newsCastors) : ?>
 							<li>
-								<a class="move" href="/?#news_scouts">News</a>
+								<a class="move" href="/pages/scouts.php?#news_scouts">News</a>
 							</li>
 						<?php endif ?>
 						<li>
@@ -129,9 +129,9 @@ $newsCastors = true;
 						<li>
 							<a class="move" href="/<?= ($view == "pis")?"#top":"pages/pis.php" ?>">Accueil</a>
 						</li>
-						<?php if ($news) : ?>
+						<?php if ($newsCastors) : ?>
 							<li>
-								<a class="move" href="/?#news_pis">News</a>
+								<a class="move" href="/pages/pis.php?#news_pis">News</a>
 							</li>
 						<?php endif ?>
 						<li>

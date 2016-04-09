@@ -57,7 +57,28 @@ include("includes/header.php");
             </div>
         </div>
     </section>
-    
+
+    <!-- Infos camps -->
+    <section id="infos" class="page-section blue" style="background-color:#2157A1;">
+        <br><br>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3 text-center">
+                        <h2>Infos camp de Pâques</h2>
+                    </div>
+                </div>
+                <br><br>
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3 text-center">
+                        <a href="pages/castors.php?#news_castors" target="blank" class="btn outline btn-intro">Castors</a>&nbsp;&nbsp;&nbsp;
+                        <a href="pages/louveteaux.php?#news_louveteaux" target="blank" class="btn outline btn-intro">Louveteaux</a>&nbsp;&nbsp;&nbsp;
+                        <a href="pages/scouts.php?#news_scouts" target="blank" class="btn outline btn-intro">Scouts</a>&nbsp;&nbsp;&nbsp;
+                        <a href="pages/pis.php?#news_pis" target="blank" class="btn outline btn-intro">Pionniers</a>
+                    </div>
+                </div>
+             </div>
+        <br><br>
+    </section>
     <!-- Sections -->
     <section id="sections" class="page-section red sections">
         <div class="container-fluid">
