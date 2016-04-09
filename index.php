@@ -32,6 +32,32 @@ include("includes/header.php");
 </header>
 
 <main class="index" role="main">
+    <section class="page-section blue">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 text-center">
+                    <h2>ATTENTION FORMULE CHANGEE</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <p>Le temps² (météo et le timing du lieu) ne nous permettent plus de tenir le BBQ de fin de camp.
+                    Nous vous accueillons avec toujours autant de plaisir à partir de 10h pour un moment convivial, c’est l’occasion rêvée de parler aux animateurs et de se détendre avant la route du retour ( la lessive et les devoirs oubliés).
+                    Les co-voiturages sont prévus.
+                    Un SMS et une mise à jour du site suivront ce message.
+                    Toutes questions quant à ce changement de programme: 
+                    0472 61 43 86 
+                    PAS d’E-MAIL
+                    Merci pour votre compréhension
+                    En attendant, quelques photos pour vous rassurer! Tout va bien et pour le mieux!
+                    Adam Cambier, resp. d’unité
+                    0472 61 43 86 
+                    PAS d’E-MAIL</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
     <!-- Sections -->
     <section id="sections" class="page-section red sections">
         <div class="container-fluid">
