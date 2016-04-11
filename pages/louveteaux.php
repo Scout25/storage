@@ -286,47 +286,7 @@ include("../includes/header.php");
                     </section>
                 </div>
 
-                <!-- Eryx -->
-                <div class="row bg_white">
-                    <section class="animateur">
-                        <div class="col-md-4 col-xs-12">
-                            <aside class="animateur-infos">
-                                <img alt="Laurent" src="../img/id_pastilles/dylan.jpg" class="pull-left border blue">
-                                <address>
-                                    <h3 class="poste red">Animateur :</h3>
-
-                                    <p class="name blue">Dylan Bogaert</p>
-
-                                    <p class="totem">
-                                        <a class="red" href="https://fr.wikipedia.org/wiki/Eryx_jaculus" target="_blank">
-                                            Eryx
-                                        </a>
-                                    </p>
-
-                                    <p class="staff-totem blue">
-                                        Meute :
-                                        <a class="red" href="http://www.sgp.be/IMG/pdf/fiche_lx.pdf#page=12" target="new">
-                                            Jacala
-                                        </a>
-                                    </p>
-                                </address>
-                            </aside>
-                        </div>
-
-                        <div class="col-md-8 col-xs-12">
-                            <article>
-                                <a href="http://www.sgp.be/IMG/pdf/fiche_lx.pdf#page=12" target="new">
-                                    <img alt="Jacala" src="../img/totem_pastilles/jacala.jpg" class="border blue">
-                                </a>
-
-                                <p class="description blue">
-                                    Jacala est le crocodile de la Waingunga contre lequel Mowgli a combattu une nuit entière dans les marécages du nord, brisant son couteau sur le dos cuirassé du monstre.
-                                </p>
-                            </article>
-                        </div>
-                    </section>
-                </div>
-
+                
                 <!-- Arthur -->
                 <div class="row bg_white">
                     <section class="animateur">
@@ -450,7 +410,7 @@ include("../includes/header.php");
                     </section>
                 </div>
 
-                <!-- Picotin -->
+                <!-- Mangue -->
                 <div class="row bg_white">
                     <section class="animateur">
                         <div class="col-md-4 col-xs-12">
