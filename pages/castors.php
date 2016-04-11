@@ -24,7 +24,7 @@ include("../includes/header.php");
 
 
 
-<section id="infos" class="page-section blue" style="background-color:#2157A1;">
+<!-- <section id="infos" class="page-section blue" style="background-color:#2157A1;">
     <br><br>
         <div class="container-fluid">
             <div class="row">
@@ -71,7 +71,7 @@ include("../includes/header.php");
             </div>
         </div>
     <br><br>
-</section>
+</section> -->
 
 
 
