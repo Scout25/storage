@@ -199,11 +199,11 @@ include("../includes/header.php");
                     <section class="animateur">
                         <div class="col-md-4 col-xs-12">
                             <aside class="animateur-infos">
-                                <img alt="Raquelle" src="../img/id_pastilles/raqui.jpg" class="pull-left border blue">
+                                <img alt="Raquel" src="../img/id_pastilles/raqui.jpg" class="pull-left border blue">
                                 <address>
                                     <h3 class="poste red">Responsable de troupe :</h3>
 
-                                    <p class="name blue">Raquelle Installé</p>
+                                    <p class="name blue">Raquel Installé</p>
 
                                     <p class="totem">
                                         <a class="red" href="http://fr.wikipedia.org/wiki/Hemione" target="_blank">
