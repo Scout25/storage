@@ -32,7 +32,7 @@ include("includes/header.php");
 </header>
 
 <main class="index" role="main">
-    <section class="page-section red">
+    <!-- <section class="page-section red">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-6 col-md-offset-3 text-center">
@@ -56,10 +56,10 @@ include("includes/header.php");
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- Infos camps -->
-    <section id="infos" class="page-section blue" style="background-color:#2157A1;">
+    <!-- <section id="infos" class="page-section blue" style="background-color:#2157A1;">
         <br><br>
             <div class="container-fluid">
                 <div class="row">
@@ -78,7 +78,7 @@ include("includes/header.php");
                 </div>
              </div>
         <br><br>
-    </section>
+    </section> -->
     <!-- Sections -->
     <section id="sections" class="page-section red sections">
         <div class="container-fluid">
