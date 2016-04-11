@@ -218,40 +218,6 @@ include("../includes/header.php");
                         </div>
                     </section>
                 </div>
-
-                <!-- Serval -->
-                <div class="row bg_white">
-                    <section class="animateur">
-                        <div class="col-md-4 col-xs-12">
-                            <aside class="animateur-infos">
-                                <img alt="Alexis" src="../img/id_pastilles/rien.jpg" class="pull-left border blue">
-                                <address>
-                                    <h3 class="poste red">Animateur :</h3>
-
-                                    <p class="name blue">Martin Lambion</p>
-
-                                    <p class="totem">
-                                        <a class="red" href="http://fr.wikipedia.org/wiki/Serval" target="_blank">
-                                            Serval
-                                        </a>
-                                    </p>
-                                </address>
-                            </aside>
-                        </div>
-
-                        <div class="col-md-8 col-xs-12">
-                            <article>
-                                <a href="http://fr.wikipedia.org/wiki/Serval" target="new">
-                                    <img alt="Serval" src="../img/totem_pastilles/serval.jpg" class="border blue">
-                                </a>
-
-                                <p class="description blue">
-                                    Le serval est la seule espèce du genre Leptailurus. Des analyses d'ADN ont montré que le serval descend du même ancêtre que le lion, mais qu'il constitue une lignée unique n'ayant pas de rapports proches avec d'autres espèces de félins, bien qu'il présente quelques points communs avec le guépard. Cependant, d'autres études indiquent que le serval est proche du chat doré africain ainsi que du caracal1. Sa longueur est d’environ 85 à 112 cm, et celle de sa queue de l’ordre de 30 à 50 cm. Il mesure de 54 à 66 cm au garrot. Son poids est de 9 à 16 kg chez les femelles, de 12 à 26 kg chez les mâles.
-                                </p>
-                            </article>
-                        </div>
-                    </section>
-                </div>
             </section>
 
             <footer>
