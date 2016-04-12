@@ -39,7 +39,8 @@ $(document).ready(function() {
 	  		"2016-04-08": {"number": 3, "badgeClass": "badge-warning", url: ",Camp de pâques,Camp de pâques,Camp de pâques"},
 	  		"2016-04-09": {"number": 3, "badgeClass": "badge-warning", url: ",Camp de pâques,Camp de pâques,Camp de pâques"},
 	  		"2016-04-15": {"number": 1, "badgeClass": "badge-warning", url: ",,,Soirée pi"},
-	  		"2016-04-17": {"number": 4, "badgeClass": "badge-warning", url: "normale,normale,normale,normale"},
+	  		"2016-04-17": {"number": 3, "badgeClass": "badge-warning", url: "normale,normale,,normale"},
+	  		"2016-04-24": {"number": 1, "badgeClass": "badge-warning", url: ",,demi,"},
 	  		"2016-04-30": {"number": 1, "badgeClass": "badge-warning", url: ",,,,Fête d'Unité"},
 
 	  		// Mai
@@ -62,7 +63,7 @@ $(document).ready(function() {
         piscine: "Réunion piscine : prévoir maillot, bonnet, essuie, (lunettes) et 5,00€",
 		normale: "Réunion normale",
 		speciale: "Réunion spéciale",
-		demi: "Demi Réunion, de 13h à 17h.",
+		demi: "Demi Réunion, de 12h30 à 17h.",
 		wePi: "<a href='/pages/pis.php?#news_pis' target='_blank'>Informations sur le week-end</a>",
 		velo: "<a href='/pages/scouts.php?#news_scouts' target='_blank'>Informations sur les 24h vélo</a>",
 		bar: "Bar pi",
