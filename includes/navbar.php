@@ -164,7 +164,7 @@ $newsCastors = true;
 
 			<ul class="nav navbar-nav navbar-right">
 				<li>
-					<a class="li_navbar <?= ($view == "inscriptions")?"active":null ?>" href="/pages/inscriptions.php">Inscriptions</a>
+					<a class="li_navbar <?= ($view == "inscriptions")?"active":null ?>" href="http://goo.gl/forms/HCdMhxWr4t" target="blank">Inscriptions Fête d'unité</a>
 				</li>
 				
 				<li>
