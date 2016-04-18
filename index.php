@@ -32,31 +32,32 @@ include("includes/header.php");
 </header>
 
 <main class="index" role="main">
-    <!-- <section class="page-section red">
+    <section class="page-section blue">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-6 col-md-offset-3 text-center">
-                    <h2>ATTENTION FORMULE CHANGEE</h2>
+                    <h2>FETE D'UNITE 2016</h2>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-12">
-                    <p>Le temps² (météo et le timing du lieu) ne nous permettent plus de tenir le BBQ de fin de camp.
-                    Nous vous accueillons avec toujours autant de plaisir à partir de 10h pour un moment convivial, c’est l’occasion rêvée de parler aux animateurs et de se détendre avant la route du retour ( la lessive et les devoirs oubliés).
-                    Les co-voiturages sont prévus.
-                    Un SMS et une mise à jour du site suivront ce message.
-                    Toutes questions quant à ce changement de programme: 
-                    0472 61 43 86 
-                    PAS d’E-MAIL
-                    Merci pour votre compréhension
-                    En attendant, quelques photos pour vous rassurer! Tout va bien et pour le mieux!
-                    Adam Cambier, resp. d’unité
-                    0472 61 43 86 
-                    PAS d’E-MAIL</p>
+                <div class="col-md-12 text-center">
+                    <p>Toute l’Unité vous présentera en effet ce samedi 30 avril 2016 son tout nouveau spectacle ! 
+                       <br>Prévenez tous les gens autour de vous oncles et tantes, marraines et parrains, grands-parents…pour partager ce chouette moment ensemble.
+                       <br><br>Nous vous attendons donc à l’école du Poelbos (Avenue du Laerbeek 110, 1090 Bruxelles, à côté de l’UZ VUB) à 17H00 pour le drink de l’amitié.
+                       <br>Le spectacle débutera à 18 suivi du repas. La soirée se terminera vers 22h00.
+                       <br><em>Pour rappel, les enfants sont attendus à 13H.</em>
+                       <br><br>Pour le repas, nous vous proposons une formule ‘Hamburger / salade’, suivi d’un dessert. Ce repas vous est proposé pour la somme de 10€ pour enfants jusque 12 ans (comprenant un hamburger) et de 12€ pour les plus grands (deux hamburgers). Sur place, vous aurez le choix entre le ‘Hamburger Classique’, le ‘Hamburger Poulet’, le ‘Mexicano’, un ‘Hot-Dog’ ou encore un ‘Boudin’ (noir ou blanc).
+                       <br><br>Veuillez noter que tous les paiements se feront sur place au comptant.
+                       <br>Si possible, merci de venir avec le compte juste. Nous utiliserons les jetons.
+                       <br>Tous les bénéfices de cette soirée seront destinés aux financements des activités spéciales de l’unité.
+                       <br><br><br> Merci de nous confirmer votre venue pour le 22 avril 2016 au plus tard via le formulaire en ligne :
+                       <br><br><br><a href="http://goo.gl/forms/HCdMhxWr4t" target="blank" class="btn outline btn-intro">INSCRIPTIONS</a>
+                       <br><br><br>ou <a href="MAILTTO:unite@scout25.be">unite@scout25.be</a> ou éventuellement par téléphone (0472 614 386) en précisant le nombre de repas réservés (précisez ‘enfant’ ou ‘adulte’).
+                       <br>Cela nous permettra de prévoir les quantités.</p>
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
 
     <!-- Infos camps -->
     <!-- <section id="infos" class="page-section blue" style="background-color:#2157A1;">
@@ -64,19 +65,47 @@ include("includes/header.php");
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-6 col-md-offset-3 text-center">
-                        <h2>Infos camp de Pâques</h2>
+                        <h2>Fête d'unité 2016</h2>
                     </div>
                 </div>
-                <br><br>
+
                 <div class="row">
-                    <div class="col-md-6 col-md-offset-3 text-center">
-                        <a href="pages/castors.php?#news_castors" target="blank" class="btn outline btn-intro">Castors</a>&nbsp;&nbsp;&nbsp;
-                        <a href="pages/louveteaux.php?#news_louveteaux" target="blank" class="btn outline btn-intro">Louveteaux</a>&nbsp;&nbsp;&nbsp;
-                        <a href="pages/scouts.php?#news_scouts" target="blank" class="btn outline btn-intro">Scouts</a>&nbsp;&nbsp;&nbsp;
-                        <a href="pages/pis.php?#news_pis" target="blank" class="btn outline btn-intro">Pionniers</a>
+                    <div class="col-xs-12 col-md-6">
+                        <article>
+                            <h3>Lieu :</h3>
+                            <br/>
+                            <p class="p1 lead">Poelboch</p>
+                            <h3>Départ :</h3>
+                            <br/>
+                            <p class="p1 lead">02 avril 2016 à 08h30 à la Gare du Nord</p>
+                            <h3>Retour :</h3>
+                            <br/>
+                            <p class="p1 lead">Le 09 avril 2016 entre 11h30 et 11h45 <strong>sur le lieu du camp</strong> (Sippenaeken)</p>
+                        </article>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <article>
+                            <h3>Thème :</h3>
+                            <br/>
+                            <p class="p1 lead">British</p>
+                            <h3>Prix :</h3>
+                            <br/>
+                            <p class="p1 lead">110,00€ (100,00€ à partir du 3eme enfant) à verser avant le 15/03/16 sur le compte BE12-3101-5849-8692, communication : PAQUES - nom(s) prénom(s)</p>
+                            <h3>Matériel :</h3>
+                            <br/>
+                            <p class="p1 lead"><a style="color:#fff;" href="http://scout25.be/documents/LX_PLOMBIERES2016_Liste%20matos.pdf" target="new">Liste ici</a></p>
+                        </article>
+                    </div>
+                    <div class="col-xs-12">
+                        <article>
+                            <div class="service-item text-center">
+                                <p><img class="attention" src="/img/icons/attention.png" alt="Important" title="Important"> Confirmer la présence le plus vite possible par <a style="color:#fff;" href="mailto:unite@scout25.be">email</a> (le versement ne confirme pas la présence)</p>
+                                <p><img class="attention" src="/img/icons/attention.png" alt="Important" title="Important"> Apporter la <a style="color:#fff;" href="../documents/fiche_medic.pdf" target="blank">fiche médicale</a>, <a style="color:#fff;" href="../documents/autor_parent.pdf" target="blank">l'autorisation parentale</a> le jour du départ</p>
+                            </div>
+                        </article>
                     </div>
                 </div>
-             </div>
+            </div>
         <br><br>
     </section> -->
     <!-- Sections -->
