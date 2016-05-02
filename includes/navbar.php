@@ -163,9 +163,9 @@ $newsCastors = true;
 			</ul>
 
 			<ul class="nav navbar-nav navbar-right">
-				<li>
+				<!-- <li>
 					<a class="li_navbar <?= ($view == "inscriptions")?"active":null ?>" href="http://goo.gl/forms/HCdMhxWr4t" target="blank">Inscriptions Fête d'unité</a>
-				</li>
+				</li> -->
 				
 				<li>
 					<a class="li_navbar <?= ($view == "anim")?"active":null ?>" href="/pages/zone_anim.php">Zone animateurs</a>
