@@ -36,24 +36,12 @@ include("includes/header.php");
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-6 col-md-offset-3 text-center">
-                    <h2>FETE D'UNITE 2016</h2>
+                    <h2>ANNULATION REUNION SCOUTS 08 MAI 2016</h2>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <p>Toute l’Unité vous présentera en effet ce samedi 30 avril 2016 son tout nouveau spectacle ! 
-                       <br>Prévenez tous les gens autour de vous oncles et tantes, marraines et parrains, grands-parents…pour partager ce chouette moment ensemble.
-                       <br><br>Nous vous attendons donc à l’école du Poelbos (Avenue du Laerbeek 110, 1090 Bruxelles, à côté de l’UZ VUB) à 17H00 pour le drink de l’amitié.
-                       <br>Le spectacle débutera à 18 suivi du repas. La soirée se terminera vers 22h00.
-                       <br><em>Pour rappel, les enfants sont attendus à 13H.</em>
-                       <br><br>Pour le repas, nous vous proposons une formule ‘Hamburger / salade’, suivi d’un dessert. Ce repas vous est proposé pour la somme de 10€ pour enfants jusque 12 ans (comprenant un hamburger) et de 12€ pour les plus grands (deux hamburgers). Sur place, vous aurez le choix entre le ‘Hamburger Classique’, le ‘Hamburger Poulet’, le ‘Mexicano’, un ‘Hot-Dog’ ou encore un ‘Boudin’ (noir ou blanc).
-                       <br><br>Veuillez noter que tous les paiements se feront sur place au comptant.
-                       <br>Si possible, merci de venir avec le compte juste. Nous utiliserons les jetons.
-                       <br>Tous les bénéfices de cette soirée seront destinés aux financements des activités spéciales de l’unité.
-                       <br><br><br> Merci de nous confirmer votre venue pour le 22 avril 2016 au plus tard via le formulaire en ligne :
-                       <br><br><br><a href="http://goo.gl/forms/HCdMhxWr4t" target="blank" class="btn outline btn-intro">INSCRIPTIONS</a>
-                       <br><br><br>ou <a href="MAILTTO:unite@scout25.be">unite@scout25.be</a> ou éventuellement par téléphone (0472 614 386) en précisant le nombre de repas réservés (précisez ‘enfant’ ou ‘adulte’).
-                       <br>Cela nous permettra de prévoir les quantités.</p>
+                    <p>En raison d'un manque d'animateurs, la réunion scouts du 08 mai 2016 est annulée.<br> Pour plus d'info : <a href="mailto:scout@scout25.be">scout@scout25.be</a></p>
                 </div>
             </div>
         </div>
