@@ -45,7 +45,6 @@ $(document).ready(function() {
 
 	  		// Mai
 	  		// "2016-05-01": {"number": 4, "badgeClass": "badge-warning", url: "normale,normale,normale,normale"},
-	  		"2016-05-08": {"number": 1, "badgeClass": "badge-warning", url: ",,normale,"},
 	  		"2016-05-15": {"number": 3, "badgeClass": "badge-warning", url: "normale,normale,,normale"},
 	  		"2016-05-29": {"number": 1, "badgeClass": "badge-warning", url: ",,,normale"},
 
