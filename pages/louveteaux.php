@@ -24,12 +24,12 @@ include("../includes/header.php");
 
 
 
-<!-- <section id="infos" class="page-section blue" style="background-color:#2157A1;">
+<section id="infos" class="page-section blue" style="background-color:#2157A1;">
     <br><br>
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-6 col-md-offset-3 text-center">
-                    <h2>Infos camp de Pâques meute</h2>
+                    <h2>Infos Grand Camp meute 2016</h2>
                 </div>
             </div>
 
@@ -38,26 +38,26 @@ include("../includes/header.php");
                     <article>
                         <h3>Lieu :</h3>
                         <br/>
-                        <p class="p1 lead">Terhaegen, 48 - 4851 Plombières</p>
+                        <p class="p1 lead">La Roche-En-Ardenne</p>
                         <h3>Départ :</h3>
                         <br/>
-                        <p class="p1 lead">02 avril 2016 à 08h30 à la Gare du Nord</p>
+                        <p class="p1 lead">16 juillet 2016 à 08h00 à la Gare du Nord</p>
                         <h3>Retour :</h3>
                         <br/>
-                        <p class="p1 lead">Le 09 avril 2016 entre 11h30 et 11h45 <strong>sur le lieu du camp</strong> (Sippenaeken)</p>
+                        <p class="p1 lead">Le 31 juillet 2016 à 18h15 à la Gare du Nord</p>
                     </article>
                 </div>
                 <div class="col-xs-12 col-md-6">
                     <article>
                         <h3>Thème :</h3>
                         <br/>
-                        <p class="p1 lead">British</p>
+                        <p class="p1 lead">Harry Potter</p>
                         <h3>Prix :</h3>
                         <br/>
-                        <p class="p1 lead">110,00€ (100,00€ à partir du 3eme enfant) à verser avant le 15/03/16 sur le compte BE12-3101-5849-8692, communication : PAQUES - nom(s) prénom(s)</p>
+                        <p class="p1 lead">190,00€ (140,00€ à pour le 3ème enfants) à verser avant le 31/06/16 sur le compte BE07-3631-0573-2666, communication : LX-LAROCHE2016-NOM-PRENOM</p>
                         <h3>Matériel :</h3>
                         <br/>
-                        <p class="p1 lead"><a style="color:#fff;" href="http://scout25.be/documents/LX_PLOMBIERES2016_Liste%20matos.pdf" target="new">Liste ici</a></p>
+                        <p class="p1 lead"><a style="color:#fff;" href="http://scout25.be/documents/matos_lx_gc_2016.pdf" target="new">Liste ici</a></p>
                     </article>
                 </div>
                 <div class="col-xs-12">
@@ -71,7 +71,7 @@ include("../includes/header.php");
             </div>
         </div>
     <br><br>
-</section> -->
+</section>
 
 
 
