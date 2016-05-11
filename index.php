@@ -83,7 +83,7 @@ include("includes/header.php");
                         <article>
                             <div class="service-item text-center">
                                 <p><img class="attention" src="/img/icons/attention.png" alt="Important" title="Important">Confirmer la présence le plus vite possible par email dans la section de votre/vos enfant(s) : <a href="mailto:castor@scout25.be" style="color:#fff;">castors</a> , <a href="mailto:louveteau@scout25.be" style="color:#fff;">louveteaux</a> , <a href="mailto:scout@scout25.be" style="color:#fff;">scouts</a> , <a href="mailto:pionnier@scout25.be" style="color:#fff;">pionniers</a>.</p>
-                                <br><p>*Les infos complètes seront disponibles avant le 01 juin 2016.</p>
+                                <br><p>*Les infos complètes seront disponibles début juin.</p>
                             </div>
                         </article>
                     </div>
