@@ -44,12 +44,36 @@ $(document).ready(function() {
 	  		"2016-04-30": {"number": 1, "badgeClass": "badge-warning", url: ",,,,Fête d'Unité"},
 
 	  		// Mai
-	  		// "2016-05-01": {"number": 4, "badgeClass": "badge-warning", url: "normale,normale,normale,normale"},
 	  		"2016-05-15": {"number": 3, "badgeClass": "badge-warning", url: "normale,normale,,normale"},
 	  		"2016-05-29": {"number": 1, "badgeClass": "badge-warning", url: ",,,normale"},
 
 	  		// Juin
 	  		"2016-06-26": {"number": 2, "badgeClass": "badge-warning", url: "Uniquement la matinée,,,,Barbecue l'après-midi"},
+
+	  		//Juillet
+	  		"2016-07-09": {"number": 1, "badgeClass": "badge-warning", url: ",,,grandcamppi,"},
+	  		"2016-07-10": {"number": 1, "badgeClass": "badge-warning", url: ",,,grandcamppi,"},
+	  		"2016-07-11": {"number": 1, "badgeClass": "badge-warning", url: ",,,grandcamppi,"},
+	  		"2016-07-12": {"number": 1, "badgeClass": "badge-warning", url: ",,,grandcamppi,"},
+	  		"2016-07-13": {"number": 1, "badgeClass": "badge-warning", url: ",,,grandcamppi,"},
+	  		"2016-07-14": {"number": 1, "badgeClass": "badge-warning", url: ",,,grandcamppi,"},
+	  		"2016-07-15": {"number": 1, "badgeClass": "badge-warning", url: ",,,grandcamppi,"},
+	  		"2016-07-16": {"number": 4, "badgeClass": "badge-warning", url: "grandcampcs,grandcamplx,grandcampsc,grandcamppi,"},
+	  		"2016-07-17": {"number": 4, "badgeClass": "badge-warning", url: "grandcampcs,grandcamplx,grandcampsc,grandcamppi,"},
+	  		"2016-07-18": {"number": 4, "badgeClass": "badge-warning", url: "grandcampcs,grandcamplx,grandcampsc,grandcamppi,"},
+	  		"2016-07-19": {"number": 4, "badgeClass": "badge-warning", url: "grandcampcs,grandcamplx,grandcampsc,grandcamppi,"},
+	  		"2016-07-20": {"number": 4, "badgeClass": "badge-warning", url: "grandcampcs,grandcamplx,grandcampsc,grandcamppi,"},
+	  		"2016-07-21": {"number": 4, "badgeClass": "badge-warning", url: "grandcampcs,grandcamplx,grandcampsc,grandcamppi,"},
+	  		"2016-07-22": {"number": 4, "badgeClass": "badge-warning", url: "grandcampcs,grandcamplx,grandcampsc,grandcamppi,"},
+	  		"2016-07-23": {"number": 3, "badgeClass": "badge-warning", url: ",grandcamplx,grandcampsc,grandcamppi,"},
+	  		"2016-07-24": {"number": 3, "badgeClass": "badge-warning", url: ",grandcamplx,grandcampsc,grandcamppi,"},
+	  		"2016-07-25": {"number": 3, "badgeClass": "badge-warning", url: ",grandcamplx,grandcampsc,grandcamppi,"},
+	  		"2016-07-26": {"number": 3, "badgeClass": "badge-warning", url: ",grandcamplx,grandcampsc,grandcamppi,"},
+	  		"2016-07-27": {"number": 3, "badgeClass": "badge-warning", url: ",grandcamplx,grandcampsc,grandcamppi,"},
+	  		"2016-07-28": {"number": 2, "badgeClass": "badge-warning", url: ",grandcamplx,grandcampsc,,"},
+	  		"2016-07-29": {"number": 2, "badgeClass": "badge-warning", url: ",grandcamplx,grandcampsc,,"},
+	  		"2016-07-30": {"number": 2, "badgeClass": "badge-warning", url: ",grandcamplx,grandcampsc,,"},
+	  		"2016-07-31": {"number": 2, "badgeClass": "badge-warning", url: ",grandcamplx,grandcampsc,,"},
 		}
 	});
 	<!---->
@@ -66,6 +90,10 @@ $(document).ready(function() {
 		wePi: "<a href='/pages/pis.php?#news_pis' target='_blank'>Informations sur le week-end</a>",
 		velo: "<a href='/pages/scouts.php?#news_scouts' target='_blank'>Informations sur les 24h vélo</a>",
 		bar: "Bar pi",
+		grandcampcs: "Infos à venir...",
+		grandcamplx: "Infos à venir...",
+		grandcampsc: "Infos à venir...",
+		grandcamppi: "Infos à venir...",
 	};
 	var reunions;
 	var thisReunion;
@@ -114,6 +142,14 @@ $(document).ready(function() {
 				thisReunion = reunion.velo;
 			else if (reunions[i] == "bar")
 				thisReunion = reunion.bar;
+			else if (reunions[i] == "grandcampcs")
+				thisReunion = reunion.grandcampcs;
+			else if (reunions[i] == "grandcamplx")
+				thisReunion = reunion.grandcamplx;
+			else if (reunions[i] == "grandcampsc")
+				thisReunion = reunion.grandcampsc;
+			else if (reunions[i] == "grandcamppi")
+				thisReunion = reunion.grandcamppi;
 			else
 				thisReunion = reunions[i];
 
