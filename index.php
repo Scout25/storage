@@ -21,6 +21,7 @@ include("includes/header.php");
             <div class="row title">
                 <div class="col-md-12">
                     <h1>L'unité du Porc-épic</h1>
+                    <h1 style="font-size:28px">DIMANCHE 26 JUIN : PRESENTATIONS CAMPS</h1>
                 </div>
             </div>
 
@@ -72,7 +73,7 @@ include("includes/header.php");
                         <article>
                             <h3>Louveteaux : </h3>
                             <br/>
-                            <p class="p1 lead">La Roche-En-Ardenne du 16 au 31 juillet 2016</p>
+                            <a class="btn outline" href="pages/louveteaux.php">Infos ici</a>
                             <h3>Pionniers : </h3>
                             <br/>
                             <p class="p1 lead">Bosnie-Herzegovine du 09 au 27 juillet 2016</p>
