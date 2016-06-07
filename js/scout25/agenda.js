@@ -91,7 +91,7 @@ $(document).ready(function() {
 		velo: "<a href='/pages/scouts.php?#news_scouts' target='_blank'>Informations sur les 24h vélo</a>",
 		bar: "Bar pi",
 		grandcampcs: "Infos à venir...",
-		grandcamplx: "Infos à venir...",
+		grandcamplx: "Grand camp : <a href='louveteaux.php?' target='_blank'>infos ici</a>",
 		grandcampsc: "Infos à venir...",
 		grandcamppi: "Infos à venir...",
 	};
