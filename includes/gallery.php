@@ -17,9 +17,7 @@ if (is_dir($data)) :
         foreach ($galleries as $gallery) :
 
             // Prevent mac hidden file
-            if ($gallery == "." || $gallery == "..") :
-                // Do nothing
-            else :
+            if ($gallery != "." || $gallery != "..") :
 
                 $thumbs = scandir($data."/".$gallery."/thumbnail");
                 $images_dir = $data."/".$gallery."/";
@@ -27,10 +25,7 @@ if (is_dir($data)) :
                 foreach ($thumbs as $thumb) :
 
                     // Prevent mac hidden file
-                    if ($thumb == "." || $thumb == "..") {
-                        // Do nothing
-                    }
-                    else {
+                    if ($thumb != "." || $thumb != "..") {
                         // Take the first thumb as gallery thumb
                         $thumb_gallery = $thumb;
                         break;
